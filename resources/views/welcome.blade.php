@@ -56,7 +56,7 @@
         <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up">
           <a href="" style="text-decoration: none">
   
-          <!-- Icon -->
+          <!-- Icon service -->
           <div class="icon text-primary mb-3 ms-3 pt-4">
             <img src="assets/service/security.png" height="44" alt="">
           </div>
