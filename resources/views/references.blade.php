@@ -30,7 +30,7 @@
 
     </div>
 
-    <div class="container px-4">
+    {{-- <div class="container px-4">
   
       <div class="row row-cols-1 row-cols-lg-3  g-4 py-5">
         <div class="col">
@@ -66,7 +66,7 @@
         </div>
 
       </div>
-    </div>
+    </div> --}}
 
 
 
