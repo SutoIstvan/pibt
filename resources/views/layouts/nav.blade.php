@@ -44,25 +44,29 @@
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item pt-2" style="height: 50px;" href="#">
+                  <a class="dropdown-item pt-2 {{ Route::is('services.server_maintenance') ? 'active' : '' }}" style="height: 50px;" 
+                      href="{{route('services.server_maintenance')}}">
                     <img src="{{ asset('assets/service/server.png') }}" height="24" alt="" class="me-2">
                     {{__('menu.server_maintenance')}}
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item pt-2" style="height: 50px;" href="#">
+                  <a class="dropdown-item pt-2 {{ Route::is('services.network_infrastructure') ? 'active' : '' }}" style="height: 50px;" 
+                    href="{{route('services.network_infrastructure')}}">
                     <img src="{{ asset('assets/service/structure.png') }}" height="24" alt="" class="me-2">
                     {{__('menu.network_infrastructure')}}
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item pt-2" style="height: 50px;" href="#">
+                  <a class="dropdown-item pt-2 {{ Route::is('services.computer_services') ? 'active' : '' }}" style="height: 50px;" 
+                    href="{{route('services.computer_services')}}">
                     <img src="{{ asset('assets/service/device.png') }}" height="24" alt="" class="me-2">
                     {{__('menu.computer_services')}}
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item pt-2" style="height: 50px;" href="#">
+                  <a class="dropdown-item pt-2 {{ Route::is('services.web_development') ? 'active' : '' }}" style="height: 50px;" 
+                    href="{{route('services.web_development')}}">
                     <img src="{{ asset('assets/service/coding.png') }}" height="24" alt="" class="me-2">
                     {{__('menu.web_development')}}
                   </a>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', __('menu.title'))</title>
+    <title>@yield('title', __('menu.title_contact'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 </head>
@@ -14,93 +14,147 @@
   {{-- <body data-bs-theme="dark"> --}}
 
     @include('layouts.nav')
-    
 
-  
-      <!-- CONTACT FORM -->
-  
+    <div class="conteiner my-5">
+      <div class="mt-5 text-center" data-aos="fade-up">
+        <h6 class="display-6 text-body-emphasis lh-2 mb-3">
+          {{-- {{ __('menu.contact')}} --}}
 
-    
-      <!-- END CONTACT FORM -->
-  
-    <!-- SLIDER -->
-    <div class="container my-5 pt-5" data-aos="fade-up">
-      <div class="p-5 text-center bg-body-tertiary rounded-3">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-  
-              <a class="navbar-brand" href="./index.html" aria-label="Front">
-                <img class="navbar-brand-logo " src="assets/img/avatar.png" height="120" alt="Logo">
-              </a>
-              <h1 class="text-body-emphasis">Jumbo Jhon</h1>
-              <p class="col-lg-8 mx-auto fs-5 text-muted">
-                {{__('menu.comment1')}}
-              </p>
-              <div class="d-inline-flex gap-2 mb-5 pb-5">
-                <img src="assets/img/stars.png" height="30" alt="">
-              </div>
-  
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-  
-              <a class="navbar-brand" href="./index.html" aria-label="Front">
-                <img class="navbar-brand-logo " src="assets/img/avatar.png" height="120" alt="Logo">
-              </a>
-              <h1 class="text-body-emphasis">Jumbo Jhon</h1>
-              <p class="col-lg-8 mx-auto fs-5 text-muted">
-                {{__('menu.comment2')}}
-              </p>
-              <div class="d-inline-flex gap-2 mb-5 pb-5">
-                <img src="assets/img/stars.png" height="30" alt="">
-              </div>
-  
-            </div>
-  
-            <div class="carousel-item" data-bs-interval="2000">
-  
-              <a class="navbar-brand" href="./index.html" aria-label="Front">
-                <img class="navbar-brand-logo " src="assets/img/avatar.png" height="120" alt="Logo">
-              </a>
-              <h1 class="text-body-emphasis">Jumbo Jhon</h1>
-              <p class="col-lg-8 mx-auto fs-5 text-muted">
-                {{__('menu.comment3')}}
-              </p>
-              <div class="d-inline-flex gap-2 mb-5 pb-5">
-                <img src="assets/img/stars.png" height="30" alt="">
-              </div>
-  
-            </div>
-  
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-  
+          Kamerarendszerek
+          
+        </h6>
+        <p >Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</p>
+        {{-- <h5>Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</h5> --}}
+
       </div>
+
+
     </div>
-  
-    <!-- SLIDER END -->
-  
-  
-  
-  
-  
-  
+
+
+    <section class="py-8 py-md-11 mb-5 mt-5">
+      <div class="container">
+    
+
+        <div class="row">
+          <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up">
+            <a href="" style="text-decoration: none">
+    
+            <!-- Icon service -->
+            <div class="icon text-primary mb-3 ms-3 pt-4">
+              <img src="../assets/service/security.png" height="44" alt="">
+            </div>
+            <!-- Heading -->
+            <h5 class="ms-3 text-secondary" >
+              {{__('menu.access_control_systems')}}
+            </h5>
+    
+            <!-- Text -->
+            <p class="text-body-secondary mb-3 ms-3">
+              {{__('menu.access_control_systems_description')}}
+            </p>
+            </a>
+          </div>
+          
+          <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="50">
+            <a href="" style="text-decoration: none">
+    
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 ms-3 pt-4">
+              <img src="../assets/service/cctv.png" height="44" alt="">
+            </div>
+            <!-- Heading -->
+            <h5 class="ms-3 text-secondary" >
+              {{__('menu.surveillance_systems')}}
+            </h5>
+    
+            <!-- Text -->
+            <p class="text-body-secondary mb-6 mb-md-0 ms-3">
+              {{__('menu.surveillance_systems_description')}}
+            </p>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="100">
+            <a href="" style="text-decoration: none">
+    
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 ms-3 pt-4">
+              <img src="../assets/service/server.png" height="44" alt="">
+            </div>
+            <!-- Heading -->
+            <h5 class="ms-3 text-secondary" >
+              {{__('menu.server_maintenance')}}
+            </h5>
+    
+            <!-- Text -->
+            <p class="text-body-secondary mb-0 ms-3">
+              {{__('menu.server_maintenance_description')}}
+            </p>
+            </a>
+          </div>
+    
+          <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up">
+            <a href="" style="text-decoration: none">
+    
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 ms-3 pt-4">
+              <img src="../assets/service/structure.png" height="44" alt="">
+            </div>
+            <!-- Heading -->
+            <h5 class="ms-3 text-secondary" >
+              {{__('menu.network_infrastructure')}}
+            </h5>
+    
+            <!-- Text -->
+            <p class="text-body-secondary mb-3 ms-3">
+              {{__('menu.network_infrastructure_description')}}
+            </p>
+            </a>
+          </div>
+    
+          <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="50">
+            <a href="" style="text-decoration: none">
+    
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 ms-3 pt-4">
+              <img src="../assets/service/device.png" height="44" alt="">
+            </div>
+    
+            <!-- Heading -->
+            <h5 class="ms-3 text-secondary" >
+              {{__('menu.computer_services')}}
+            </h5>
+    
+            <!-- Text -->
+            <p class="text-body-secondary mb-0 ms-3">
+              {{__('menu.computer_services_description')}}
+            </p>
+            </a>
+          </div>
+    
+          <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="100">
+            <a href="" style="text-decoration: none">
+    
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 ms-3 pt-4">
+              <img src="../assets/service/coding.png" height="44" alt="">
+            </div>
+            <!-- Heading -->
+            <h5 class="ms-3 text-secondary" >
+              {{__('menu.web_development')}}
+            </h5>
+    
+            <!-- Text -->
+            <p class="text-body-secondary mb-0 ms-3">
+              {{__('menu.web_development_description')}}
+            </p>
+            </a>
+          </div>
+    
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      </section>
+
 
   
     <!-- FOOTER -->

@@ -20,7 +20,7 @@
         <h6 class="display-6 text-body-emphasis lh-2 mb-3">
           {{-- {{ __('menu.contact')}} --}}
 
-          Beléptető rendszerek
+          Számítógép üzemeltetési szolgáltatások
           
         </h6>
         <p >Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</p>

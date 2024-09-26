@@ -38,6 +38,21 @@ Route::prefix('services')->group(function () {
         return view('services.surveillance_systems');
     })->name('services.surveillance_systems');
 
+    Route::get('/server-maintenance', function () {
+        return view('services.server_maintenance');
+    })->name('services.server_maintenance');
+
+    Route::get('/network-infrastructure', function () {
+        return view('services.network_infrastructure');
+    })->name('services.network_infrastructure');
+
+    Route::get('/computer-services', function () {
+        return view('services.computer_services');
+    })->name('services.computer_services');
+
+    Route::get('/web-development', function () {
+        return view('services.web_development');
+    })->name('services.web_development');    
 });
 
 Route::get('change-language/{locale}', function ($locale) {
