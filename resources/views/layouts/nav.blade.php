@@ -4,7 +4,7 @@
           <a class="navbar-brand" href="./index.html" aria-label="Front">
               <img class="navbar-brand-logo" height="50px" src="{{ asset('assets/img/logo.png') }}" alt="Logo">
           </a>
-          <h5 class="mt-2 me-auto" style="color: #3f8fff">
+          <h5 class="mt-2 me-auto" style="color: #0d6efd !important">
               <a href="" style="text-decoration: none">
                 Paksi informatika
               </a>
