@@ -37,7 +37,7 @@ return [
     'title_about' => 'Rólunk - Paksi Informatika',
     'title_references' => 'Referenciák - Paksi Informatika',
 
-    'name' => 'Имя',
+    'name' => 'Név',
     'mail' => 'E-mail cím',
     'short_decription_message' => 'Rövid leírása, egyéb üzenet',
     'accept_the_data_management_conditions' => 'Elfogadom az adatkezelési feltételeket.',
