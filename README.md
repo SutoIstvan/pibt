@@ -1,7 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="public/assets/img/logo.png" width="200" alt="Laravel Logo"></a></p>
 
-## Laravel 11 Docker
+## Paks informatikai BT - Docker
 - Laravel v11
+- Bootstrap 5.3
 - PHP v8.3
 - MySQL v8.1
 - phpMyAdmin v5
