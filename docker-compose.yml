@@ -38,9 +38,6 @@ services:
             - ./certbot/www/:/var/www/certbot/:rw
             - ./certbot/conf/:/etc/letsencrypt/:rw
             - ./certbot/logs/:/var/log/letsencrypt/:rw  # добавьте этот volume для логов
-        command: tail -f /dev/null
-
-
 
     ####################################################################################################
     # DATABASE (MySQL)
