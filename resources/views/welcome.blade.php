@@ -28,10 +28,11 @@
             {{__('menu.low_voltage_technology_systems')}}
           </h1>
           <p class="lead text-body-secondary mt-1" data-aos="fade-up" data-aos-duration="1000">
+            {{__('menu.hero_description')}}
+            {{__('menu.network_infrastructure')}},
+            {{__('menu.server_maintenance')}},
             {{__('menu.access_control_systems')}},
             {{__('menu.surveillance_systems')}},
-            {{__('menu.server_maintenance')}},
-            {{__('menu.network_infrastructure')}},
             {{__('menu.computer_services')}},
             {{__('menu.web_development')}}.
           </p>
@@ -53,43 +54,6 @@
         </h6>
       </div>
       <div class="row">
-        <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up">
-          <a href="" style="text-decoration: none">
-  
-          <!-- Icon service -->
-          <div class="icon text-primary mb-3 ms-3 pt-4">
-            <img src="assets/service/security.png" height="44" alt="">
-          </div>
-          <!-- Heading -->
-          <h5 class="ms-3 text-secondary" >
-            {{__('menu.access_control_systems')}}
-          </h5>
-  
-          <!-- Text -->
-          <p class="text-body-secondary mb-3 ms-3">
-            {{__('menu.access_control_systems_description')}}
-          </p>
-          </a>
-        </div>
-        
-        <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="50">
-          <a href="" style="text-decoration: none">
-  
-          <!-- Icon -->
-          <div class="icon text-primary mb-3 ms-3 pt-4">
-            <img src="assets/service/cctv.png" height="44" alt="">
-          </div>
-          <!-- Heading -->
-          <h5 class="ms-3 text-secondary" >
-            {{__('menu.surveillance_systems')}}
-          </h5>
-  
-          <!-- Text -->
-          <p class="text-body-secondary mb-6 mb-md-0 ms-3">
-            {{__('menu.surveillance_systems_description')}}
-          </p>
-          </a>
-        </div>
         <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="100">
           <a href="" style="text-decoration: none">
   
@@ -107,6 +71,7 @@
             {{__('menu.server_maintenance_description')}}
           </p>
           </a>
+          <p></p>
         </div>
   
         <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up">
@@ -126,7 +91,49 @@
             {{__('menu.network_infrastructure_description')}}
           </p>
           </a>
+          <p></p>
         </div>
+
+        <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up">
+          <a href="" style="text-decoration: none">
+  
+          <!-- Icon service -->
+          <div class="icon text-primary mb-3 ms-3 pt-4">
+            <img src="assets/service/security.png" height="44" alt="">
+          </div>
+          <!-- Heading -->
+          <h5 class="ms-3 text-secondary" >
+            {{__('menu.access_control_systems')}}
+          </h5>
+  
+          <!-- Text -->
+          <p class="text-body-secondary mb-3 ms-3">
+            {{__('menu.access_control_systems_description')}}
+          </p>
+          </a>
+          <p></p>
+        </div>
+        
+        <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="50">
+          <a href="" style="text-decoration: none">
+  
+          <!-- Icon -->
+          <div class="icon text-primary mb-3 ms-3 pt-4">
+            <img src="assets/service/cctv.png" height="44" alt="">
+          </div>
+          <!-- Heading -->
+          <h5 class="ms-3 text-secondary" >
+            {{__('menu.surveillance_systems')}}
+          </h5>
+  
+          <!-- Text -->
+          <p class="text-body-secondary mb-6 mb-md-0 ms-3">
+            {{__('menu.surveillance_systems_description')}}
+          </p>
+          </a>
+          <p></p>
+        </div>
+
   
         <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="50">
           <a href="" style="text-decoration: none">
@@ -146,6 +153,7 @@
             {{__('menu.computer_services_description')}}
           </p>
           </a>
+          <p></p>
         </div>
   
         <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="100">
@@ -165,6 +173,7 @@
             {{__('menu.web_development_description')}}
           </p>
           </a>
+          <p></p>
         </div>
   
       </div> <!-- / .row -->

@@ -15,7 +15,7 @@
 
     @include('layouts.nav')
 
-    <div class="conteiner my-5">
+    <div class="conteiner px-5">
       <div class="mt-5 text-center" data-aos="fade-up">
         <h6 class="display-6 text-body-emphasis lh-2 mb-3">
           {{-- {{ __('menu.contact')}} --}}

@@ -30,20 +30,6 @@
                 aria-expanded="false">{{__('menu.services')}}</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item pt-2 {{ Route::is('services.access_control_systems') ? 'active' : '' }}" style="height: 50px;" 
-                     href="{{route('services.access_control_systems')}}">
-                    <img src="{{ asset('assets/service/security.png') }}" height="24" alt="" class="me-2">
-                    {{__('menu.access_control_systems')}}
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item pt-2 {{ Route::is('services.surveillance_systems') ? 'active' : '' }}" style="height: 50px;" 
-                     href="{{route('services.surveillance_systems')}}">
-                    <img src="{{ asset('assets/service/cctv.png') }}" height="24" alt="" class="me-2">
-                    {{__('menu.surveillance_systems')}}
-                  </a>
-                </li>
-                <li>
                   <a class="dropdown-item pt-2 {{ Route::is('services.server_maintenance') ? 'active' : '' }}" style="height: 50px;" 
                       href="{{route('services.server_maintenance')}}">
                     <img src="{{ asset('assets/service/server.png') }}" height="24" alt="" class="me-2">
@@ -55,6 +41,20 @@
                     href="{{route('services.network_infrastructure')}}">
                     <img src="{{ asset('assets/service/structure.png') }}" height="24" alt="" class="me-2">
                     {{__('menu.network_infrastructure')}}
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item pt-2 {{ Route::is('services.access_control_systems') ? 'active' : '' }}" style="height: 50px;" 
+                     href="{{route('services.access_control_systems')}}">
+                    <img src="{{ asset('assets/service/security.png') }}" height="24" alt="" class="me-2">
+                    {{__('menu.access_control_systems')}}
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item pt-2 {{ Route::is('services.surveillance_systems') ? 'active' : '' }}" style="height: 50px;" 
+                     href="{{route('services.surveillance_systems')}}">
+                    <img src="{{ asset('assets/service/cctv.png') }}" height="24" alt="" class="me-2">
+                    {{__('menu.surveillance_systems')}}
                   </a>
                 </li>
                 <li>
