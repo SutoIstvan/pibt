@@ -55,7 +55,7 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-4 aos-init aos-animate services-hover-effect" data-aos="fade-up" data-aos-delay="100">
-          <a href="" style="text-decoration: none">
+          <a href="{{route('services.server_maintenance')}}" style="text-decoration: none">
   
           <!-- Icon -->
           <div class="icon text-primary mb-3 ms-3 pt-4">
