@@ -15,11 +15,22 @@
         right: 50px; /* Выровнять по правому краю */
         width: 350px; /* Ширина картинки */
         height: 350px; /* Высота картинки */
-        background-image: url('../assets/service/structure.png'); /* Путь к изображению */
+        background-image: url('../assets/service/structure.png'); 
         background-size: cover; /* Обеспечивает полное покрытие области */
         background-repeat: no-repeat; /* Не повторять картинку */
         opacity: 0.05; /* Прозрачность */
         z-index: -1; /* Убедитесь, что картинка находится за текстом */
+      }
+
+      .circle-icon {
+        background: #c1cef8;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 70px;
+        vertical-align: middle;
+        /* padding: 30px; */
       }
 
     </style>
@@ -30,53 +41,48 @@
 
     @include('layouts.nav')
 
-    {{-- <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
+    <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
       <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
-        <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-4">
-          <img src="../assets/img/mainimg.png" class="img-fluid " loading="lazy" style="opacity: 0.8;">
+        <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-6">
+          <img src="../assets/it.png" class="img-fluid " loading="lazy" style="opacity: 0.8;">
         </div>
-        <div class="col-lg-8 mt-xs-3">
+        <div class="col-lg-6 mt-xs-3">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 " data-aos="fade-up">
-            IT Üzemeltetés 
+            IT Üzemeltetés - Teljeskörű Megoldások a <span class="text-primary">Vállalkozásod</span> Számára
           </h1>
-          <p>
-            Teljeskörű Megoldások a Vállalkozásod Számára
-          </p>
           <p class="lead text-body-secondary mt-1" data-aos="fade-up" data-aos-duration="1000">
-            Az Paksi Informatika több mint 20 éves szakmai tapasztalattal nyújt teljeskörű IT
-            üzemeltetési szolgáltatásokat kis- és középvállalkozások számára. Célunk, hogy biztosítsuk
-            ügyfeleink számára a zökkenőmentes, megbízható és hatékony IT infrastruktúrát, amely
-            minden nap támogatja működésüket. Szolgáltatásaink magukban foglalják a szerverek, IT
-            rendszerek, munkaállomások tervezését, beüzemelését, üzemeltetését és karbantartását,
-            valamint innovatív, nyílt forráskódú megoldásokat, automatizálást és webfejlesztést.
-          </p>
+            A Paksi Informatika több mint 20 éves tapasztalattal kínál teljeskörű IT üzemeltetési szolgáltatásokat kis- és középvállalkozásoknak. Célunk, hogy ügyfeleink számára megbízható, hatékony IT infrastruktúrát biztosítsunk, amely támogatja mindennapi működésüket. Szolgáltatásaink között szerepel a szerverek és IT rendszerek tervezése, üzemeltetése, karbantartása, valamint nyílt forráskódú megoldások, automatizálás és webfejlesztés.          </p>
         </div>
       </div>
-    </div> --}}
+    </div>
     
 
     
     
-    <div class="container my-5">
-      <div class="background-image mb-5 me-5"></div> <!-- Фоновая картинка -->
+    {{-- <div class="container my-5">
+      <div class="background-image mb-5 me-5"></div> 
 
       <div class="col-md-9 mt-5 text-center justify-content-center g-lg-5 py-5 mx-auto" data-aos="fade-up">
 
         <div class="d-flex flex-column align-items-center">
+
+          <i class="fa-solid fa-gear circle-icon fa-3x" style="color: #335eea"></i>
+
+
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
             IT Üzemeltetés – Teljeskörű Megoldások a Vállalkozásod Számára
           </h1>
 
         </div>
         
-        {{-- <div class="d-flex align-items-start">
+        <div class="d-flex align-items-start">
           <img class="mt-3 me-3" src="../assets/service/server.png" height="74" alt="">
           <div>
             <h1 class="display-6 text-body-emphasis lh-2 mb-3 align-items-start" style="text-align: left !important;">
               IT Üzemeltetés – Teljeskörű Megoldások a Vállalkozásod Számára
             </h1>
           </div>
-        </div> --}}
+        </div>
         
         <p >
           Az Paksi Informatika több mint 20 éves szakmai tapasztalattal nyújt teljeskörű IT
@@ -86,6 +92,145 @@
           rendszerek, munkaállomások tervezését, beüzemelését, üzemeltetését és karbantartását,
           valamint innovatív, nyílt forráskódú megoldásokat, automatizálást és webfejlesztést.
         </p>
+      </div>
+    </div> --}}
+
+
+
+    <div class="container my-5">
+      <div class="col-md-11 mt-2 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-2 text-center">
+            Szerverek és munkaállomások tervezése,<br> beszerzése és beüzemelése
+          </h1>
+        </div>        
+        <p>
+          Egy jól megtervezett és megbízható IT infrastruktúra alapvető a stabil üzleti működéshez. Innovatív megoldásainkkal biztosítjuk, hogy rendszereid mindig hatékonyan és biztonságosan működjenek. Az alábbi szolgáltatásokat kínáljuk:
+        </p>
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+      <div class="row ">
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-gears circle-icon fa-2x" style="color: #335eea"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Infrastruktúra tervezése:</h5>
+              <p class="text-body-secondary">Megtervezzük a vállalkozásod igényeinek legjobban megfelelő szerverarchitektúrát és klienshálózatot, legyen szó fizikai vagy virtuális környezetekről.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-microchip circle-icon fa-2x" style="color: #335eea"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Hardver beszerzés és telepítés:</h5>
+              <p class="text-body-secondary">Gondoskodunk a megfelelő szerverek, munkaállomások, tárolók, hálózati eszközök és egyéb IT komponensek beszerzéséről és beüzemeléséről.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="w-100"></div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-code circle-icon fa-2x" style="color: #335eea"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Szoftverek telepítése és konfigurálása:</h5>
+              <p class="text-body-secondary">A szerverek és munkaállomások szoftveres konfigurációja biztosítja az optimális teljesítményt és a biztonságos működést.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container my-2">
+      <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
+            Üzemeltetés, karbantartás és távfelügyelet
+          </h1>
+        </div>        
+        <p>
+          A rendszeres üzemeltetés és karbantartás elengedhetetlen az IT rendszerek zavartalan működéséhez, legyen szó szerverekről vagy kliensekről. Szolgáltatásaink közé tartozik:        </p>
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+      <div class="row ">
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-clock-rotate-left circle-icon fa-2x" style="color: #335eea"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Rendszeres felügyelet:</h5>
+              <p class="text-body-secondary">Folyamatosan monitorozzuk a szerverek és munkaállomások állapotát, azonnal reagálva az esetleges hibákra és problémákra.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-pen-to-square circle-icon fa-2x" style="color: #335eea"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Szoftverfrissítések és javítások:</h5>
+              <p class="text-body-secondary">Biztosítjuk a legfrissebb szoftverfrissítéseket és biztonsági javításokat a rendszerek védelme érdekében.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="w-100"></div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-code circle-icon fa-2x" style="color: #335eea"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Hibajavítás és támogatás:</h5>
+              <p class="text-body-secondary">Ha bármi probléma merül fel, gyors és hatékony megoldásokat kínálunk.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-house-laptop circle-icon fa-2x" style="color: #335eea"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Távfelügyelet:</h5>
+              <p class="text-body-secondary">Munkaállomások és szerverek távoli monitorozása és felügyelete biztosítja a gyors hibajavítást és minimalizálja a leállásokat.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
