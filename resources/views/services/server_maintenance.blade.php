@@ -23,7 +23,7 @@
       }
 
       .circle-icon {
-        background: #c1cef8;
+        background: #c1cef8a3;
         width: 70px;
         height: 70px;
         border-radius: 50%;
@@ -31,6 +31,7 @@
         line-height: 70px;
         vertical-align: middle;
         /* padding: 30px; */
+        color: #335eeab5
       }
 
     </style>
@@ -43,14 +44,14 @@
 
     <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
       <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
-        <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-6">
+        <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-5">
           <img src="../assets/it.png" class="img-fluid " loading="lazy" style="opacity: 0.8;">
         </div>
-        <div class="col-lg-6 mt-xs-3">
+        <div class="col-lg-7 mt-xs-3">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 " data-aos="fade-up">
             IT Üzemeltetés - Teljeskörű Megoldások a <span class="text-primary">Vállalkozásod</span> Számára
           </h1>
-          <p class="lead text-body-secondary mt-1" data-aos="fade-up" data-aos-duration="1000">
+          <p class="lead text-body-secondary mt-1 me-5" data-aos="fade-up" data-aos-duration="1000">
             A Paksi Informatika több mint 20 éves tapasztalattal kínál teljeskörű IT üzemeltetési szolgáltatásokat kis- és középvállalkozásoknak. Célunk, hogy ügyfeleink számára megbízható, hatékony IT infrastruktúrát biztosítsunk, amely támogatja mindennapi működésüket. Szolgáltatásaink között szerepel a szerverek és IT rendszerek tervezése, üzemeltetése, karbantartása, valamint nyílt forráskódú megoldások, automatizálás és webfejlesztés.          </p>
         </div>
       </div>
@@ -66,7 +67,7 @@
 
         <div class="d-flex flex-column align-items-center">
 
-          <i class="fa-solid fa-gear circle-icon fa-3x" style="color: #335eea"></i>
+          <i class="fa-solid fa-gear circle-icon fa-3x"></i>
 
 
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
@@ -116,7 +117,7 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-gears circle-icon fa-2x" style="color: #335eea"></i>
+                <i class="fa-solid mt-1 fa-gears circle-icon fa-2x"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
@@ -130,7 +131,7 @@
           <div class="d-flex">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-microchip circle-icon fa-2x" style="color: #335eea"></i>
+                <i class="fa-solid mt-1 fa-microchip circle-icon fa-2x"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
@@ -146,7 +147,7 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-code circle-icon fa-2x" style="color: #335eea"></i>
+                <i class="fa-solid mt-1 fa-code circle-icon fa-2x"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
@@ -159,7 +160,7 @@
     </div>
 
 
-    <div class="container my-2">
+    <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
@@ -177,7 +178,7 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-clock-rotate-left circle-icon fa-2x" style="color: #335eea"></i>
+                <i class="fa-solid mt-1 fa-clock-rotate-left circle-icon fa-2x"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
@@ -191,7 +192,7 @@
           <div class="d-flex">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-pen-to-square circle-icon fa-2x" style="color: #335eea"></i>
+                <i class="fa-solid mt-1 fa-pen-to-square circle-icon fa-2x"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
@@ -207,7 +208,7 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-code circle-icon fa-2x" style="color: #335eea"></i>
+                <i class="fa-solid mt-1 fa-code circle-icon fa-2x"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
@@ -221,7 +222,7 @@
           <div class="d-flex">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-house-laptop circle-icon fa-2x" style="color: #335eea"></i>
+                <i class="fa-solid mt-1 fa-house-laptop circle-icon fa-2x"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
