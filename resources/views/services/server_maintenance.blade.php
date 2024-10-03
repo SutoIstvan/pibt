@@ -208,7 +208,7 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-code circle-icon fa-2x"></i>
+                <i class="fa-solid mt-1 fa-headset circle-icon fa-2x"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
