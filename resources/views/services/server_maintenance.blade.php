@@ -42,7 +42,7 @@
 
     @include('layouts.nav')
 
-    <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
+    {{-- <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
       <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
         <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-5">
           <img src="../assets/it.png" class="img-fluid " loading="lazy" style="opacity: 0.8;">
@@ -55,9 +55,22 @@
             A Paksi Informatika több mint 20 éves tapasztalattal kínál teljeskörű IT üzemeltetési szolgáltatásokat kis- és középvállalkozásoknak. Célunk, hogy ügyfeleink számára megbízható, hatékony IT infrastruktúrát biztosítsunk, amely támogatja mindennapi működésüket. Szolgáltatásaink között szerepel a szerverek és IT rendszerek tervezése, üzemeltetése, karbantartása, valamint nyílt forráskódú megoldások, automatizálás és webfejlesztés.          </p>
         </div>
       </div>
-    </div>
+    </div> --}}
     
-
+    <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
+      <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
+        <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-6">
+          <img src="../assets/it.png" class="img-fluid " loading="lazy" style="opacity: 0.7; height:300px">
+        </div>
+        <div class="col-lg-6 mt-xs-3">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up">
+            Teljeskörű Megoldások a <span class="text-primary">Vállalkozásod</span> Számára
+          </h1>
+          <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
+            Célunk, hogy ügyfeleink számára megbízható, hatékony IT infrastruktúrát biztosítsunk, amely támogatja mindennapi működésüket. Szolgáltatásaink között szerepel a szerverek és IT rendszerek tervezése, üzemeltetése, karbantartása, valamint nyílt forráskódú megoldások, automatizálás és webfejlesztés.          </p>
+        </div>
+      </div>
+    </div>
     
     
     {{-- <div class="container my-5">
@@ -235,7 +248,7 @@
       </div>
     </div>
 
-    <div class="container" data-aos="fade-up">
+    {{-- <div class="container" data-aos="fade-up">
       <p class="fs-4 mx-md-5">
         Szerverek és munkaállomások tervezése, beszerzése és beüzemelése
       </p>
@@ -362,7 +375,7 @@
           szolgáltatásokat kínálunk.
         </li>
       </ul>
-    </div>
+    </div> --}}
 
 
     <div class="container my-5">
