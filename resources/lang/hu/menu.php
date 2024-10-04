@@ -43,6 +43,10 @@ return [
     'title_about' => 'Rólunk - Paksi Informatika',
     'title_references' => 'Referenciák - Paksi Informatika',
 
+    'title_server_maintenance' => 'IT üzemeltetés - Paksi Informatika',
+    'title_network_infrastructure' => 'Gyengeáramú hálózatok - Paksi Informatika',
+    'title_access_control_systems' => 'Beléptető rendszerek - Paksi Informatika',
+    
     'name' => 'Név',
     'mail' => 'E-mail cím',
     'short_decription_message' => 'Rövid leírása, egyéb üzenet',
