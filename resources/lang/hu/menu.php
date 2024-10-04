@@ -46,7 +46,8 @@ return [
     'title_server_maintenance' => 'IT üzemeltetés - Paksi Informatika',
     'title_network_infrastructure' => 'Gyengeáramú hálózatok - Paksi Informatika',
     'title_access_control_systems' => 'Beléptető rendszerek - Paksi Informatika',
-    
+    'title_surveillance_systems' => 'Videómegfigyelő rendszerek - Paksi Informatika',
+
     'name' => 'Név',
     'mail' => 'E-mail cím',
     'short_decription_message' => 'Rövid leírása, egyéb üzenet',
