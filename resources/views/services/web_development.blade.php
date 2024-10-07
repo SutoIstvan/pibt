@@ -16,10 +16,10 @@
     <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
       <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
         <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-6">
-          <img src="../assets/web-services.png" class="img-fluid " loading="lazy" style="opacity: 0.7; height:300px">
+          <img src="../assets/web-services.png" class="img-fluid " loading="lazy" style="opacity: 0.7; height:350px">
         </div>
         <div class="col-lg-6 mt-xs-3">
-          <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-3" data-aos="fade-up">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up">
             <span class="text-primary">Webfejlesztés</span> - Modern megoldások minden platformra
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
