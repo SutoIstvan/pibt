@@ -167,7 +167,7 @@
     </div>
 
 
-    <div class="container my-3 mb-4">
+    {{-- <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
@@ -211,7 +211,7 @@
         </div>
 
       </div>
-    </div>
+    </div> --}}
 
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
@@ -224,6 +224,7 @@
           Az open source rendszerek egyre nagyobb teret hódítanak a vállalati IT környezetben, mivel költséghatékonyak és nagy rugalmasságot biztosítanak. Cégünk számos nyílt forráskódú platformot és szoftvert integrál, mint például:
         </p>
       </div>
+    </div>
 
     <div class="container" data-aos="fade-up">
       <div class="row mt-4">
