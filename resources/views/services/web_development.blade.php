@@ -206,7 +206,7 @@
             <div class="flex-grow-1 ms-3">
               <h5>HTML 5 - Weboldal vázának kialakítása:</h5>
               <p class="text-body-secondary">
-                A weboldal szerkezete és tartalma HTML segítségével készül, ez biztosítja a weboldal alapjait.
+                A weboldal szerkezete és tartalma HTML 5 segítségével készül, ez biztosítja a weboldal alapjait.
               </p>
             </div>
           </div>
