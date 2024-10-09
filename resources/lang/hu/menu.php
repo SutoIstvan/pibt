@@ -12,7 +12,7 @@ return [
     'surveillance_systems' => 'Videómegfigyelő rendszerek',
     'surveillance_systems_description' => 'Biztonsági kamerák telepítése, távfelügyeleti rendszerek kialakítása.',
     
-    'server_maintenance' => 'IT üzemeltetés',
+    'server_maintenance' => 'Szerver üzemeltetés',
     'server_maintenance_description' => 'Szerverek és kliensek menedzsmentje, rendszergazdai feladatok, szoftver és hardverkarbantartás.',
     'network_infrastructure' => 'Gyengeáramú hálózatok',
     'network_infrastructure_description' => 'Hálózattervezés és telepítés, kábelezés, kapcsolók és routerek konfigurálása.',
@@ -43,7 +43,7 @@ return [
     'title_about' => 'Rólunk - Paksi Informatika',
     'title_references' => 'Referenciák - Paksi Informatika',
 
-    'title_server_maintenance' => 'IT üzemeltetés - Paksi Informatika',
+    'title_server_maintenance' => 'Szerver üzemeltetés - Paksi Informatika',
     'title_network_infrastructure' => 'Gyengeáramú hálózatok - Paksi Informatika',
     'title_access_control_systems' => 'Beléptető rendszerek - Paksi Informatika',
     'title_surveillance_systems' => 'Videómegfigyelő rendszerek - Paksi Informatika',
