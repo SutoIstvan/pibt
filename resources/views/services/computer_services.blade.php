@@ -19,8 +19,8 @@
           <img src="../assets/access-systems.png" class="img-fluid " loading="lazy" style="opacity: 0.7; height:300px">
         </div>
         <div class="col-lg-6 mt-xs-3">
-          <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up" style="font-size:39px !important">
-            Megbízható <span class="text-primary">rendszergazdai</span> megoldások a zökkenőmentes működésért.
+          <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up">
+            <span class="text-primary">Rendszergazdai</span> megoldások a zökkenőmentes működésért.
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
             Cégünk, a Paksi Informatika, teljes körű rendszergazdai szolgáltatásokat kínál, amelyek segítik a vállalkozásodat a zavartalan működés fenntartásában. Szakképzett csapatunk biztosítja a rendszered hatékony üzemeltetését, karbantartását és biztonságát.      
