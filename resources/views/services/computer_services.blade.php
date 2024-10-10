@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', __('menu.title_access_control_systems'))</title>
+    <title>@yield('title', __('menu.title_computer_services'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
@@ -33,13 +33,11 @@
       <div class="col-md-11 mt-2 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-2 text-center">
-            Beléptető rendszerek tervezése
+            Rendszertervezés és telepítés
           </h1>
         </div>        
         <p>
-          Cégünk átfogó beléptető rendszer tervezési szolgáltatásokat kínál, amelyek az ügyfél
-          specifikus igényeire szabott megoldásokat nyújtanak. Minden rendszerünket az alábbi
-          alapelvek szerint tervezzük:
+          Ez a folyamat magában foglalja a rendszer kialakításának minden aspektusát, figyelembe véve az üzleti igényeket és követelményeket. A rendszertervezés során részletesen megvizsgáljuk az üzleti folyamatokat, hogy a legoptimálisabb hardver- és szoftvermegoldásokat kínáljuk.
         </p>
       </div>
     </div>
@@ -54,10 +52,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Biztonsági követelmények felmérése:</h5>
+              <h5>Hardverbeszerzés:</h5>
               <p class="text-body-secondary">
-                Az ügyfél igényeinek pontos megértése, amely alapján
-                kidolgozzuk a megfelelő beléptetési megoldásokat.
+                A szükséges hardverek kiválasztása az ügyfél specifikációi alapján, beleértve a szerverkonfigurációkat és tárolási megoldásokat.
               </p>
             </div>
           </div>
@@ -71,11 +68,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Integráció meglévő rendszerekkel:</h5>
+              <h5>Szoftverbeszerzés:</h5>
               <p class="text-body-secondary">
-                Beléptető rendszereink zökkenőmentesen integrálhatók
-                a már meglévő IT infrastruktúrával, hálózatokkal és biztonsági rendszerekkel, például
-                kamerarendszerekkel.
+                Az üzleti igényekhez és a kiválasztott hardverekhez illeszkedő szoftverek megvásárlása.
               </p>
             </div>
           </div>
@@ -91,10 +86,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Rugalmasság és skálázhatóság:</h5>
+              <h5>Telepítés és konfigurálás:</h5>
               <p class="text-body-secondary">
-                Olyan megoldásokat kínálunk, amelyek a vállalkozás
-                növekedésével bővíthetők és átalakíthatók.
+                A rendszerek fizikai telepítése és konfigurálása a zökkenőmentes működés érdekében.
               </p>
             </div>
           </div>
@@ -107,12 +101,11 @@
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            Technológiai megoldásaink
+            Folyamatos üzemeltetés és karbantartás
           </h1>
         </div>        
         <p>
-          Széles körű technológiai megoldásokat kínálunk, amelyek megfelelnek a legkülönbözőbb
-          biztonsági kihívásoknak:
+          A rendszerek folyamatos működésének fenntartása kiemelkedő fontosságú. A rendszeres ellenőrzésekkel biztosítjuk, hogy az IT-rendszerek zavartalanul működjenek.
         </p>
       </div>
     </div>
@@ -127,10 +120,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>RFID kártyás rendszerek:</h5>
+              <h5>Rendszeres ellenőrzések:</h5>
               <p class="text-body-secondary">
-                Érintésmentes, gyors és kényelmes beléptetési megoldások,
-                amelyek könnyen kezelhetők és felügyelhetők.
+                Folyamatosan ellenőrizzük az infrastruktúrát automatikus és manuális felügyeleti folyamatokkal, lehetővé téve a hardverhibák és szoftverproblémák gyors észlelését.
               </p>
             </div>
           </div>
@@ -144,11 +136,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>Biometrikus rendszerek:</h5>
+              <h5>Szoftverfrissítések:</h5>
               <p class="text-body-secondary">
-                Ujjlenyomat, arcfelismerés vagy retinaalapú beléptetés, amely
-                maximális biztonságot nyújt, és kizárja a kártyák elvesztéséből vagy másolásából adódó
-                kockázatokat.
+                Rendszeresen frissítjük az operációs rendszereket, alkalmazásokat és biztonsági megoldásokat, hogy a rendszer naprakész maradjon a legújabb hibajavításokkal.
               </p>
             </div>
           </div>
@@ -164,16 +154,15 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>PIN kódos rendszerek:</h5>
+              <h5>Hibajavítás és technikai támogatás:</h5>
               <p class="text-body-secondary">
-                Egyszerű és hatékony megoldások olyan helyszíneken, ahol többféle
-                beléptetési módszer integrálása szükséges.
+                Probléma esetén gyors hibajavítást és technikai támogatást nyújtunk, biztosítva a rendszer gyors helyreállítását.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="200">
+        {{-- <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="200">
           <div class="d-flex">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
@@ -181,29 +170,27 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Többfaktoros hitelesítés:</h5>
+              <h5>Távfelügyelet:</h5>
               <p class="text-body-secondary">
-                Magas biztonságot igénylő helyszíneken kombinált beléptetési
-                megoldásokat is biztosítunk (például biometrikus azonosítás + PIN kód).
+                Az informatikai rendszerek állapotának folyamatos figyelemmel kísérése távolról. Így az esetleges hibák vagy problémák azonnal felismerhetők és megoldhatók.
               </p>
             </div>
           </div>
-        </div>
+        </div> --}}
 
       </div>
     </div>
 
-
+    
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            Rendszerek telepítése és üzembe helyezése
+            Távfelügyelet
           </h1>
         </div>        
         <p>
-          A beléptető rendszerek telepítése során maximális figyelmet fordítunk a gyors és
-          zökkenőmentes kivitelezésre:
+          A távfelügyelet lehetővé teszi a rendszerek folyamatos monitorozását anélkül, hogy személyesen jelen kellene lenni a helyszínen.
         </p>
       </div>
     </div>
@@ -218,10 +205,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Hardver telepítés:</h5>
+              <h5>Távoli monitorozás:</h5>
               <p class="text-body-secondary">
-                Kártyaolvasók, biometrikus érzékelők, ajtózárak, és egyéb beléptető
-                eszközök professzionális telepítése és konfigurálása.
+                Az informatikai rendszerek folyamatos figyelése távolról, amely lehetővé teszi a hibák azonnali észlelését és megoldását.
               </p>
             </div>
           </div>
@@ -235,10 +221,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>Szoftver integráció:</h5>
+              <h5>Azonnali hibakezelés:</h5>
               <p class="text-body-secondary">
-                A beléptető rendszerek felügyeleti szoftvereinek telepítése és beállítása,
-                amelyek lehetővé teszik a belépési naplók és hozzáférési jogosultságok könnyű kezelését.
+                Probléma esetén a távfelügyeleti eszközök azonnal értesítik a rendszergazdát, aki távolról beavatkozik.
               </p>
             </div>
           </div>
@@ -254,14 +239,94 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Rendszeres tesztelés:</h5>
+              <h5>Kockázatminimalizálás:</h5>
               <p class="text-body-secondary">
-                A telepítés után alapos tesztelést végzünk, hogy biztosítsuk a rendszer
-                hibátlan működését, és megfeleljen az összes biztonsági követelménynek.
+                A távfelügyelet révén a kockázatok és leállások minimalizálhatók, mivel az azonnali reakcióidő segít megelőzni a jelentős kieséseket.
               </p>
             </div>
           </div>
         </div>
+
+    <div class="container my-3 mb-4">
+      <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
+            Biztonsági megoldások
+          </h1>
+        </div>        
+        <p>
+          A biztonság minden informatikai rendszer alapköve. A különféle veszélyek és támadások ellen hatékony védelmi mechanizmusokat kell alkalmazni.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+      <div class="row ">
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-microchip circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Tűzfalak és vírusvédelem:</h5>
+              <p class="text-body-secondary">
+                A tűzfalak megakadályozzák az illetéktelen hozzáférést, míg a vírusvédelem folyamatosan blokkolja a kártékony szoftvereket.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-window-restore circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3" >
+              <h5>Adatvédelmi intézkedések:</h5>
+              <p class="text-body-secondary">
+                Titkosítás és egyéb technikák biztosítják az érzékeny felhasználói és ügyféladatok védelmét.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100"></div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-clipboard-check circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Biztonsági auditok:</h5>
+              <p class="text-body-secondary">
+                Rendszeres ellenőrzések a rendszer sebezhetőségeinek feltárására és javítására, a biztonság fenntartása érdekében.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {{-- <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-clipboard-check circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Adatmentés és helyreállítás:</h5>
+              <p class="text-body-secondary">
+                A rendszeres adatmentés elengedhetetlen a hardverhibák, kiberincidensek vagy emberi hibák elleni védelemhez. A gyors adat-helyreállítás biztosítja, hogy adatvesztés esetén az információk gyorsan visszaállíthatók legyenek.
+              </p>
+            </div>
+          </div>
+        </div> --}}
 
       </div>
     </div>
@@ -270,12 +335,11 @@
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            Távfelügyelet és karbantartás
+            Adatmentés és helyreállítás
           </h1>
         </div>        
         <p>
-          A rendszer folyamatos felügyelete és karbantartása kulcsfontosságú a beléptető rendszer
-          hosszú távú megbízhatósága érdekében:
+          Az adatvesztés komoly problémát okozhat, ezért létfontosságú, hogy hatékony adatmentési és helyreállítási megoldásokkal rendelkezzünk.
         </p>
       </div>
 
@@ -289,12 +353,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Távoli hozzáférés és felügyelet:</h5>
+              <h5>Adatmentési megoldások kidolgozása:</h5>
               <p class="text-body-secondary">
-                Olyan rendszereket telepítünk, amelyek lehetővé teszik a
-                beléptető rendszer távfelügyeletét és menedzselését, biztosítva a rugalmas felhasználást és a
-                gyors beavatkozást.
-              </p>
+                A rendszeres mentések lehetővé teszik az adatok gyors visszaállítását hardverhiba vagy adatvesztés esetén.              </p>
             </div>
           </div>
         </div>
@@ -307,30 +368,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>Rendszeres karbantartás:</h5>
+              <h5>Gyors helyreállítás:</h5>
               <p class="text-body-secondary">
-                Preventív karbantartási szolgáltatásainkkal biztosítjuk, hogy a
-                beléptető rendszer mindig kifogástalanul működjön.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-100"></div>
-  
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
-          <div class="d-flex ">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-headset circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>Gyors hibaelhárítás:</h5>
-              <p class="text-body-secondary">
-                Ha bármi probléma merül fel, csapatunk azonnali hibaelhárítást biztosít,
-                minimális leállási idővel.
-              </p>
+                Az adatvesztés utáni helyreállítás révén az adatok rövid időn belül visszaállíthatók, biztosítva a zavartalan üzletmenetet.              </p>
             </div>
           </div>
         </div>
@@ -338,55 +378,6 @@
       </div>
     </div>
 
-    <div class="container my-3 mb-4">
-      <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
-        <div class="d-flex flex-column align-items-center">
-          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            Integrált megoldások a biztonság növelése érdekében
-          </h1>
-        </div>        
-        <p>
-          Beléptető rendszereinket könnyedén integráljuk más biztonsági megoldásokkal, mint például:
-        </p>
-      </div>
-
-    <div class="container" data-aos="fade-up">
-      <div class="row mt-4">
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
-          <div class="d-flex ">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid fa-video mt-1 circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>IP kamerarendszerek:</h5>
-              <p class="text-body-secondary">
-                A belépési pontokat megfigyelő kamerarendszerek telepítése és
-                összekapcsolása a beléptető rendszerrel, amely további biztonságot nyújt.
-              </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
-          <div class="d-flex">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-bell circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3" >
-              <h5>Riasztórendszerek:</h5>
-              <p class="text-body-secondary">
-                A beléptető rendszer és a riasztórendszer együttes működtetése, amely
-                értesítést küld minden jogosulatlan hozzáférési kísérletről.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
 
     <div class="container my-5">
 
@@ -395,10 +386,7 @@
           Miért válasszon minket?
         </h1>
         <p >
-          A <strong>Paksi Informatika</strong> professzionális beléptető rendszerei minden biztonsági igényre
-          megoldást kínálnak, legyen szó kis irodákról, gyárakról vagy nagyvállalatokról. Innovatív
-          technológiai megoldásaink és rugalmasan testre szabható rendszereink garantálják a
-          vállalkozásod biztonságát és hatékonyságát.
+          A <strong>Paksi Informatika</strong> garantálja, hogy informatikai rendszerei mindig hatékonyan és biztonságosan működjenek, kihasználva a legújabb technológiák és bevált módszerek előnyeit. Folyamatos támogatásunkkal és felügyeletünkkel ügyfeleink mindig számíthatnak ránk, gyors reagálásunk pedig minimalizálja a rendszerek leállásának idejét. Szolgáltatásainkat teljes mértékben az Ön vállalkozásának igényeihez igazítjuk, legyen szó kis- vagy nagyvállalatról. Ha megbízható és szakértő partnerre van szüksége, válassza a Paksi Informatikát!
         </p>
 
       </div>

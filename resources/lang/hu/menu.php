@@ -16,7 +16,7 @@ return [
     'server_maintenance_description' => 'Szerverek és kliensek menedzsmentje, rendszergazdai feladatok, szoftver és hardverkarbantartás.',
     'network_infrastructure' => 'Gyengeáramú hálózatok',
     'network_infrastructure_description' => 'Hálózattervezés és telepítés, kábelezés, kapcsolók és routerek konfigurálása.',
-    'computer_services' => 'Rendszergazdai feladatok',
+    'computer_services' => 'Rendszergazdai megoldások',
     'computer_services_description' => 'Hálózati biztonság, adatvédelem, rendszerfrissítések.',
     'web_development' => 'Webfejlesztés',
     'web_development_description' => 'Weboldalak és webalkalmazások készítése és karbantartása.',
@@ -47,6 +47,8 @@ return [
     'title_network_infrastructure' => 'Gyengeáramú hálózatok - Paksi Informatika',
     'title_access_control_systems' => 'Beléptető rendszerek - Paksi Informatika',
     'title_surveillance_systems' => 'Videómegfigyelő rendszerek - Paksi Informatika',
+    'title_computer_services' => 'Rendszergazdai megoldások - Paksi Informatika',
+    'title_web_development' => 'Webfejlesztés - Paksi Informatika',
 
     'name' => 'Név',
     'mail' => 'E-mail cím',
