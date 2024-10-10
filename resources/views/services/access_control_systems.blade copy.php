@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', __('menu.title_surveillance_systems'))</title>
+    <title>@yield('title', __('menu.title_access_control_systems'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
@@ -16,14 +16,17 @@
     <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
       <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
         <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-6">
-          <img src="../assets/it.png" class="img-fluid " loading="lazy" style="opacity: 0.7; height:300px">
+          <img src="../assets/access-systems.png" class="img-fluid " loading="lazy" style="opacity: 0.7; height:300px">
         </div>
         <div class="col-lg-6 mt-xs-3">
-          <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-2" data-aos="fade-up" style="font-size:39px !important">
-            <span class="text-primary">{{ __('surveillance.video_surveillance') }}</span> {{ __('surveillance.systems_comprehensive') }}
+          <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up">
+            <span class="text-primary">Biztonságos</span> hozzáférés és intelligens megoldások.
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
-            {{ __('surveillance.paksi_info') }}
+            A Paksi Informatika a legmodernebb beléptető rendszerek telepítésében és karbantartásában
+            nyújt teljes körű megoldásokat. Beléptető
+            rendszereink nemcsak növelik a biztonságot, hanem segítenek az adatok gyűjtésében és a
+            hatékonyabb üzleti folyamatok kialakításában is.          
           </p>
         </div>
       </div>
@@ -33,11 +36,13 @@
       <div class="col-md-11 mt-2 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-2 text-center">
-            {{ __('surveillance.design_title') }}
+            Beléptető rendszerek tervezése
           </h1>
         </div>        
         <p>
-          {{ __('surveillance.design_description') }}
+          Cégünk átfogó beléptető rendszer tervezési szolgáltatásokat kínál, amelyek az ügyfél
+          specifikus igényeire szabott megoldásokat nyújtanak. Minden rendszerünket az alábbi
+          alapelvek szerint tervezzük:
         </p>
       </div>
     </div>
@@ -48,13 +53,14 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-ruler-combined circle-icon fa-lg"></i>
+                <i class="fa-solid mt-1 fa-shield circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.site_survey') }}</h5>
+              <h5>Biztonsági követelmények felmérése:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.site_survey_description') }}
+                Az ügyfél igényeinek pontos megértése, amely alapján
+                kidolgozzuk a megfelelő beléptetési megoldásokat.
               </p>
             </div>
           </div>
@@ -62,101 +68,36 @@
   
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-video circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.camera_selection') }}</h5>
-              <p class="text-body-secondary">
-                {{ __('surveillance.camera_selection_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="w-100"></div>
-  
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
-          <div class="d-flex ">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-square-poll-vertical circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.scalability') }}</h5>
-              <p class="text-body-secondary">
-                {{ __('surveillance.scalability_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container my-3 mb-4">
-      <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
-        <div class="d-flex flex-column align-items-center">
-          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('surveillance.installation_title') }}
-          </h1>
-        </div>        
-        <p>
-          {{ __('surveillance.installation_description') }}
-        </p>
-      </div>
-    </div>
-
-    <div class="container" data-aos="fade-up">
-      <div class="row ">
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
-          <div class="d-flex ">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-video circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.camera_installation') }}</h5>
-              <p class="text-body-secondary">
-                {{ __('surveillance.camera_installation_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
-          <div class="d-flex">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-tower-cell circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('surveillance.network_integration') }}</h5>
-              <p class="text-body-secondary">
-                {{ __('surveillance.network_integration_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="w-100"></div>
-  
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
-          <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
                 <i class="fa-solid mt-1 fa-gears circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.recorder_configuration') }}</h5>
+              <h5>Integráció meglévő rendszerekkel:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.recorder_configuration_description') }}
+                Beléptető rendszereink zökkenőmentesen integrálhatók
+                a már meglévő IT infrastruktúrával, hálózatokkal és biztonsági rendszerekkel, például
+                kamerarendszerekkel.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="w-100"></div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-maximize circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Rugalmasság és skálázhatóság:</h5>
+              <p class="text-body-secondary">
+                Olyan megoldásokat kínálunk, amelyek a vállalkozás
+                növekedésével bővíthetők és átalakíthatók.
               </p>
             </div>
           </div>
@@ -169,11 +110,12 @@
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('surveillance.remote_access_title') }}
+            Technológiai megoldásaink
           </h1>
         </div>        
         <p>
-          {{ __('surveillance.remote_access_description') }}
+          Széles körű technológiai megoldásokat kínálunk, amelyek megfelelnek a legkülönbözőbb
+          biztonsági kihívásoknak:
         </p>
       </div>
     </div>
@@ -184,13 +126,14 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-eye circle-icon fa-lg"></i>
+                <i class="fa-solid mt-1 fa-address-card circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.real_time_monitoring') }}</h5>
+              <h5>RFID kártyás rendszerek:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.real_time_monitoring_description') }}
+                Érintésmentes, gyors és kényelmes beléptetési megoldások,
+                amelyek könnyen kezelhetők és felügyelhetők.
               </p>
             </div>
           </div>
@@ -200,13 +143,105 @@
           <div class="d-flex">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-play circle-icon fa-lg"></i>
+                <i class="fa-solid mt-1 fa-fingerprint circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('surveillance.footage_review') }}</h5>
+              <h5>Biometrikus rendszerek:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.footage_review_description') }}
+                Ujjlenyomat, arcfelismerés vagy retinaalapú beléptetés, amely
+                maximális biztonságot nyújt, és kizárja a kártyák elvesztéséből vagy másolásából adódó
+                kockázatokat.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="w-100"></div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-table-cells-column-lock circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>PIN kódos rendszerek:</h5>
+              <p class="text-body-secondary">
+                Egyszerű és hatékony megoldások olyan helyszíneken, ahol többféle
+                beléptetési módszer integrálása szükséges.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-unlock circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Többfaktoros hitelesítés:</h5>
+              <p class="text-body-secondary">
+                Magas biztonságot igénylő helyszíneken kombinált beléptetési
+                megoldásokat is biztosítunk (például biometrikus azonosítás + PIN kód).
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container my-3 mb-4">
+      <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
+            Rendszerek telepítése és üzembe helyezése
+          </h1>
+        </div>        
+        <p>
+          A beléptető rendszerek telepítése során maximális figyelmet fordítunk a gyors és
+          zökkenőmentes kivitelezésre:
+        </p>
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+      <div class="row ">
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-microchip circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Hardver telepítés:</h5>
+              <p class="text-body-secondary">
+                Kártyaolvasók, biometrikus érzékelők, ajtózárak, és egyéb beléptető
+                eszközök professzionális telepítése és konfigurálása.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-window-restore circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3" >
+              <h5>Szoftver integráció:</h5>
+              <p class="text-body-secondary">
+                A beléptető rendszerek felügyeleti szoftvereinek telepítése és beállítása,
+                amelyek lehetővé teszik a belépési naplók és hozzáférési jogosultságok könnyű kezelését.
               </p>
             </div>
           </div>
@@ -218,17 +253,19 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-bell circle-icon fa-lg"></i>
+                <i class="fa-solid mt-1 fa-clipboard-check circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.alarm_notifications') }}</h5>
+              <h5>Rendszeres tesztelés:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.alarm_notifications_description') }}
+                A telepítés után alapos tesztelést végzünk, hogy biztosítsuk a rendszer
+                hibátlan működését, és megfeleljen az összes biztonsági követelménynek.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -236,11 +273,12 @@
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('surveillance.maintenance_title') }}
+            Távfelügyelet és karbantartás
           </h1>
         </div>        
         <p>
-          {{ __('surveillance.maintenance_description') }}
+          A rendszer folyamatos felügyelete és karbantartása kulcsfontosságú a beléptető rendszer
+          hosszú távú megbízhatósága érdekében:
         </p>
       </div>
 
@@ -250,13 +288,15 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid fa-clipboard-check mt-1 circle-icon fa-lg"></i>
+                <i class="fa-solid fa-house-laptop mt-1 circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.regular_checks') }}</h5>
+              <h5>Távoli hozzáférés és felügyelet:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.regular_checks_description') }}
+                Olyan rendszereket telepítünk, amelyek lehetővé teszik a
+                beléptető rendszer távfelügyeletét és menedzselését, biztosítva a rugalmas felhasználást és a
+                gyors beavatkozást.
               </p>
             </div>
           </div>
@@ -266,13 +306,14 @@
           <div class="d-flex">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-cloud-arrow-up circle-icon fa-lg"></i>
+                <i class="fa-solid mt-1 fa-gears circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('surveillance.software_updates') }}</h5>
+              <h5>Rendszeres karbantartás:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.software_updates_description') }}
+                Preventív karbantartási szolgáltatásainkkal biztosítjuk, hogy a
+                beléptető rendszer mindig kifogástalanul működjön.
               </p>
             </div>
           </div>
@@ -288,13 +329,15 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.quick_troubleshooting') }}</h5>
+              <h5>Gyors hibaelhárítás:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.quick_troubleshooting_description') }}
+                Ha bármi probléma merül fel, csapatunk azonnali hibaelhárítást biztosít,
+                minimális leállási idővel.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -302,11 +345,11 @@
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('surveillance.ip_camera_advantages') }}
+            Integrált megoldások a biztonság növelése érdekében
           </h1>
         </div>        
         <p>
-          {{ __('surveillance.ip_camera_advantages_description') }}
+          Beléptető rendszereinket könnyedén integráljuk más biztonsági megoldásokkal, mint például:
         </p>
       </div>
 
@@ -316,15 +359,15 @@
           <div class="d-flex ">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid fa-up-right-and-down-left-from-center mt-1 circle-icon fa-lg"></i>
+                <i class="fa-solid fa-video mt-1 circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.high_resolution_images') }}</h5>
+              <h5>IP kamerarendszerek:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.high_resolution_images_description') }}
-              </p>
-            </div>
+                A belépési pontokat megfigyelő kamerarendszerek telepítése és
+                összekapcsolása a beléptető rendszerrel, amely további biztonságot nyújt.
+              </div>
           </div>
         </div>
   
@@ -332,47 +375,14 @@
           <div class="d-flex">
             <div class="flex-shrink-0">
               <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-mobile circle-icon fa-lg"></i>
+                <i class="fa-solid mt-1 fa-bell circle-icon fa-lg"></i>
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('surveillance.remote_monitoring') }}</h5>
+              <h5>Riasztórendszerek:</h5>
               <p class="text-body-secondary">
-                {{ __('surveillance.remote_monitoring_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-100"></div>
-  
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
-          <div class="d-flex ">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-square-plus circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.easy_expandability') }}</h5>
-              <p class="text-body-secondary">
-                {{ __('surveillance.easy_expandability_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
-          <div class="d-flex ">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-puzzle-piece circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>{{ __('surveillance.integration_with_other_systems') }}</h5>
-              <p class="text-body-secondary">
-                {{ __('surveillance.integration_with_other_systems_description') }}
+                A beléptető rendszer és a riasztórendszer együttes működtetése, amely
+                értesítést küld minden jogosulatlan hozzáférési kísérletről.
               </p>
             </div>
           </div>
@@ -382,13 +392,18 @@
     </div>
 
     <div class="container my-5">
+
       <div class="col-md-9 mt-5 text-center justify-content-center g-lg-5 py-5 mx-auto" data-aos="fade-up">
         <h1 class="display-6 text-body-emphasis lh-2 mb-3">
-          {{ __('surveillance.why_choose_us') }}
+          Miért válasszon minket?
         </h1>
-        <p>
-          {{ __('surveillance.why_choose_us_description', ['company' => 'Paksi Informatika']) }}
+        <p >
+          A <strong>Paksi Informatika</strong> professzionális beléptető rendszerei minden biztonsági igényre
+          megoldást kínálnak, legyen szó kis irodákról, gyárakról vagy nagyvállalatokról. Innovatív
+          technológiai megoldásaink és rugalmasan testre szabható rendszereink garantálják a
+          vállalkozásod biztonságát és hatékonyságát.
         </p>
+
       </div>
     </div>
 
