@@ -23,7 +23,7 @@
             <span class="text-primary">Rendszergazdai</span> megoldások a zökkenőmentes működésért.
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
-            Cégünk, a Paksi Informatika, teljes körű rendszergazdai szolgáltatásokat kínál, amelyek segítik a vállalkozásodat a zavartalan működés fenntartásában. Szakképzett csapatunk biztosítja a rendszered hatékony üzemeltetését, karbantartását és biztonságát.      
+            Cégünk, a Paksi Informatika, teljes körű rendszergazdai szolgáltatásokat kínál, amelyek segítik a vállalkozásodat a zavartalan működés fenntartásában. Szakképzett csapatunk biztosítja a rendszered hatékony üzemeltetését, karbantartását és biztonságát, lehetővé téve a folyamatos fejlődést.
           </p>
         </div>
       </div>

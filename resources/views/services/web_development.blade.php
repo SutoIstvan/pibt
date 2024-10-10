@@ -23,7 +23,7 @@
             <span class="text-primary">Webfejlesztés</span> - Modern megoldások minden platformra
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
-            A Paksi Informatika webfejlesztési szolgáltatásokat is kínál, amelyek célja a vállalkozások online jelenlétének erősítése. Szolgáltatásaink révén modern, felhasználóbarát és keresőoptimalizált weboldalakat készítünk, amelyek minden eszközön jól működnek. Fejlesztői csapatunk a legújabb technológiákat használja, hogy egyedi igényeknek megfelelően, hatékony megoldásokat nyújtson.
+            A Paksi Informatika webfejlesztési szolgáltatásokat kínál. Modern, felhasználóbarát és keresőoptimalizált weboldalakat készítünk, amelyek minden eszközön jól működnek. Fejlesztői csapatunk a legújabb technológiákat alkalmazza, hogy egyedi igényeknek megfelelő, hatékony megoldásokat nyújtson, garantálva ezzel a sikeres online jelenlétet.
           </p>
         </div>
       </div>
