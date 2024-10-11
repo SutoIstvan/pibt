@@ -20,13 +20,10 @@
         </div>
         <div class="col-lg-6 mt-xs-3">
           <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up">
-            <span class="text-primary">Biztonságos</span> hozzáférés és intelligens megoldások.
+            <span class="text-primary">{{ __('access.secure') }}</span> {{ __('access.access_and_intelligent_solutions') }}
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
-            A Paksi Informatika a legmodernebb beléptető rendszerek telepítésében és karbantartásában
-            nyújt teljes körű megoldásokat. Beléptető
-            rendszereink nemcsak növelik a biztonságot, hanem segítenek az adatok gyűjtésében és a
-            hatékonyabb üzleti folyamatok kialakításában is.          
+            {{ __('access.paksi_informatika_description') }}
           </p>
         </div>
       </div>
@@ -36,17 +33,15 @@
       <div class="col-md-11 mt-2 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-2 text-center">
-            Beléptető rendszerek tervezése
+            {{ __('access.access_system_design') }}
           </h1>
         </div>        
         <p>
-          Cégünk átfogó beléptető rendszer tervezési szolgáltatásokat kínál, amelyek az ügyfél
-          specifikus igényeire szabott megoldásokat nyújtanak. Minden rendszerünket az alábbi
-          alapelvek szerint tervezzük:
+          {{ __('access.company_services_description') }}
         </p>
       </div>
     </div>
-
+    
     <div class="container">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up">
@@ -57,15 +52,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Biztonsági követelmények felmérése:</h5>
+              <h5>{{ __('access.security_requirements_assessment') }}:</h5>
               <p class="text-body-secondary">
-                Az ügyfél igényeinek pontos megértése, amely alapján
-                kidolgozzuk a megfelelő beléptetési megoldásokat.
+                {{ __('access.security_requirements_description') }}
               </p>
             </div>
           </div>
         </div>
-  
+    
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -74,18 +68,16 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Integráció meglévő rendszerekkel:</h5>
+              <h5>{{ __('access.integration_with_existing_systems') }}:</h5>
               <p class="text-body-secondary">
-                Beléptető rendszereink zökkenőmentesen integrálhatók
-                a már meglévő IT infrastruktúrával, hálózatokkal és biztonsági rendszerekkel, például
-                kamerarendszerekkel.
+                {{ __('access.integration_description') }}
               </p>
             </div>
           </div>
         </div>
-  
+    
         <div class="w-100"></div>
-  
+    
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -94,32 +86,29 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Rugalmasság és skálázhatóság:</h5>
+              <h5>{{ __('access.flexibility_and_scalability') }}:</h5>
               <p class="text-body-secondary">
-                Olyan megoldásokat kínálunk, amelyek a vállalkozás
-                növekedésével bővíthetők és átalakíthatók.
+                {{ __('access.flexibility_description') }}
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
+    
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            Technológiai megoldásaink
+            {{ __('access.technological_solutions') }}
           </h1>
         </div>        
         <p>
-          Széles körű technológiai megoldásokat kínálunk, amelyek megfelelnek a legkülönbözőbb
-          biztonsági kihívásoknak:
+          {{ __('access.technological_solutions_description') }}
         </p>
       </div>
     </div>
-
+    
     <div class="container" data-aos="fade-up">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -130,15 +119,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>RFID kártyás rendszerek:</h5>
+              <h5>{{ __('access.rfid_card_systems') }}:</h5>
               <p class="text-body-secondary">
-                Érintésmentes, gyors és kényelmes beléptetési megoldások,
-                amelyek könnyen kezelhetők és felügyelhetők.
+                {{ __('access.rfid_description') }}
               </p>
             </div>
           </div>
         </div>
-  
+    
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -147,18 +135,16 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>Biometrikus rendszerek:</h5>
+              <h5>{{ __('access.biometric_systems') }}:</h5>
               <p class="text-body-secondary">
-                Ujjlenyomat, arcfelismerés vagy retinaalapú beléptetés, amely
-                maximális biztonságot nyújt, és kizárja a kártyák elvesztéséből vagy másolásából adódó
-                kockázatokat.
+                {{ __('access.biometric_description') }}
               </p>
             </div>
           </div>
         </div>
-  
+    
         <div class="w-100"></div>
-  
+    
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -167,15 +153,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>PIN kódos rendszerek:</h5>
+              <h5>{{ __('access.pin_code_systems') }}:</h5>
               <p class="text-body-secondary">
-                Egyszerű és hatékony megoldások olyan helyszíneken, ahol többféle
-                beléptetési módszer integrálása szükséges.
+                {{ __('access.pin_code_description') }}
               </p>
             </div>
           </div>
         </div>
-
+    
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="200">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -184,15 +169,13 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Többfaktoros hitelesítés:</h5>
+              <h5>{{ __('access.multi_factor_authentication') }}:</h5>
               <p class="text-body-secondary">
-                Magas biztonságot igénylő helyszíneken kombinált beléptetési
-                megoldásokat is biztosítunk (például biometrikus azonosítás + PIN kód).
+                {{ __('access.multi_factor_description') }}
               </p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -201,12 +184,11 @@
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            Rendszerek telepítése és üzembe helyezése
+            {{ __('access.system_installation_and_commissioning') }}
           </h1>
         </div>        
         <p>
-          A beléptető rendszerek telepítése során maximális figyelmet fordítunk a gyors és
-          zökkenőmentes kivitelezésre:
+          {{ __('access.installation_description') }}
         </p>
       </div>
     </div>
@@ -221,10 +203,11 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Hardver telepítés:</h5>
+              <h5>
+                {{ __('access.hardware_installation') }}
+              </h5>
               <p class="text-body-secondary">
-                Kártyaolvasók, biometrikus érzékelők, ajtózárak, és egyéb beléptető
-                eszközök professzionális telepítése és konfigurálása.
+                {{ __('access.hardware_installation_description') }}
               </p>
             </div>
           </div>
@@ -238,10 +221,11 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>Szoftver integráció:</h5>
+              <h5>
+                {{ __('access.software_integration') }}
+              </h5>
               <p class="text-body-secondary">
-                A beléptető rendszerek felügyeleti szoftvereinek telepítése és beállítása,
-                amelyek lehetővé teszik a belépési naplók és hozzáférési jogosultságok könnyű kezelését.
+                {{ __('access.software_integration_description') }}
               </p>
             </div>
           </div>
@@ -257,15 +241,15 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Rendszeres tesztelés:</h5>
+              <h5>
+                {{ __('access.regular_testing') }}
+              </h5>
               <p class="text-body-secondary">
-                A telepítés után alapos tesztelést végzünk, hogy biztosítsuk a rendszer
-                hibátlan működését, és megfeleljen az összes biztonsági követelménynek.
+                {{ __('access.regular_testing_description') }}
               </p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -273,12 +257,11 @@
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            Távfelügyelet és karbantartás
+            {{ __('access.remote_monitoring_and_maintenance') }}
           </h1>
         </div>        
         <p>
-          A rendszer folyamatos felügyelete és karbantartása kulcsfontosságú a beléptető rendszer
-          hosszú távú megbízhatósága érdekében:
+          {{ __('access.monitoring_maintenance_description') }}
         </p>
       </div>
 
@@ -292,11 +275,11 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Távoli hozzáférés és felügyelet:</h5>
+              <h5>
+                {{ __('access.remote_access_and_monitoring') }}
+              </h5>
               <p class="text-body-secondary">
-                Olyan rendszereket telepítünk, amelyek lehetővé teszik a
-                beléptető rendszer távfelügyeletét és menedzselését, biztosítva a rugalmas felhasználást és a
-                gyors beavatkozást.
+                {{ __('access.remote_access_description') }}
               </p>
             </div>
           </div>
@@ -310,10 +293,11 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>Rendszeres karbantartás:</h5>
+              <h5>
+                {{ __('access.regular_maintenance') }}
+              </h5>
               <p class="text-body-secondary">
-                Preventív karbantartási szolgáltatásainkkal biztosítjuk, hogy a
-                beléptető rendszer mindig kifogástalanul működjön.
+                {{ __('access.regular_maintenance_description') }}
               </p>
             </div>
           </div>
@@ -329,10 +313,11 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>Gyors hibaelhárítás:</h5>
+              <h5>
+                {{ __('access.quick_troubleshooting') }}
+              </h5>
               <p class="text-body-secondary">
-                Ha bármi probléma merül fel, csapatunk azonnali hibaelhárítást biztosít,
-                minimális leállási idővel.
+                {{ __('access.quick_troubleshooting_description') }}
               </p>
             </div>
           </div>
@@ -345,11 +330,11 @@
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            Integrált megoldások a biztonság növelése érdekében
+            {{ __('access.integrated_solutions') }}
           </h1>
         </div>        
         <p>
-          Beléptető rendszereinket könnyedén integráljuk más biztonsági megoldásokkal, mint például:
+          {{ __('access.integrated_solutions_description') }}
         </p>
       </div>
 
@@ -363,11 +348,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>IP kamerarendszerek:</h5>
+              <h5>
+                {{ __('access.ip_camera_systems') }}
+              </h5>
               <p class="text-body-secondary">
-                A belépési pontokat megfigyelő kamerarendszerek telepítése és
-                összekapcsolása a beléptető rendszerrel, amely további biztonságot nyújt.
-              </div>
+                {{ __('access.ip_camera_systems_description') }}
+              </p>
+            </div>
+
           </div>
         </div>
   
@@ -379,10 +367,11 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>Riasztórendszerek:</h5>
+              <h5>
+                {{ __('access.alarm_systems') }}
+              </h5>
               <p class="text-body-secondary">
-                A beléptető rendszer és a riasztórendszer együttes működtetése, amely
-                értesítést küld minden jogosulatlan hozzáférési kísérletről.
+                {{ __('access.alarm_systems_description') }}
               </p>
             </div>
           </div>
@@ -395,13 +384,10 @@
 
       <div class="col-md-9 mt-5 text-center justify-content-center g-lg-5 py-5 mx-auto" data-aos="fade-up">
         <h1 class="display-6 text-body-emphasis lh-2 mb-3">
-          Miért válasszon minket?
+          {{ __('access.why_choose_us') }}
         </h1>
         <p >
-          A <strong>Paksi Informatika</strong> professzionális beléptető rendszerei minden biztonsági igényre
-          megoldást kínálnak, legyen szó kis irodákról, gyárakról vagy nagyvállalatokról. Innovatív
-          technológiai megoldásaink és rugalmasan testre szabható rendszereink garantálják a
-          vállalkozásod biztonságát és hatékonyságát.
+          {{ __('access.why_choose_us_description') }}
         </p>
 
       </div>

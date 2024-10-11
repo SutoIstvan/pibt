@@ -20,10 +20,13 @@
         </div>
         <div class="col-lg-6 mt-xs-3">
           <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-3" data-aos="fade-up">
-            {{ __('network.low_voltage_networks') }} - {{ __('network.precise_design_and_implementation') }}
+            Gyengeáramú <span class="text-primary">hálózatok</span> - Precíz tervezés és kivitelezés.
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
-            {{ __('network.experience_description') }}
+            Széleskörű tapasztalatunkkal és szakértelmünkkel biztosítjuk, hogy a vállalkozások számára
+            kiépített rendszerek stabilak, biztonságosak és könnyen bővíthetők legyenek. Legyen szó
+            irodai hálózatról, biztonsági rendszerről vagy beléptető rendszerekről, mi garantáljuk, hogy a
+            megoldásaink hosszú távon fenntarthatóak és megbízhatóak.
           </p>
         </div>
       </div>
@@ -33,15 +36,16 @@
       <div class="col-md-11 mt-2 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-2 text-center">
-            {{ __('network.low_voltage_network_design') }}
+            Gyengeáramú hálózatok tervezése
           </h1>
         </div>        
         <p>
-          {{ __('network.network_design_importance') }}
+          A jól megtervezett gyengeáramú hálózat kritikus fontosságú a modern vállalati
+          infrastruktúrában. Minden projektünk az alábbiakra összpontosít:
         </p>
       </div>
     </div>
-    
+
     <div class="container">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up">
@@ -52,14 +56,16 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('network.network_needs_assessment') }}:</h5>
+              <h5>Hálózati igények felmérése:</h5>
               <p class="text-body-secondary">
-                {{ __('network.needs_assessment_description') }}
+                Minden egyes ügyfél esetében pontosan meghatározzuk a
+                vállalkozás specifikus hálózati igényeit, figyelembe véve a biztonsági és adatátviteli
+                követelményeket.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -68,16 +74,18 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('network.custom_network_plans') }}:</h5>
+              <h5>Egyedi hálózati tervek készítése:</h5>
               <p class="text-body-secondary">
-                {{ __('network.custom_plans_description') }}
+                Az ügyfél környezetéhez igazítva, egyedi megoldásokat
+                dolgozunk ki, amelyek biztosítják a gyors és stabil kapcsolatot, legyen szó LAN, WLAN vagy
+                egyéb hálózati megoldásokról.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="w-100"></div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -86,29 +94,32 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('network.scalability') }}:</h5>
+              <h5>Skálázhatóság:</h5>
               <p class="text-body-secondary">
-                {{ __('network.scalability_description') }}
+                A tervezett hálózatok bővíthetőek, hogy hosszú távon is megfeleljenek a
+                növekedés követelményeinek.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+
+
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('network.network_building_and_implementation') }}
+            Hálózatépítés és kivitelezés
           </h1>
         </div>        
         <p>
-          {{ __('network.implementation_description') }}
+          A tervezés után következik a kivitelezés, ahol tapasztalt szakembereink gondoskodnak a
+          hálózati eszközök szakszerű telepítéséről és beüzemeléséről:
         </p>
       </div>
     </div>
-    
+
     <div class="container" data-aos="fade-up">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -119,14 +130,15 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('network.cabling_and_installation') }}:</h5>
+              <h5>Kábelezés és telepítés:</h5>
               <p class="text-body-secondary">
-                {{ __('network.cabling_description') }}
+                Magas minőségű kábeleket és hálózati eszközöket használunk, hogy
+                biztosítsuk a tartós és megbízható kapcsolatot.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -135,16 +147,18 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('network.device_configuration') }}:</h5>
+              <h5>Eszközök konfigurálása:</h5>
               <p class="text-body-secondary">
-                {{ __('network.configuration_description') }}
+                A hálózati eszközök, például switchek, routerek és tűzfalak
+                telepítése és konfigurálása során maximális figyelmet fordítunk a biztonságra és az
+                optimalizált teljesítményre.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="w-100"></div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -153,29 +167,32 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('network.testing_and_handover') }}:</h5>
+              <h5>Tesztelés és átadás:</h5>
               <p class="text-body-secondary">
-                {{ __('network.testing_description') }}
+                A hálózat kiépítése után teljes körű tesztelést végzünk, hogy
+                megbizonyosodjunk a hibátlan működésről.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    
+
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('network.network_maintenance_and_monitoring') }}
+            Hálózatok karbantartása és felügyelete
           </h1>
         </div>        
         <p>
-          {{ __('network.maintenance_description') }}
+          A telepített hálózatok folyamatos karbantartása és felügyelete elengedhetetlen a megbízható
+          működés érdekében. Szolgáltatásaink közé tartozik:
         </p>
       </div>
     </div>
-    
+
     <div class="container" data-aos="fade-up">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -186,14 +203,15 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('network.regular_checks') }}:</h5>
+              <h5>Rendszeres ellenőrzések és hibamegelőzés:</h5>
               <p class="text-body-secondary">
-                {{ __('network.checks_description') }}
+                Proaktív karbantartás, amely minimalizálja az
+                esetleges meghibásodások esélyét.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -202,16 +220,17 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('network.troubleshooting') }}:</h5>
+              <h5>Hibaelhárítás:</h5>
               <p class="text-body-secondary">
-                {{ __('network.troubleshooting_description') }}
+                Gyorsan és hatékonyan orvosoljuk a hálózati hibákat, biztosítva a
+                zökkenőmentes működést.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="w-100"></div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -220,29 +239,32 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('network.remote_monitoring') }}:</h5>
+              <h5>Távfelügyelet:</h5>
               <p class="text-body-secondary">
-                {{ __('network.remote_monitoring_description') }}
+                Modern távfelügyeleti megoldásainkkal folyamatosan monitorozzuk a hálózat
+                teljesítményét és azonnal reagálunk, ha problémát észlelünk.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    
+
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('network.ip_camera_and_access_control') }}
+            IP Kamerarendszerek és Beléptető rendszerek integrációja
           </h1>
         </div>        
         <p>
-          {{ __('network.integration_description') }}
+          A gyengeáramú hálózatok részeként kiemelt figyelmet fordítunk az IP kamerarendszerek és
+          beléptető rendszerek integrálására is:
         </p>
       </div>
     </div>
-    
+
     <div class="container" data-aos="fade-up">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -253,14 +275,15 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('network.ip_camera_installation') }}:</h5>
+              <h5>IP Kamerarendszerek telepítése:</h5>
               <p class="text-body-secondary">
-                {{ __('network.ip_camera_description') }}
+                Komplett IP alapú kamerarendszerek kiépítése és
+                integrálása a vállalati hálózattal, távfelügyeleti lehetőségekkel.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -269,13 +292,16 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('network.access_control_installation') }}:</h5>
+              <h5>Beléptető rendszerek telepítése:</h5>
               <p class="text-body-secondary">
-                {{ __('network.access_control_description') }}
+                Elektronikus beléptető rendszerek (pl. RFID, biometrikus
+                rendszerek) tervezése és telepítése, amelyek teljes mértékben integrálódnak a hálózati
+                infrastruktúrába.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
