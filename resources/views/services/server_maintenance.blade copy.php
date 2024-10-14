@@ -20,11 +20,10 @@
         </div>
         <div class="col-lg-6 mt-xs-3">
           <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up">
-            <span class="text-primary">{{ __('server.comprehensive_solutions') }}</span> - {{ __('server.for_your_business') }}.
+            Teljeskörű Megoldások a <span class="text-primary">Vállalkozásod</span> Számára
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
-            {{ __('server.our_goal') }}
-          </p>
+            Célunk, hogy ügyfeleink számára megbízható, hatékony IT infrastruktúrát biztosítsunk, amely támogatja mindennapi működésüket. Szolgáltatásaink között szerepel a szerverek és IT rendszerek tervezése, üzemeltetése, karbantartása, valamint nyílt forráskódú megoldások, automatizálás és webfejlesztés.          </p>
         </div>
       </div>
     </div>
@@ -33,15 +32,15 @@
       <div class="col-md-11 mt-2 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-2 text-center">
-            {{ __('server.server_workstation_design') }}
+            Szerverek és munkaállomások tervezése, beszerzése és beüzemelése
           </h1>
         </div>        
         <p>
-          {{ __('server.infrastructure_importance') }}
+          Egy jól megtervezett és megbízható IT infrastruktúra alapvető a stabil üzleti működéshez. Innovatív megoldásainkkal biztosítjuk, hogy rendszereid mindig hatékonyan és biztonságosan működjenek. Az alábbi szolgáltatásokat kínáljuk:
         </p>
       </div>
     </div>
-    
+
     <div class="container">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up">
@@ -52,12 +51,12 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.infrastructure_design') }}</h5>
-              <p class="text-body-secondary">{{ __('server.infrastructure_design_description') }}</p>
+              <h5>Infrastruktúra tervezése:</h5>
+              <p class="text-body-secondary">Megtervezzük a vállalkozásod igényeinek legjobban megfelelő szerverarchitektúrát és klienshálózatot, legyen szó fizikai vagy virtuális környezetekről.</p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -66,14 +65,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.hardware_procurement') }}</h5>
-              <p class="text-body-secondary">{{ __('server.hardware_procurement_description') }}</p>
+              <h5>Hardver beszerzés és telepítés:</h5>
+              <p class="text-body-secondary">Gondoskodunk a megfelelő szerverek, munkaállomások, tárolók, hálózati eszközök és egyéb IT komponensek beszerzéséről és beüzemeléséről.</p>
             </div>
           </div>
         </div>
-    
+  
         <div class="w-100"></div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -82,27 +81,28 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.software_installation') }}</h5>
-              <p class="text-body-secondary">{{ __('server.software_installation_description') }}</p>
+              <h5>Szoftverek telepítése és konfigurálása:</h5>
+              <p class="text-body-secondary">A szerverek és munkaállomások szoftveres konfigurációja biztosítja az optimális teljesítményt és a biztonságos működést.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+
+
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('server.operation_maintenance_remote') }}
+            Üzemeltetés, karbantartás és távfelügyelet
           </h1>
         </div>        
         <p>
-          {{ __('server.regular_maintenance_importance') }}
+          A rendszeres üzemeltetés és karbantartás elengedhetetlen az IT rendszerek zavartalan működéséhez, legyen szó szerverekről vagy kliensekről. Szolgáltatásaink közé tartozik:
         </p>
       </div>
     </div>
-    
+
     <div class="container" data-aos="fade-up">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -113,12 +113,12 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.regular_monitoring') }}</h5>
-              <p class="text-body-secondary">{{ __('server.regular_monitoring_description') }}</p>
+              <h5>Rendszeres felügyelet:</h5>
+              <p class="text-body-secondary">Folyamatosan monitorozzuk a szerverek és munkaállomások állapotát, azonnal reagálva az esetleges hibákra és problémákra.</p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -127,14 +127,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('server.software_updates') }}</h5>
-              <p class="text-body-secondary">{{ __('server.software_updates_description') }}</p>
+              <h5>Szoftverfrissítések és javítások:</h5>
+              <p class="text-body-secondary">Biztosítjuk a legfrissebb szoftverfrissítéseket és biztonsági javításokat a rendszerek védelme érdekében.</p>
             </div>
           </div>
         </div>
-    
+  
         <div class="w-100"></div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -143,12 +143,12 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.troubleshooting_support') }}</h5>
-              <p class="text-body-secondary">{{ __('server.troubleshooting_support_description') }}</p>
+              <h5>Hibajavítás és támogatás:</h5>
+              <p class="text-body-secondary">Ha bármi probléma merül fel, gyors és hatékony megoldásokat kínálunk.</p>
             </div>
           </div>
         </div>
-    
+
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="200">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -157,27 +157,75 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.remote_monitoring') }}</h5>
-              <p class="text-body-secondary">{{ __('server.remote_monitoring_description') }}</p>
+              <h5>Távfelügyelet:</h5>
+              <p class="text-body-secondary">Munkaállomások és szerverek távoli monitorozása és felügyelete biztosítja a gyors hibajavítást és minimalizálja a leállásokat.</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    
+
+
+    {{-- <div class="container my-3 mb-4">
+      <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
+            Webfejlesztés
+          </h1>
+        </div>        
+        <p>
+          Cégünk szakértői webfejlesztési szolgáltatásokat nyújtanak, amelyek a vállalkozásod üzleti és felhasználói igényeihez igazodnak. <br> Fő profilunk:
+        </p>
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+      <div class="row ">
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-code circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Weboldalak fejlesztése és karbantartása:</h5>
+              <p class="text-body-secondary">Modern, reszponzív és felhasználóbarát weboldalakat készítünk, amelyek minden eszközön jól működnek.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-window-restore circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3" >
+              <h5>Webalkalmazások:</h5>
+              <p class="text-body-secondary">Üzleti folyamatokra szabott egyedi webalkalmazásokat fejlesztünk, amelyek javítják a hatékonyságot és a felhasználói élményt.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> --}}
+
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('server.open_source_solutions') }}
+            Open Source megoldások
           </h1>
         </div>        
         <p>
-          {{ __('server.open_source_description') }}
+          Az open source rendszerek egyre nagyobb teret hódítanak a vállalati IT környezetben, mivel költséghatékonyak és nagy rugalmasságot biztosítanak. Cégünk számos nyílt forráskódú platformot és szoftvert integrál, mint például:
         </p>
       </div>
     </div>
-    
+
     <div class="container" data-aos="fade-up">
       <div class="row mt-4">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -188,12 +236,12 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.linux_servers') }}</h5>
-              <p class="text-body-secondary">{{ __('server.linux_servers_description') }}</p>
+              <h5>Linux szerverek:</h5>
+              <p class="text-body-secondary">Biztonságos és költséghatékony megoldások mind fizikai, mind virtuális környezetekben.</p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -202,27 +250,27 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('server.open_source_applications') }}</h5>
-              <p class="text-body-secondary">{{ __('server.open_source_applications_description') }}</p>
+              <h5>Nyílt forráskódú alkalmazások:</h5>
+              <p class="text-body-secondary">Olyan szoftverek telepítése és üzemeltetése, mint pl. a Nextcloud, az OpenVPN vagy a pfSense tűzfal, amelyek segítenek költséghatékonyan fenntartani az IT rendszereket.</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    
+
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('server.automation_efficiency') }}
+            Automatizálás és hatékonyság növelés
           </h1>
         </div>        
         <p>
-          {{ __('server.automation_description') }}
+          Az IT rendszerek automatizálása jelentős mértékben hozzájárulhat az erőforrások hatékonyabb felhasználásához és a költségek csökkentéséhez. Az alábbiakat kínáljuk:
         </p>
       </div>
-    </div>
-    
+
     <div class="container" data-aos="fade-up">
       <div class="row mt-4">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -233,14 +281,13 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.automated_updates') }}</h5>
+              <h5>Automatizált frissítések és karbantartási feladatok:</h5>
               <p class="text-body-secondary">
-                {{ __('server.automated_updates_description') }}
-              </p>
+                Rendszerek automatikus frissítése és rendszeres karbantartási feladatok végrehajtása minimális leállással.              </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -249,29 +296,30 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('server.script_based_automation') }}</h5>
+              <h5>Skriptalapú automatizálás:</h5>
               <p class="text-body-secondary">
-                {{ __('server.script_based_automation_description') }}
+                Egyedi szkriptek fejlesztése és telepítése a napi rutinfolyamatok, mint például adatmentések és jelentéskészítés automatizálására.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    
+
     <div class="container my-5">
       <div class="col-md-11 mt-2 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-2 text-center">
-            {{ __('server.data_backup_recovery') }}
+            Adatmentés és helyreállítás
           </h1>
         </div>        
         <p>
-          {{ __('server.data_protection_importance') }}
+          Az adatok védelme és a rendszeres adatmentés elengedhetetlen része a biztonságos üzemeltetésnek. Az alábbi megoldásokat kínáljuk:
         </p>
       </div>
     </div>
-    
+
     <div class="container">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up">
@@ -282,12 +330,12 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.secure_backup_strategies') }}</h5>
-              <p class="text-body-secondary">{{ __('server.secure_backup_strategies_description') }}</p>
+              <h5>Biztonságos adatmentési stratégiák kialakítása:</h5>
+              <p class="text-body-secondary">A legjobb gyakorlatokon alapuló adatmentési megoldások kidolgozása, amelyek védenek a hardverhibák és emberi hibák ellen is.</p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -296,41 +344,45 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('server.local_cloud_backup') }}</h5>
-              <p class="text-body-secondary">{{ __('server.local_cloud_backup_description') }}</p>
+              <h5>Helyi és felhőalapú mentési megoldások:</h5>
+              <p class="text-body-secondary">Az ügyfél igényeinek megfelelően helyi és/vagy felhőalapú adatmentési megoldásokat biztosítunk.</p>
             </div>
           </div>
         </div>
-
-    
+  
         <div class="w-100"></div>
-
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
-            <div class="d-flex ">
-                <div class="flex-shrink-0">
-                    <div class="svg-icon text-primary">
-                        <i class="fa-solid mt-1 fa-database circle-icon fa-lg"></i>
-                    </div>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                    <h5>{{ __('server.data_recovery_solutions') }}</h5>
-                    <p class="text-body-secondary">{{ __('server.data_recovery_solutions_description') }}</p>
-                </div>
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-database circle-icon fa-lg"></i>
+              </div>
             </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Adat-helyreállítási megoldások:</h5>
+              <p class="text-body-secondary">Hiba esetén gyors és megbízható helyreállítási szolgáltatásokat kínálunk.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="container my-5">
-    <div class="col-md-9 mt-5 text-center justify-content-center g-lg-5 py-5 mx-auto" data-aos="fade-up">
+    <div class="container my-5">
+
+      <div class="col-md-9 mt-5 text-center justify-content-center g-lg-5 py-5 mx-auto" data-aos="fade-up">
         <h1 class="display-6 text-body-emphasis lh-2 mb-3">
-            {{ __('server.why_choose_us') }}
+          Miért válasszon minket?
         </h1>
-        <p>
-            {{ __('server.company_description', ['company' => 'Paksi Informatika']) }}
+        <p >
+          Az <strong>Paksi Informatika</strong> elkötelezett a professzionális, megbízható és költséghatékony IT
+          üzemeltetési megoldások iránt. Csapatunk szaktudása és tapasztalata biztosítja, hogy a
+          vállalkozásod IT infrastruktúrája – legyen szó szerverekről, munkaállomásokról, vagy
+          webalkalmazásokról – mindig optimálisan működjön, így te az üzletre koncentrálhatsz.
         </p>
+
+      </div>
     </div>
-</div>
 
     <!-- FOOTER -->
 

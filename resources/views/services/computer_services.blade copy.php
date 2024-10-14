@@ -20,10 +20,10 @@
         </div>
         <div class="col-lg-6 mt-xs-3">
           <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up">
-            <span class="text-primary">{{ __('computer.system_admin') }}</span> {{ __('computer.solutions_for_smooth_operation') }}
+            <span class="text-primary">Rendszergazdai</span> megoldások a zökkenőmentes működésért.
           </h1>
           <p class="lead text-body-secondary mt-1 me-4" data-aos="fade-up" data-aos-duration="1000">
-            {{ __('computer.company_description') }}
+            Cégünk, a Paksi Informatika, teljes körű rendszergazdai szolgáltatásokat kínál, amelyek segítik a vállalkozásodat a zavartalan működés fenntartásában. Szakképzett csapatunk biztosítja a rendszered hatékony üzemeltetését, karbantartását és biztonságát, lehetővé téve a folyamatos fejlődést.
           </p>
         </div>
       </div>
@@ -33,15 +33,15 @@
       <div class="col-md-11 mt-2 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-2 text-center">
-            {{ __('computer.system_design_and_installation') }}
+            Rendszertervezés és telepítés
           </h1>
         </div>        
         <p>
-          {{ __('computer.system_design_description') }}
+          Ez a folyamat magában foglalja a rendszer kialakításának minden aspektusát, figyelembe véve az üzleti igényeket és követelményeket. A rendszertervezés során részletesen megvizsgáljuk az üzleti folyamatokat, hogy a legoptimálisabb hardver- és szoftvermegoldásokat kínáljuk.
         </p>
       </div>
     </div>
-    
+
     <div class="container">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up">
@@ -52,14 +52,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.hardware_procurement') }}:</h5>
+              <h5>Hardverbeszerzés:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.hardware_procurement_description') }}
+                A szükséges hardverek kiválasztása az ügyfél specifikációi alapján, beleértve a szerverkonfigurációkat és tárolási megoldásokat.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -68,16 +68,16 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.software_procurement') }}:</h5>
+              <h5>Szoftverbeszerzés:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.software_procurement_description') }}
+                Az üzleti igényekhez és a kiválasztott hardverekhez illeszkedő szoftverek megvásárlása.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="w-100"></div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -86,29 +86,30 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.installation_and_configuration') }}:</h5>
+              <h5>Telepítés és konfigurálás:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.installation_and_configuration_description') }}
+                A rendszerek fizikai telepítése és konfigurálása a zökkenőmentes működés érdekében.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+
+
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('computer.continuous_operation_and_maintenance') }}
+            Folyamatos üzemeltetés és karbantartás
           </h1>
         </div>        
         <p>
-          {{ __('computer.continuous_operation_description') }}
+          A rendszerek folyamatos működésének fenntartása kiemelkedő fontosságú. A rendszeres ellenőrzésekkel biztosítjuk, hogy az IT-rendszerek zavartalanul működjenek.
         </p>
       </div>
     </div>
-    
+
     <div class="container" data-aos="fade-up">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -119,14 +120,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.regular_checks') }}:</h5>
+              <h5>Rendszeres ellenőrzések:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.regular_checks_description') }}
+                Folyamatosan ellenőrizzük az infrastruktúrát automatikus és manuális felügyeleti folyamatokkal, lehetővé téve a hardverhibák és szoftverproblémák gyors észlelését.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -135,16 +136,16 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('computer.software_updates') }}:</h5>
+              <h5>Szoftverfrissítések:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.software_updates_description') }}
+                Rendszeresen frissítjük az operációs rendszereket, alkalmazásokat és biztonsági megoldásokat, hogy a rendszer naprakész maradjon a legújabb hibajavításokkal.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="w-100"></div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -153,29 +154,47 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.troubleshooting_and_support') }}:</h5>
+              <h5>Hibajavítás és technikai támogatás:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.troubleshooting_and_support_description') }}
+                Probléma esetén gyors hibajavítást és technikai támogatást nyújtunk, biztosítva a rendszer gyors helyreállítását.
               </p>
             </div>
           </div>
         </div>
+
+        {{-- <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-unlock circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Távfelügyelet:</h5>
+              <p class="text-body-secondary">
+                Az informatikai rendszerek állapotának folyamatos figyelemmel kísérése távolról. Így az esetleges hibák vagy problémák azonnal felismerhetők és megoldhatók.
+              </p>
+            </div>
+          </div>
+        </div> --}}
+
       </div>
     </div>
+
     
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('computer.remote_monitoring') }}
+            Távfelügyelet
           </h1>
         </div>        
         <p>
-          {{ __('computer.remote_monitoring_description') }}
+          A távfelügyelet lehetővé teszi a rendszerek folyamatos monitorozását anélkül, hogy személyesen jelen kellene lenni a helyszínen.
         </p>
       </div>
     </div>
-    
+
     <div class="container" data-aos="fade-up">
       <div class="row ">
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
@@ -186,14 +205,14 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.remote_monitoring_title') }}:</h5>
+              <h5>Távoli monitorozás:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.remote_monitoring_details') }}
+                Az informatikai rendszerek folyamatos figyelése távolról, amely lehetővé teszi a hibák azonnali észlelését és megoldását.
               </p>
             </div>
           </div>
         </div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
           <div class="d-flex">
             <div class="flex-shrink-0">
@@ -202,16 +221,16 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('computer.immediate_troubleshooting') }}:</h5>
+              <h5>Azonnali hibakezelés:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.immediate_troubleshooting_description') }}
+                Probléma esetén a távfelügyeleti eszközök azonnal értesítik a rendszergazdát, aki távolról beavatkozik.
               </p>
             </div>
           </div>
         </div>
-    
+
         <div class="w-100"></div>
-    
+  
         <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
           <div class="d-flex ">
             <div class="flex-shrink-0">
@@ -220,93 +239,107 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.risk_minimization') }}:</h5>
+              <h5>Kockázatminimalizálás:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.risk_minimization_description') }}
+                A távfelügyelet révén a kockázatok és leállások minimalizálhatók, mivel az azonnali reakcióidő segít megelőzni a jelentős kieséseket.
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="container my-3 mb-4">
-      <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
-        <div class="d-flex flex-column align-items-center">
-          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('computer.security_solutions') }}
-          </h1>
-        </div>        
-        <p>
-          {{ __('computer.security_solutions_description') }}
-        </p>
-      </div>
-    </div>
-    
-    <div class="container" data-aos="fade-up">
-      <div class="row ">
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
-          <div class="d-flex ">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-microchip circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.firewalls_and_antivirus') }}:</h5>
-              <p class="text-body-secondary">
-                {{ __('computer.firewalls_and_antivirus_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
-          <div class="d-flex">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-window-restore circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3" >
-              <h5>{{ __('computer.data_protection_measures') }}:</h5>
-              <p class="text-body-secondary">
-                {{ __('computer.data_protection_measures_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="w-100"></div>
-    
-        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
-          <div class="d-flex ">
-            <div class="flex-shrink-0">
-              <div class="svg-icon text-primary">
-                <i class="fa-solid mt-1 fa-clipboard-check circle-icon fa-lg"></i>
-              </div>
-            </div>
-            <div class="flex-grow-1 ms-3">
-              <h5>{{ __('computer.security_audits') }}:</h5>
-              <p class="text-body-secondary">
-                {{ __('computer.security_audits_description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
 
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
           <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
-            {{ __('computer.data_backup_and_recovery') }}
+            Biztonsági megoldások
           </h1>
         </div>        
         <p>
-          {{ __('computer.data_backup_and_recovery_description') }}
+          A biztonság minden informatikai rendszer alapköve. A különféle veszélyek és támadások ellen hatékony védelmi mechanizmusokat kell alkalmazni.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+      <div class="row ">
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-microchip circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Tűzfalak és vírusvédelem:</h5>
+              <p class="text-body-secondary">
+                A tűzfalak megakadályozzák az illetéktelen hozzáférést, míg a vírusvédelem folyamatosan blokkolja a kártékony szoftvereket.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-window-restore circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3" >
+              <h5>Adatvédelmi intézkedések:</h5>
+              <p class="text-body-secondary">
+                Titkosítás és egyéb technikák biztosítják az érzékeny felhasználói és ügyféladatok védelmét.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100"></div>
+  
+        <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-clipboard-check circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Biztonsági auditok:</h5>
+              <p class="text-body-secondary">
+                Rendszeres ellenőrzések a rendszer sebezhetőségeinek feltárására és javítására, a biztonság fenntartása érdekében.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {{-- <div class="col-md-6 col-lg-6 mb-3 mb-md-5 mb-lg-7" data-aos="fade-up" data-aos-delay="150">
+          <div class="d-flex ">
+            <div class="flex-shrink-0">
+              <div class="svg-icon text-primary">
+                <i class="fa-solid mt-1 fa-clipboard-check circle-icon fa-lg"></i>
+              </div>
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h5>Adatmentés és helyreállítás:</h5>
+              <p class="text-body-secondary">
+                A rendszeres adatmentés elengedhetetlen a hardverhibák, kiberincidensek vagy emberi hibák elleni védelemhez. A gyors adat-helyreállítás biztosítja, hogy adatvesztés esetén az információk gyorsan visszaállíthatók legyenek.
+              </p>
+            </div>
+          </div>
+        </div> --}}
+
+      </div>
+    </div>
+
+    <div class="container my-3 mb-4">
+      <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
+            Adatmentés és helyreállítás
+          </h1>
+        </div>        
+        <p>
+          Az adatvesztés komoly problémát okozhat, ezért létfontosságú, hogy hatékony adatmentési és helyreállítási megoldásokkal rendelkezzünk.
         </p>
       </div>
 
@@ -320,12 +353,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3">
-              <h5>
-                {{ __('computer.backup_solutions_development') }}
-              </h5>
+              <h5>Adatmentési megoldások kidolgozása:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.backup_solutions_development_description') }}
-              </p>
+                A rendszeres mentések lehetővé teszik az adatok gyors visszaállítását hardverhiba vagy adatvesztés esetén.              </p>
             </div>
           </div>
         </div>
@@ -338,12 +368,9 @@
               </div>
             </div>
             <div class="flex-grow-1 ms-3" >
-              <h5>
-                {{ __('computer.quick_recovery') }}
-              </h5>
+              <h5>Gyors helyreállítás:</h5>
               <p class="text-body-secondary">
-                {{ __('computer.quick_recovery_description') }}
-              </p>
+                Az adatvesztés utáni helyreállítás révén az adatok rövid időn belül visszaállíthatók, biztosítva a zavartalan üzletmenetet.              </p>
             </div>
           </div>
         </div>
@@ -356,11 +383,12 @@
 
       <div class="col-md-9 mt-5 text-center justify-content-center g-lg-5 py-5 mx-auto" data-aos="fade-up">
         <h1 class="display-6 text-body-emphasis lh-2 mb-3">
-          {{ __('computer.why_choose_us') }}
+          Miért válasszon minket?
         </h1>
         <p >
-          {{ __('computer.why_choose_us_description') }}
+          A <strong>Paksi Informatika</strong> garantálja, hogy informatikai rendszerei mindig hatékonyan és biztonságosan működjenek, kihasználva a legújabb technológiák és bevált módszerek előnyeit. Folyamatos támogatásunkkal és felügyeletünkkel ügyfeleink mindig számíthatnak ránk, gyors reagálásunk pedig minimalizálja a rendszerek leállásának idejét. Szolgáltatásainkat teljes mértékben az Ön vállalkozásának igényeihez igazítjuk, legyen szó kis- vagy nagyvállalatról. Ha megbízható és szakértő partnerre van szüksége, válassza a Paksi Informatikát!
         </p>
+
       </div>
     </div>
 

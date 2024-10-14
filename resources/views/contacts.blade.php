@@ -75,7 +75,7 @@
         <h6 class="display-6 text-body-emphasis lh-2 mb-3 mt-5" data-aos="fade-up">
           {{-- {{ __('menu.contact')}} --}}
 
-          Terkep          
+          Térkép          
         </h6>
         {{-- <p>Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</p> --}}
         {{-- <h5>Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</h5> --}}
