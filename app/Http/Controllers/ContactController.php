@@ -21,7 +21,7 @@ class ContactController extends Controller
 
         // Логика для отправки письма или сохранения данных
         Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
-            $message->to('admin@example.com', 'Admin')
+            $message->to('info@pikft.hu', 'Admin')
                     ->subject('Новое сообщение с формы обратной связи');
             $message->from($validated['email'], $validated['name']);
         });
