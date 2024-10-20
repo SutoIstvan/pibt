@@ -16,7 +16,7 @@ class ContactController extends Controller
             'message' => 'required|min:10',
         ]);
 
-        dd($validated);
+        // dd($validated);
 
 
         // Логика для отправки письма или сохранения данных
