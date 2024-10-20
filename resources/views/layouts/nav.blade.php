@@ -5,7 +5,7 @@
               <img class="navbar-brand-logo" height="50px" src="{{ asset('assets/img/logo.png') }}" alt="Logo">
           </a>
           <h5 class="mt-2 me-auto" style="color: #0d6efd !important">
-              <a href="" style="text-decoration: none">
+              <a href="{{ route('home') }}" style="text-decoration: none">
                 Paksi informatika
               </a>
           </h5>  

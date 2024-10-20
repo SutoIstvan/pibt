@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,9 @@ Route::get('/about', function () {
 Route::get('/references', function () {
     return view('references');
 })->name('references');
+
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+
 
 Route::prefix('services')->group(function () {
     Route::get('/access-control-systems', function () {
