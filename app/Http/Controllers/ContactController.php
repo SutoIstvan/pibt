@@ -18,13 +18,24 @@ class ContactController extends Controller
 
         // dd($validated);
 
+        // Создаем текстовое сообщение
+        $message = "Новое сообщение от: {$validated['name']}\n";
+        $message .= "Email: {$validated['email']}\n\n";
+        $message .= "Сообщение:\n{$validated['message']}";
+
+        // Отправка простого текстового письма
+        Mail::raw($message, function ($message) {
+            $message->to('recipient@example.com')
+                    ->subject('Контактное сообщение');
+        });
 
         // Логика для отправки письма или сохранения данных
-        Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
-            $message->to('info@pikft.hu', 'Admin')
-                    ->subject('Новое сообщение с формы обратной связи');
-            $message->from($validated['email'], $validated['name']);
-        });
+
+        // Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
+        //     $message->to('info@pikft.hu', 'Admin')
+        //             ->subject('Новое сообщение с формы обратной связи');
+        //     $message->from($validated['email'], $validated['name']);
+        // });
 
         return redirect()->back()->with('success', 'Ваше сообщение успешно отправлено!');
     }
