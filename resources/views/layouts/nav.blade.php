@@ -1,7 +1,7 @@
 <div class="container">
     <nav class="navbar navbar-expand-lg" aria-label="Eleventh navbar example">
       <div class="container-fluid me-auto">
-          <a class="navbar-brand" href="./index.html" aria-label="Front">
+          <a class="navbar-brand" href="{{ route('home') }}" aria-label="Front">
               <img class="navbar-brand-logo" height="50px" src="{{ asset('assets/img/logo.png') }}" alt="Logo">
           </a>
           <h5 class="mt-2 me-auto" style="color: #0d6efd !important">
