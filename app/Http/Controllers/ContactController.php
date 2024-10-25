@@ -23,11 +23,6 @@ class ContactController extends Controller
         $message .= "Email: {$validated['email']}\n\n";
         $message .= "Сообщение:\n{$validated['message']}";
 
-        // Отправка простого текстового письма
-        // Mail::raw($message, function ($message) {
-        //     $message->to('info@pikft.hu')
-        //             ->subject('Контактное сообщение');
-        // });
 
         // Mail::raw('This is a test email', function ($message) {
         //     $message->to('info@pikft.hu') // замените на адрес, на который хотите отправить
@@ -37,7 +32,7 @@ class ContactController extends Controller
         // Логика для отправки письма или сохранения данных
 
         Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
-            $message->to('info@pikft.hu', 'Admin')
+            $message->to('info@pikft.hu')
                     ->subject('Новое сообщение с формы обратной связи');
             $message->from($validated['email'], $validated['name']);
         });
