@@ -74,11 +74,11 @@
               </ul>
             </li>
 
-            <li class="nav-item me-4">
+            {{-- <li class="nav-item me-4">
               <a class="nav-link {{ Route::is('about') ? 'active' : '' }}" href="{{route('about')}}">
                 {{__('menu.about')}}
               </a>
-            </li>
+            </li> --}}
 
             <li class="nav-item me-4">
               <a class="nav-link {{ Route::is('references') ? 'active' : '' }}" href="{{route('references')}}">

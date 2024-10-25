@@ -347,7 +347,7 @@
     
               <!-- Brand -->
               <div class="img-fluid text-gray-600 mb-2 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <img src="/assets/logo/titan-2-logo.png" height="95px" alt="">
+                <img src="/assets/logo/energostroj.png" height="95px" alt="">
 
                 {{-- <svg viewBox="0 0 2761 991" xmlns="http://www.w3.org/2000/svg">
                   <path
