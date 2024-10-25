@@ -196,7 +196,7 @@
             <form action="{{ route('contact.submit') }}" method="POST" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
               @csrf
               <div class="form-floating mb-3">
-                <input name="name"  class="form-control" id="floatingInput" >
+                <input name="name"  class="form-control" id="floatingInput" placeholder="{{__('menu.name')}}">
                 <label for="floatingInput">{{__('menu.name')}}</label>
               </div>
               <div class="form-floating mb-3">
