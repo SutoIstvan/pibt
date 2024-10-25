@@ -25,7 +25,7 @@ class ContactController extends Controller
 
         // Отправка простого текстового письма
         Mail::raw($message, function ($message) {
-            $message->to('recipient@example.com')
+            $message->to('info@pikft.hu')
                     ->subject('Контактное сообщение');
         });
 
