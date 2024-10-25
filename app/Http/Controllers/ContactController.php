@@ -24,9 +24,14 @@ class ContactController extends Controller
         $message .= "Сообщение:\n{$validated['message']}";
 
         // Отправка простого текстового письма
-        Mail::raw($message, function ($message) {
-            $message->to('info@pikft.hu')
-                    ->subject('Контактное сообщение');
+        // Mail::raw($message, function ($message) {
+        //     $message->to('info@pikft.hu')
+        //             ->subject('Контактное сообщение');
+        // });
+
+        Mail::raw('This is a test email', function ($message) {
+            $message->to('info@pikft.hu') // замените на адрес, на который хотите отправить
+                    ->subject('Test Email');
         });
 
         // Логика для отправки письма или сохранения данных
