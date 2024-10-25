@@ -18,14 +18,11 @@
     <div class="conteiner px-5">
       <div class="mt-5 text-center" data-aos="fade-up">
         <h6 class="display-6 text-body-emphasis lh-2 mb-3">
-          {{-- {{ __('menu.contact')}} --}}
-
-          Vegye fel velünk a kapcsolatot!
-          
+          {{ __('contacts.contact_us')}}          
         </h6>
-        <p >Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</p>
-        {{-- <h5>Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</h5> --}}
-
+        <p >
+          {{ __('contacts.contact_us_desc')}}
+        </p>
       </div>
 
 
@@ -37,10 +34,9 @@
         <div class="col">
           <div class=" p-5 text-center bg-body-tertiary rounded-3" data-aos="fade-up" data-aos-delay="50">
             <img src="../assets/img/email.png" height="50px" alt="">
-            <h3 class="text-body-emphasis mt-2 mb-2">email</h3>
-            <p class="col-lg-10 mx-auto text-muted">
-              admin@gmail.com
-              info@gmail.com
+            <h3 class="text-body-emphasis mt-2 mb-2">{{ __('contacts.email')}}</h3>
+            <p class="col-lg-10 mx-auto text-muted"><br>
+              info@pikft.hu
             </p>
           </div>
         </div>
@@ -48,10 +44,9 @@
         <div class="col">
           <div class=" p-5 text-center bg-body-tertiary rounded-3" data-aos="fade-up" data-aos-delay="100">
             <img src="../assets/img/mobile.png" height="50px" alt="">
-            <h3 class="text-body-emphasis mt-2 mb-2">phone</h3>
-            <p class="col-lg-10 mx-auto text-muted">
-              +36 20 444 4444 <br>
-              +36 20 777 7777
+            <h3 class="text-body-emphasis mt-2 mb-2">{{ __('contacts.phone')}}</h3>
+            <p class="col-lg-10 mx-auto text-muted"><br>
+              +36 70 702 1252 
             </p>
           </div>
         </div>
@@ -59,7 +54,7 @@
         <div class="col">
           <div class=" p-5 text-center bg-body-tertiary rounded-3" data-aos="fade-up" data-aos-delay="150">
             <img src="../assets/img/address.png" height="50px" alt="">
-            <h3 class="text-body-emphasis mt-2 mb-2">address</h3>
+            <h3 class="text-body-emphasis mt-2 mb-2">{{ __('contacts.address')}}</h3>
             <p class="col-lg-10 mx-auto text-muted">
               Paks, Vácika köz 1, 7030 Magyarország
             </p>
@@ -73,13 +68,8 @@
     <div class="conteiner my-5">
       <div class="mb-5 mt-1 text-center">
         <h6 class="display-6 text-body-emphasis lh-2 mb-3 mt-5" data-aos="fade-up">
-          {{-- {{ __('menu.contact')}} --}}
-
-          Térkép          
+          {{ __('contacts.map')}}          
         </h6>
-        {{-- <p>Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</p> --}}
-        {{-- <h5>Szívesen beszélnénk arról, hogyan segíthetünk Önnek.</h5> --}}
-
       </div>
     
     <div class="container my-5 pt-1" data-aos="fade-up">

@@ -5,7 +5,7 @@ return [
     'about' => 'Rólunk',
     'services' => 'Szolgáltatások',
     'contact' => 'Kapcsolat',
-    'references' => 'Referenciák',
+    'references' => 'Ügyfeleink',
 
     'access_control_systems' => 'Beléptető rendszerek',
     'access_control_systems_description' => 'Elektronikus beléptető rendszerek telepítése és karbantartása.',
