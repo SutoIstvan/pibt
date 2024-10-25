@@ -32,7 +32,7 @@ class ContactController extends Controller
 
         } catch (Exception $e) {
             // Логирование ошибки
-            // \Log::error('Email sending error: ' . $e->getMessage());
+            \Log::error('Email sending error: ' . $e->getMessage());
             
             return redirect()->back()
                 ->with('error', 'Hiba történt az üzenet küldése közben. Kérjük, próbálja újra később.')  // "Произошла ошибка при отправке сообщения. Пожалуйста, попробуйте позже." на венгерском
