@@ -29,18 +29,18 @@ class ContactController extends Controller
         //             ->subject('Контактное сообщение');
         // });
 
-        Mail::raw('This is a test email', function ($message) {
-            $message->to('info@pikft.hu') // замените на адрес, на который хотите отправить
-                    ->subject('Test Email');
-        });
+        // Mail::raw('This is a test email', function ($message) {
+        //     $message->to('info@pikft.hu') // замените на адрес, на который хотите отправить
+        //             ->subject('Test Email');
+        // });
 
         // Логика для отправки письма или сохранения данных
 
-        // Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
-        //     $message->to('info@pikft.hu', 'Admin')
-        //             ->subject('Новое сообщение с формы обратной связи');
-        //     $message->from($validated['email'], $validated['name']);
-        // });
+        Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
+            $message->to('info@pikft.hu', 'Admin')
+                    ->subject('Новое сообщение с формы обратной связи');
+            $message->from($validated['email'], $validated['name']);
+        });
 
         return redirect()->back()->with('success', 'Ваше сообщение успешно отправлено!');
     }
