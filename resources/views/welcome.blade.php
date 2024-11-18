@@ -200,7 +200,10 @@
     
           <div class="col-md-10 mx-auto col-lg-6">
             <form action="{{ route('contact.submit') }}" method="POST" id="contactUSForm" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-              @csrf
+
+              {{ csrf_field() }}
+
+
               <div class="form-floating mb-3">
                 <input name="name"  class="form-control" id="floatingInput" placeholder="{{__('menu.name')}}">
                 <label for="floatingInput">{{__('menu.name')}}</label>
