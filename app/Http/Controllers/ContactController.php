@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Rules\ReCaptcha;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -14,9 +15,10 @@ class ContactController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required|min:10',
+            'g-recaptcha-response' => ['required', new ReCaptcha]
         ]);
 
-        // dd($validated);
+        dd($validated);
 
         // Создаем текстовое сообщение
         $message = "Новое сообщение от: {$validated['name']}\n";

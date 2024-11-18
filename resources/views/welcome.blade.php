@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('GOOGLE_RECAPTCHA_KEY') }}"></script>
+
 
 </head>
 
@@ -193,7 +195,7 @@
         <div class="row align-items-center g-lg-5 py-5">
     
           <div class="col-md-10 mx-auto col-lg-6">
-            <form action="{{ route('contact.submit') }}" method="POST" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <form action="{{ route('contact.submit') }}" method="POST" id="contactUSForm" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
               @csrf
               <div class="form-floating mb-3">
                 <input name="name"  class="form-control" id="floatingInput" placeholder="{{__('menu.name')}}">
@@ -451,8 +453,31 @@
       <i class="fas fa-arrow-up"></i>
     </button>
   
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {{-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
 
+    <script type="text/javascript">
+
+      $('#contactUSForm').submit(function(event) {
+  
+          event.preventDefault();
+  
+      
+  
+          grecaptcha.ready(function() {
+  
+              grecaptcha.execute("{{ env('GOOGLE_RECAPTCHA_KEY') }}", {action: 'subscribe_newsletter'}).then(function(token) {
+  
+                  $('#contactUSForm').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+  
+                  $('#contactUSForm').unbind('submit').submit();
+  
+              });;
+  
+          });
+  
+      });
+  
+  </script>
 
   </body>
 </html>
