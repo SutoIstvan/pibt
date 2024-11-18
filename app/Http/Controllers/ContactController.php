@@ -21,8 +21,9 @@ class ContactController extends Controller
 
         $recaptcha_response = $request->input('g-recaptcha-response');
 
-        dd($recaptcha_response);
+        // dd($recaptcha_response);
         if (is_null($recaptcha_response)) {
+            return "Please Complete the Recaptcha to proceed";
             return redirect()->back()->with('status', 'Please Complete the Recaptcha to proceed');
         }
 
