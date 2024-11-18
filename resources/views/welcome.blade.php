@@ -8,6 +8,8 @@
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
+      <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
+
 </head>
 
 <body>
@@ -213,12 +215,12 @@
                 </label>
               </div>
 
-              <div class="g-recaptcha" data-sitekey="6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></div>
-
-              {{-- <head>
-                <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
-                <!-- Your code -->
-              </head> --}}
+              <button class="g-recaptcha"
+                  data-sitekey="6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"
+                  data-callback='onSubmit'
+                  data-action='submit'>
+                Submit
+              </button>
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
               <!-- <hr class="my-4">
@@ -437,18 +439,13 @@
       <i class="fas fa-arrow-up"></i>
     </button>
   
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-{{--     
-    <script>
-      
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.enterprise.ready(async () => {
-          const token = await grecaptcha.enterprise.execute('6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ', {action: 'LOGIN'});
-        });
-      }
-    </script> --}}
+    
+<script>
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
+</script>
 
   </body>
 </html>
