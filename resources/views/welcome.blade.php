@@ -9,7 +9,11 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
-
+    <script>
+      function onSubmit(token) {
+        document.getElementById("contactForm").submit();
+      }
+    </script>
 
 </head>
 
@@ -462,14 +466,6 @@
     <button type="button" class="btn btn-outline-primary btn-lg" id="btn-back-to-top">
       <i class="fas fa-arrow-up"></i>
     </button>
-  
 
-<!-- Replace the variables below. -->
-<script>
-  function onSubmit(token) {
-    document.getElementById("contactForm").submit();
-  }
-</script>
-
-  </body>
+    </body>
 </html>
