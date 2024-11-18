@@ -8,9 +8,9 @@
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
-    <script async src="https://www.google.com/recaptcha/api.js">// Add recaptcha script
+    {{-- <script async src="https://www.google.com/recaptcha/api.js">// Add recaptcha script --}}
 
-      // <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
 
 </head>
 
