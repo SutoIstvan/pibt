@@ -19,7 +19,7 @@ class ContactController extends Controller
             'g-recaptcha-response' => 'recaptcha',
         ]);
 
-        dd($request);
+        // dd($request);
         // Создаем текстовое сообщение
         $message = "Новое сообщение от: {$validated['name']}\n";
         $message .= "Email: {$validated['email']}\n\n";
