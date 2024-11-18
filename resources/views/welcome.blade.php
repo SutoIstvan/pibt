@@ -467,31 +467,7 @@
       <i class="fas fa-arrow-up"></i>
     </button>
   
-    {{-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
 
-    <script type="text/javascript">
-
-      $('#contactUSForm').submit(function(event) {
-  
-          event.preventDefault();
-  
-      
-  
-          grecaptcha.ready(function() {
-  
-              grecaptcha.execute("6LcEpIIqAAAAADzeK6gyoVNtFbLASoxlWvH8lpkI", {action: 'subscribe_newsletter'}).then(function(token) {
-  
-                  $('#contactUSForm').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
-  
-                  $('#contactUSForm').unbind('submit').submit();
-  
-              });;
-  
-          });
-  
-      });
-  
-  </script>
 
   </body>
 </html>
