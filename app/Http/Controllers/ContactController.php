@@ -27,7 +27,7 @@ class ContactController extends Controller
         $url = "https://www.google.com/recaptcha/api/siteverify";
 
         $body = [
-            'secret' => config('services.recaptcha.secret'),
+            'secret' => config('6LcEpIIqAAAAACztP6F1u1k_QCpMAZdgL-6tnL61'),
             'response' => $recaptcha_response,
             'remoteip' => IpUtils::anonymize($request->ip()) //anonymize the ip to be GDPR compliant. Otherwise just pass the default ip address
         ];
@@ -44,6 +44,8 @@ class ContactController extends Controller
             return "ok";
             // return redirect()->intended(RouteServiceProvider::HOME);
         } else {
+            return "Please Complete the Recaptcha Again to proceed";
+
             return redirect()->back()->with('status', 'Please Complete the Recaptcha Again to proceed');
         }
 
