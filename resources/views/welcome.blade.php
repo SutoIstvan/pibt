@@ -213,12 +213,12 @@
                 <label for="floatingInput">{{__('menu.name')}}</label>
               </div>
               <div class="form-floating mb-3">
-                <input name="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                <input name="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
                 <label for="floatingEmail">{{__('menu.mail')}}</label>
               </div>
               <div class="form-group">
                 <label for="message" class="form-label ms-2">{{__('menu.short_decription_message')}}</label>
-                <textarea name="message" id="inputMessage" id="message" class="form-control" rows="2"></textarea>
+                <textarea name="message" id="inputMessage" id="message" class="form-control" rows="2" required></textarea>
               </div>
               <div class="checkbox mb-3 mt-2 ms-2">
                 <label>
