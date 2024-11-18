@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 
@@ -220,6 +220,11 @@
               </div>
 
 
+              <div class="form-group text-center">
+
+                  <button class="btn btn-success btn-submit">Submit</button>
+
+              </div>
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
               <!-- <hr class="my-4">
