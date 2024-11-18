@@ -212,6 +212,14 @@
                   <input type="checkbox" value="remember-me"> {{__('menu.accept_the_data_management_conditions')}}
                 </label>
               </div>
+
+              <div class="g-recaptcha" data-sitekey="6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></div>
+
+              {{-- <head>
+                <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
+                <!-- Your code -->
+              </head> --}}
+
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
               <!-- <hr class="my-4">
               <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small> -->
@@ -429,5 +437,18 @@
       <i class="fas fa-arrow-up"></i>
     </button>
   
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+{{--     
+    <script>
+      
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.enterprise.ready(async () => {
+          const token = await grecaptcha.enterprise.execute('6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ', {action: 'LOGIN'});
+        });
+      }
+    </script> --}}
+
   </body>
 </html>
