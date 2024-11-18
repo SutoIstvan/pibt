@@ -46,9 +46,8 @@ class ContactController extends Controller
             return "ok";
             // return redirect()->intended(RouteServiceProvider::HOME);
         } else {
-            return "Please Complete the Recaptcha Again to proceed";
 
-            return redirect()->back()->with('status', 'Please Complete the Recaptcha Again to proceed');
+            return redirect()->back()->with('success', 'Please Complete the Recaptcha Again to proceed');
         }
 
         //  dd($recaptcha_response);
