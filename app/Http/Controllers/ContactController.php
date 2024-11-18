@@ -10,16 +10,14 @@ class ContactController extends Controller
 {
     public function submit(Request $request)
     {
-        // dd($request);
+        dd($request);
         // Валидация данных
         $validated = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required|min:10',
-            'g-recaptcha-response' => ['required', new ReCaptchaV3('submitContact')]
         ]);
 
-        return redirect()->back()->with('success', 'Thank you for contacting us. Your message has been sent. ');
 
         // Создаем текстовое сообщение
         $message = "Новое сообщение от: {$validated['name']}\n";

@@ -8,15 +8,6 @@
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-
-    {{-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script> --}}
-    <script>
-      function onSubmit(token) {
-        document.getElementById("contactForm").submit();
-      }
-    </script>
-
 </head>
 
 <body>
@@ -202,7 +193,7 @@
         <div class="row align-items-center g-lg-5 py-5">
     
           <div class="col-md-10 mx-auto col-lg-6">
-            <form action="{{ route('contact.submit') }}" method="POST" id="contactForm" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <form action="{{ route('contact.submit') }}" method="POST" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
 
               @csrf
 
@@ -225,13 +216,8 @@
                 </label>
               </div>
 
+              {!! htmlScriptTagJsApi() !!}
 
-              <div class="d-grid">
-                  <button class="g-recaptcha btn btn-primary btn-lg "
-                          data-sitekey="6LcEpIIqAAAAADzeK6gyoVNtFbLASoxlWvH8lpkI"
-                          data-callback="onSubmit"
-                          data-action="submitContact">Submit</button>
-              </div>
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
               <!-- <hr class="my-4">
@@ -345,12 +331,7 @@
     </div>
   
     <!-- SLIDER END -->
-  
-  
-  
-  
-  
-  
+    
       <!-- BRAND -->
   
       <section class="py-6 py-md-8 mb-5 pt-5">
