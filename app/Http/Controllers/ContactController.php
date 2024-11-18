@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function submit(Request $request)
     {
-        dd($request);
+        
         // Валидация данных
         $validated = $request->validate([
             'name' => 'required|max:255',
@@ -19,7 +19,7 @@ class ContactController extends Controller
             'g-recaptcha-response' => 'recaptcha',
         ]);
 
-
+        dd($request);
         // Создаем текстовое сообщение
         $message = "Новое сообщение от: {$validated['name']}\n";
         $message .= "Email: {$validated['email']}\n\n";
