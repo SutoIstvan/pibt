@@ -195,7 +195,7 @@
         <div class="row align-items-center g-lg-5 py-5">
     
           <div class="col-md-10 mx-auto col-lg-6">
-            <form action="{{ route('contact.submit') }}" method="POST" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <form action="{{ route('contact.submit') }}" method="POST" id="demo-form" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
               @csrf
               <div class="form-floating mb-3">
                 <input name="name"  class="form-control" id="floatingInput" placeholder="{{__('menu.name')}}">
@@ -215,11 +215,11 @@
                 </label>
               </div>
 
-              <button class="g-recaptcha"
+              <button class="g-recaptcha w-100 btn btn-lg btn-primary"
                   data-sitekey="6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"
                   data-callback='onSubmit'
                   data-action='submit'>
-                Submit
+                  {{__('menu.request_a_quote')}}
               </button>
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
