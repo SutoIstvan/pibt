@@ -10,7 +10,10 @@
 
     {{-- <script async src="https://www.google.com/recaptcha/api.js">// Add recaptcha script --}}
 
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
+    {{-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script> --}}
+
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+
 
 </head>
 
@@ -218,7 +221,7 @@
               </div>
 
               <!-- Google Recaptcha -->
-              <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}>1</div>
+      <div class="g-recaptcha" data-sitekey="6LcEpIIqAAAAADzeK6gyoVNtFbLASoxlWvH8lpkI" data-action="LOGIN"></div>
 
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
