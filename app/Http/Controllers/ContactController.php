@@ -10,6 +10,7 @@ class ContactController extends Controller
 {
     public function submit(Request $request)
     {
+        dd($request['g-recaptcha-response']);
         // Валидация данных
         $validated = $request->validate([
             'name' => 'required|max:255',
