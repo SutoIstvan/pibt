@@ -8,11 +8,12 @@
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-
-    <script src="https://www.google.com/recaptcha/api.js?render=EfT3JU7XthSnMrmjb0ov"></script>
-
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contactForm").submit();
+        }
+    </script>
 
 </head>
 
@@ -199,9 +200,9 @@
         <div class="row align-items-center g-lg-5 py-5">
     
           <div class="col-md-10 mx-auto col-lg-6">
-            <form action="{{ route('contact.submit') }}" method="POST" id="contactUSForm" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <form action="{{ route('contact.submit') }}" method="POST" id="contactForm" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
 
-              {{ csrf_field() }}
+              @csrf
 
 
               <div class="form-floating mb-3">
@@ -223,10 +224,11 @@
               </div>
 
 
-              <div class="form-group text-center">
-
-                  <button class="btn btn-success btn-submit">Submit</button>
-
+              <div class="d-grid">
+                  <button class="g-recaptcha btn btn-primary btn-lg "
+                          data-sitekey="{{ config('services.recaptcha_v3.siteKey') }}"
+                          data-callback="onSubmit"
+                          data-action="submitContact">Submit</button>
               </div>
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
