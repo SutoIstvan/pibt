@@ -14,10 +14,11 @@ class ContactController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required|min:10',
-            'g-recaptcha-response' => 'required',
         ]);
 
-         dd($validated);
+        $recaptcha_response = $request->input('g-recaptcha-response');
+
+         dd($recaptcha_response);
 
         // Создаем текстовое сообщение
         $message = "Новое сообщение от: {$validated['name']}\n";

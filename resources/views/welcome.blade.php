@@ -8,7 +8,9 @@
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
-      <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
+    <script async src="https://www.google.com/recaptcha/api.js">// Add recaptcha script
+
+      // <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
 
 </head>
 
@@ -215,14 +217,8 @@
                 </label>
               </div>
 
-              <button class="g-recaptcha w-100 btn btn-lg btn-primary"
-                  data-sitekey="6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"
-                  data-callback='onSubmit'
-                  data-action='submit'>
-                  {{__('menu.request_a_quote')}}
-              </button>
-
-              <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+              <!-- Google Recaptcha -->
+              <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}></div>
 
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
@@ -444,13 +440,7 @@
   
 
     
-<script>
-  function onSubmit(token) {
-    document.getElementById("g-recaptcha-response").value = token;
 
-    document.getElementById("demo-form").submit();
-  }
-</script>
 
   </body>
 </html>
