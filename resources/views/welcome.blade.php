@@ -222,7 +222,7 @@
                   {{__('menu.request_a_quote')}}
               </button>
 
-              <input type="" name="g-recaptcha-response" id="g-recaptcha-response">
+              <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
