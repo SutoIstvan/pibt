@@ -224,6 +224,13 @@
     
           <div class="col-lg-6 text-center text-lg-start">
   
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+
             <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 mt-5 mt-md-0">{{__('menu.ask')}} <span class="text-primary">{{__('menu.offer')}}</span></h1>
             <p class="col-lg-10 fs-4">
               {{__('menu.ask_offer_description')}}
