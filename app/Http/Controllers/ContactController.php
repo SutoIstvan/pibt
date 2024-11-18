@@ -23,8 +23,7 @@ class ContactController extends Controller
 
         // dd($recaptcha_response);
         if (is_null($recaptcha_response)) {
-            return "Please Complete the Recaptcha to proceed";
-            return redirect()->back()->with('status', 'Please Complete the Recaptcha to proceed');
+            return redirect()->back()->with('success', 'Please Complete the Recaptcha to proceed');
         }
 
         $url = "https://www.google.com/recaptcha/api/siteverify";
