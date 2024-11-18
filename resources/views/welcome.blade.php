@@ -221,7 +221,7 @@
               </div>
 
               <!-- Google Recaptcha -->
-      <div class="g-recaptcha" data-sitekey="6LcEpIIqAAAAADzeK6gyoVNtFbLASoxlWvH8lpkI" data-action="LOGIN"></div>
+              <div class="g-recaptcha" data-sitekey="6LcEpIIqAAAAADzeK6gyoVNtFbLASoxlWvH8lpkI" data-action="LOGIN"></div>
 
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
