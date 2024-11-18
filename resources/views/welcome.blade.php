@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
     <script src="https://www.google.com/recaptcha/api.js?render={{ env('GOOGLE_RECAPTCHA_KEY') }}"></script>
 
 
