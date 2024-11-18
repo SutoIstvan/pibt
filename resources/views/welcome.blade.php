@@ -8,6 +8,16 @@
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     {!! htmlScriptTagJsApi() !!}
+
+    <style>
+      @media only screen and (max-width: 500px) {
+          .g-recaptcha {
+              transform:scale(0.77);
+              transform-origin:0 0;
+          }
+      }
+      </style>
+
 </head>
 
 <body>
@@ -216,8 +226,11 @@
                 </label>
               </div>
 
-              {!! htmlScriptTagJsApi() !!}
-              {!! htmlFormSnippet() !!}
+              <div class="mb-3">
+                {!! htmlScriptTagJsApi() !!}
+                {!! htmlFormSnippet() !!}
+              </div>
+
 
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
