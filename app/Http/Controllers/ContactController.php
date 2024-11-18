@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Rules\ReCaptcha;
+use App\Rules\ReCaptchaV3;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -15,10 +15,10 @@ class ContactController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required|min:10',
-            'g-recaptcha-response' => ['required', new ReCaptcha]
+            'g-recaptcha-response' => ['required', new ReCaptchaV3('submitContact')]
         ]);
 
-        dd($validated);
+        return redirect()->back()->with('success', 'Thank you for contacting us. Your message has been sent. ');
 
         // Создаем текстовое сообщение
         $message = "Новое сообщение от: {$validated['name']}\n";
