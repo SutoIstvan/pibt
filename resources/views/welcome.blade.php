@@ -231,6 +231,18 @@
                 </div>
             @endif
 
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+
+
             <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 mt-5 mt-md-0">{{__('menu.ask')}} <span class="text-primary">{{__('menu.offer')}}</span></h1>
             <p class="col-lg-10 fs-4">
               {{__('menu.ask_offer_description')}}
