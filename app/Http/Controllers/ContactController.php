@@ -33,6 +33,6 @@ class ContactController extends Controller
             $message->from($validated['email'], $validated['name']);
         });
 
-        return redirect()->back()->with('success', 'Ваше сообщение успешно отправлено!');
+        return redirect()->back()->with('success', 'Köszönjük! Üzenetét sikeresen elküldtük! Kérése feldolgozása után munkatársunk felveszi Önnel a kapcsolatot.!');
     }
 }
