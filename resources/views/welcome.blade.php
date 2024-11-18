@@ -209,7 +209,7 @@
 
 
               <div class="form-floating mb-3">
-                <input name="name"  class="form-control" id="floatingInput" placeholder="{{__('menu.name')}}">
+                <input name="name"  class="form-control" id="floatingInput" placeholder="{{__('menu.name')}}" required>
                 <label for="floatingInput">{{__('menu.name')}}</label>
               </div>
               <div class="form-floating mb-3">
@@ -222,7 +222,7 @@
               </div>
               <div class="checkbox mb-3 mt-2 ms-2">
                 <label>
-                  <input type="checkbox" value="remember-me"> {{__('menu.accept_the_data_management_conditions')}}
+                  <input type="checkbox" value="remember-me" required> {{__('menu.accept_the_data_management_conditions')}}
                 </label>
               </div>
 
