@@ -222,7 +222,7 @@
 
               <div class="d-grid">
                   <button class="g-recaptcha btn btn-primary btn-lg "
-                          data-sitekey="{{ config('services.recaptcha_v3.siteKey') }}"
+                          data-sitekey="6LcEpIIqAAAAADzeK6gyoVNtFbLASoxlWvH8lpkI"
                           data-callback="onSubmit"
                           data-action="submitContact">Submit</button>
               </div>
