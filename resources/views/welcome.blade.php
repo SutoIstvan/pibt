@@ -213,12 +213,7 @@
                 </label>
               </div>
 
-              <div class="g-recaptcha" data-sitekey="6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></div>
 
-              {{-- <head>
-                <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ"></script>
-                <!-- Your code -->
-              </head> --}}
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
               <!-- <hr class="my-4">
@@ -439,16 +434,6 @@
   
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-{{--     
-    <script>
-      
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.enterprise.ready(async () => {
-          const token = await grecaptcha.enterprise.execute('6LfWd4IqAAAAACCY5ybIUTLVJ1x9RbUiQnX-JEHJ', {action: 'LOGIN'});
-        });
-      }
-    </script> --}}
 
   </body>
 </html>
