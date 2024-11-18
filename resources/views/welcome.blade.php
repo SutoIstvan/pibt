@@ -222,6 +222,9 @@
                   {{__('menu.request_a_quote')}}
               </button>
 
+              <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
               <!-- <hr class="my-4">
               <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small> -->
@@ -443,6 +446,8 @@
     
 <script>
   function onSubmit(token) {
+    document.getElementById("g-recaptcha-response").value = token;
+
     document.getElementById("demo-form").submit();
   }
 </script>
