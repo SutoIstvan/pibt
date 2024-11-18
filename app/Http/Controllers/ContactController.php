@@ -10,11 +10,11 @@ class ContactController extends Controller
     public function submit(Request $request)
     {
         // Валидация данных
-        $validated = $request->validate([
-            'name' => 'required|max:255',
-            'email' => 'required|email',
-            'message' => 'required|min:10',
-        ]);
+        // $validated = $request->validate([
+        //     'name' => 'required|max:255',
+        //     'email' => 'required|email',
+        //     'message' => 'required|min:10',
+        // ]);
 
         $recaptcha_response = $request->input('g-recaptcha-response');
 

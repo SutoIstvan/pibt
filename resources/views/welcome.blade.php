@@ -218,7 +218,7 @@
               </div>
 
               <!-- Google Recaptcha -->
-              <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}></div>
+              <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}>1</div>
 
 
               <button class="w-100 btn btn-lg btn-primary" type="submit">{{__('menu.request_a_quote')}}</button>
