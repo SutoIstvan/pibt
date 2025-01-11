@@ -12,11 +12,47 @@
 <body>
 
     @include('layouts.nav')
+
+    {{-- <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
+      <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
+        <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+          <img src="../assets/security-door-code-men.png" class="img-fluid " loading="lazy" style="opacity: 0.8;">
+        </div>
+        <div class="col-lg-6 mt-xs-3">
+          <h1 class="display-6 text-body-emphasis lh-2 mb-3 " data-aos="fade-up">
+            {{__('menu.professional')}} 
+            @if(app()->getLocale() == 'ru') <br> @endif
+            <span class="text-primary">{{__('menu.it')}}</span> 
+            {{__('menu.low_voltage_technology_systems')}}
+          </h1>
+          <p class="lead text-body-secondary mt-1" data-aos="fade-up" data-aos-duration="1000">
+            {{__('menu.hero_description')}}
+            {{__('menu.network_infrastructure')}},
+            {{__('menu.server_maintenance')}},
+            {{__('menu.access_control_systems')}},
+            {{__('menu.surveillance_systems')}},
+            {{__('menu.computer_services')}},
+            {{__('menu.web_development')}}.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-2" data-aos="fade-up" data-aos-duration="2000">
+
+            <button type="button" class="btn btn-outline-primary btn-lg" onclick="window.location.href='{{ route('about') }}'">
+                {{ __('menu.details') }}
+            </button> 
+
+            <button type="button" class="btn btn-outline-secondary btn-lg" onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });">
+                {{ __('menu.request_a_quote') }}
+            </button>
+      
+          </div>
+        </div>
+      </div>
+    </div> --}}
     
     <div class="container col-xxl-12 px-4 py-5 mt-lg-5">
       <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
         <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-sm-12 col-lg-6">
-          <img src="../assets/access-systems.png" class="img-fluid " loading="lazy" style="opacity: 0.7; height:300px">
+          <img src="../assets/security-door-code-men.png" class="img-fluid " loading="lazy" style="opacity: 0.7; height:300px">
         </div>
         <div class="col-lg-6 mt-xs-3">
           <h1 class="display-6 text-body-emphasis lh-2 mb-4 mt-5" data-aos="fade-up">

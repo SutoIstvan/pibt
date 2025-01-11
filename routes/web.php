@@ -3,6 +3,8 @@
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\UnasApiController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -65,3 +67,9 @@ Route::get('change-language/{locale}', function ($locale) {
     }
     return redirect()->back();
 })->name('changeLanguage');
+
+
+
+Route::get('/unas/login', [UnasApiController::class, 'login']);
+Route::get('/unas/productsdb', [UnasApiController::class, 'getProductsdb']);
+Route::get('/unas/products', [UnasApiController::class, 'getProducts']);
