@@ -86,13 +86,19 @@ Route::post('/products/upload', [ProductController::class, 'upload'])->name('sho
 
 
 Route::post('/webhook/order-created', function (Request $request) {
-    // Получаем данные из запроса
-    $orderData = json_decode($request->getContent(), true); // true для получения ассоциативного массива
+    try {
+        // Получаем данные из запроса
+        $orderData = json_decode($request->getContent(), true); // true для получения ассоциативного массива
 
-    // Записываем данные в лог
-    Log::info('Получен новый заказ от Shopify:', $orderData);
+        // Записываем данные в лог
+        Log::info('Получен новый заказ от Shopify:', $orderData);
 
-    return response()->json(['status' => 'success']);
+        return response()->json(['status' => 'success']);
+    } catch (\Exception $e) {
+        Log::error('Ошибка при обработке заказа: ' . $e->getMessage());
+        return response()->json(['status' => 'error'], 500);
+    }
 });
+
 
 

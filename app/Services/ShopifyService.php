@@ -37,7 +37,7 @@ class ShopifyService
 
     public function createProduct($productData)
     {
-        $endpoint = '/admin/api/2024-01/products.json';
+        $endpoint = '/admin/api/2025-01/products.json';
         
         // Подготавливаем массив изображений для Shopify
         $images = array_map(function($image) {
