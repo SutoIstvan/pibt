@@ -87,11 +87,33 @@ Route::post('/products/upload', [ProductController::class, 'upload'])->name('sho
 
 Route::post('/webhook/order-created', function (Request $request) {
     try {
+        // Проверяем подпись вебхука
+        $hmac = $request->header('X-Shopify-Hmac-Sha256');
+        $data = $request->getContent();
+        $secret = '69f9ff29ff9e24288e4341c9a61bb9e0fc443dd7bfc00247d55dd8f4aa81a82b';
+        $calculatedHmac = base64_encode(hash_hmac('sha256', $data, $secret, true));
+
+        // Логируем для отладки
+        Log::info('Webhook проверка:', [
+            'received_hmac' => $hmac,
+            'calculated_hmac' => $calculatedHmac,
+            'raw_data' => $data
+        ]);
+
+        if (!hash_equals($hmac, $calculatedHmac)) {
+            Log::error('Неверная подпись вебхука');
+            return response()->json(['error' => 'Invalid signature'], 401);
+        }
+
         // Получаем данные из запроса
-        $orderData = json_decode($request->getContent(), true); // true для получения ассоциативного массива
+        $orderData = json_decode($data, true);
 
         // Записываем данные в лог
-        Log::info('Получен новый заказ от Shopify:', $orderData);
+        Log::info('Получен новый заказ от Shopify:', [
+            'order_id' => $orderData['id'] ?? 'unknown',
+            'order_number' => $orderData['order_number'] ?? 'unknown',
+            'data' => $orderData
+        ]);
 
         return response()->json(['status' => 'success']);
     } catch (\Exception $e) {
