@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
+use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
@@ -191,6 +193,7 @@ class UnasApiController extends Controller
         $productResponse = curl_exec($curl);
 
 
+        // dd($productResponse);
         // dd([
         //     'raw_response' => $productResponse,
         //     'response_type' => gettype($productResponse),
@@ -205,49 +208,88 @@ class UnasApiController extends Controller
 
         curl_close($curl);
 
-// Пробуем распарсить XML
-$xml = simplexml_load_string($productResponse);
-if ($xml === false) {
-    return response()->json([
-        'error' => 'Ошибка парсинга XML',
-        'raw_response' => $productResponse
-    ], 500);
-}
+        // Пробуем распарсить XML
+        $xml = simplexml_load_string($productResponse);
+        if ($xml === false) {
+            return response()->json([
+                'error' => 'Ошибка парсинга XML',
+                'raw_response' => $productResponse
+            ], 500);
+        }
 
-// Преобразуем XML в массив
-$products = json_decode(json_encode($xml), true);
+        // Сохраняем продукты в базу данных
+        foreach ($xml->Product as $productData) {
+            // Инициализируем массив для хранения изображений
+            $imagesArray = [];
+
+            // Проверяем, есть ли изображения
+            if (isset($productData->Images->Image)) {
+                foreach ($productData->Images->Image as $image) {
+                    // Извлекаем необходимые данные для каждого изображения
+                    $imagesArray[] = [
+                        'type' => (string)$image->Type,
+                        'url' => (string)$image->Url->Medium,
+                        'sefUrl' => (string)$image->SefUrl,
+                        'filename' => (string)$image->Filename,
+                        'alt' => (string)$image->Alt,
+                    ];
+                }
+            }
+
+            // Сохраняем данные
+            \App\Models\Product::updateOrCreate(
+                ['unas_id' => (string)$productData->Id],
+                [
+                    'sku' => (string)$productData->Sku,
+                    'state' => (string)$productData->State,
+                    'create_time' => Carbon::createFromTimestamp((int)$productData->CreateTime),
+                    'last_mod_time' => Carbon::createFromTimestamp((int)$productData->LastModTime),
+                    'name' => (string)$productData->Name,
+                    'unit' => (string)$productData->Unit,
+                    'minimum_qty' => (int)$productData->MinimumQty,
+                    'description_short' => (string)$productData->Description->Short,
+                    'description_long' => (string)$productData->Description->Long,
+
+                    // JSON поля
+                    'images' => json_encode([
+                        'default_filename' => (string)$productData->Images->DefaultFilename,
+                        'default_alt' => (string)$productData->Images->DefaultAlt,
+                        'og' => (string)$productData->Images->OG,
+                        'last_mod_time' => (int)$productData->Images->LastModTime,
+                        'list' => $imagesArray, // Используем наш массив изображений
+                    ]),
+
+                    // JSON поля для цен
+                    'prices' => json_encode([
+                        'vat' => (float)str_replace('%', '', (string)$productData->Prices->Vat), // Удаляем '%' и конвертируем в float
+                        'price' => [
+                            'type' => 'normal', // Можно изменить тип, если у вас есть логика для определения типа
+                            'net' => (float)$productData->Prices->Price->Net, // Чистая цена
+                            'gross' => (float)$productData->Prices->Price->Gross, // Брутто цена
+                            'actual' => 1, // Предположим, что цена актуальна
+                        ],
+                    ]),
+
+
+                    'categories' => json_encode((array)$productData->Categories),
+                    'statuses' => json_encode((array)$productData->Statuses),
+
+                    // Булевы поля с проверкой
+                    'no_list' => (int)$productData->NoList,
+                    'inquire' => (int)$productData->Inquire,
+                    'only_gift_status' => (int)$productData->OnlyGiftStatus,
+                    'explicit' => (int)$productData->Explicit,
+                ]
+            );
+        }
 
 
 
+        $products = Product::all();
 
-// Извлечение данных для каждого продукта
-foreach ($products['Product'] as $key => &$product) {
-    // Извлекаем имя продукта
-    $product['Name'] = (string)$xml->Product[$key]->Name;
+        // Возвращаем представление с продуктами
+        return view('products.index', compact('products'));
 
-    // Извлекаем цены: Gross и Net
-    $product['PriceGross'] = isset($xml->Product[$key]->Prices->Price->Gross)
-        ? (string)$xml->Product[$key]->Prices->Price->Gross
-        : 'N/A';
-
-    $product['PriceNet'] = isset($xml->Product[$key]->Prices->Price->Net)
-        ? (string)$xml->Product[$key]->Prices->Price->Net
-        : 'N/A';
-
-    // Извлекаем краткое описание
-    $product['ShortDescription'] = isset($xml->Product[$key]->Description->Short)
-        ? trim((string)$xml->Product[$key]->Description->Short)
-        : 'Описание отсутствует';
-
-    // Извлекаем полное описание
-    $product['LongDescription'] = isset($xml->Product[$key]->Description->Long)
-        ? trim((string)$xml->Product[$key]->Description->Long)
-        : 'Описание отсутствует';
-
-}
-
-// Возвращаем view с данными
-return view('products.index', ['products' => $products]);
-
+        return response()->json(['success' => 'Продукты успешно сохранены'], 200);
     }
 }

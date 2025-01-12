@@ -2,8 +2,14 @@
 
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 use App\Http\Controllers\UnasApiController;
+
+use App\Http\Controllers\ProductController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -73,3 +79,20 @@ Route::get('change-language/{locale}', function ($locale) {
 Route::get('/unas/login', [UnasApiController::class, 'login']);
 Route::get('/unas/productsdb', [UnasApiController::class, 'getProductsdb']);
 Route::get('/unas/products', [UnasApiController::class, 'getProducts']);
+
+Route::post('/products/upload', [ProductController::class, 'upload'])->name('shopify.upload');
+
+
+
+
+Route::post('/webhook/order-created', function (Request $request) {
+    // Получаем данные из запроса
+    $orderData = json_decode($request->getContent(), true); // true для получения ассоциативного массива
+
+    // Записываем данные в лог
+    Log::info('Получен новый заказ от Shopify:', $orderData);
+
+    return response()->json(['status' => 'success']);
+});
+
+
