@@ -4,11 +4,24 @@
           <a class="navbar-brand" href="{{ route('home') }}" aria-label="Front">
               <img class="navbar-brand-logo" height="50px" src="{{ asset('assets/img/logo.png') }}" alt="Logo">
           </a>
+
+
+
           <h5 class="mt-2 me-auto" style="color: #0d6efd !important">
-              <a href="{{ route('home') }}" style="text-decoration: none">
+              <a class="nav-link" href="{{ route('home') }}" style="text-decoration: none; font-size:16px">
                 Paksi informatika
               </a>
           </h5>  
+
+          <a class="navbar-brand ms-4 d-none d-sm-block" href="https://vallalkozzdigitalisan.mkik.hu/" aria-label="Front">
+            <img class="navbar-brand-logo" height="46px" src="{{ asset('assets/img/logo-mvp.png') }}" alt="Logo">
+          </a>
+          
+
+          <h5 class="mt-2 me-auto d-none d-sm-block" style="text-decoration: none; font-size:15px; color: #726f6f !important" >
+            <a class="nav-link" href="https://vallalkozzdigitalisan.mkik.hu/">Modern Vállalkozások Programja - Vállalkozz digitálisan!
+            </a>
+          </h5>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
               aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>

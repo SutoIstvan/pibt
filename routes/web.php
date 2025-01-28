@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\UnasApiController;
 
 use App\Http\Controllers\ProductController;
-
-
+use App\Http\Controllers\UnasProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -121,6 +120,10 @@ Route::post('/webhook/order-created', function (Request $request) {
         return response()->json(['status' => 'error'], 500);
     }
 });
+
+
+Route::post('/products/import', [UnasProductController::class, 'storeFromXml']);
+
 
 
 

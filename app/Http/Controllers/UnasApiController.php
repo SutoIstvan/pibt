@@ -148,7 +148,11 @@ class UnasApiController extends Controller
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
         // API ключ
-        $apiKey = 'f5fa9186987d3d6d9f52e8386089f1c6204efc29';
+        // $apiKey = 'f5fa9186987d3d6d9f52e8386089f1c6204efc29';
+
+        $apiKey = 'c9fee685261d00f137f44f4d203ed5ed67fca717';
+
+        
 
         // Запрос на логин
         $loginRequest = '<?xml version="1.0" encoding="UTF-8"?><Params><ApiKey>' . $apiKey . '</ApiKey><WebshopInfo>true</WebshopInfo></Params>';
@@ -184,7 +188,7 @@ class UnasApiController extends Controller
         </Params>
         XML;
 
-
+        
 
         curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($curl, CURLOPT_URL, "https://api.unas.eu/shop/getProduct");
