@@ -66,7 +66,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="d-flex justify-content-end mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="development-men-notebook.png" alt="" height="500px"
+                            <img class="img-fluid" src="assets/wel.png" alt="" height="500px"
                                 width="500px" style="opacity: 0.7;">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
@@ -110,7 +110,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="d-flex justify-content-end mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="server-men-notebook.png" alt="" height="500px"
+                            <img class="img-fluid" src="assets/ser.png" alt="" height="500px"
                                 width="500px" style="opacity: 0.7;">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
@@ -152,7 +152,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="d-flex justify-content-end mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="development-men-notebook2.png" alt="" height="500px"
+                            <img class="img-fluid" src="assets/web.png" alt="" height="500px"
                                 width="500px" style="opacity: 0.7;">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
@@ -196,7 +196,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="d-flex justify-content-end mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="security-door-men-notebook.png" alt=""
+                            <img class="img-fluid" src="assets/sec.png" alt=""
                                 height="500px" width="500px" style="opacity: 0.7;">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
