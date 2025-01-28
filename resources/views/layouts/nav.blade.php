@@ -9,7 +9,7 @@
 
           <h5 class="mt-2 me-auto" style="color: #0d6efd !important">
               <a class="nav-link" href="{{ route('home') }}" style="text-decoration: none; font-size:16px">
-                Paksi informatika
+                Paksi <br> informatika
               </a>
           </h5>  
 
@@ -19,7 +19,7 @@
           
 
           <h5 class="mt-2 me-auto d-none d-sm-block" style="text-decoration: none; font-size:15px; color: #726f6f !important" >
-            <a class="nav-link" href="https://vallalkozzdigitalisan.mkik.hu/">Modern Vállalkozások Programja - Vállalkozz digitálisan!
+            <a class="nav-link" href="https://vallalkozzdigitalisan.mkik.hu/">Modern Vállalkozások Programja - <br>Vállalkozz digitálisan!
             </a>
           </h5>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
