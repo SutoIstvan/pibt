@@ -41,7 +41,7 @@
             <li><strong>Adószám:</strong> 22550242-2-17</li>
             <li><strong>Képviselő:</strong> Bizsi Sándor</li>
             <li><strong>Telefonszám:</strong> +36707021252</li>
-            <li><strong>E-mail cím:</strong> bizsis@gmail.com</li>
+            <li><strong>E-mail cím:</strong> info@pikft.hu</li>
             <li><strong>Honlap:</strong> pikft.hu</li>
             <p>
                <strong>Szerver üzemeltető:</strong> Paksi Informatikai Bt.
