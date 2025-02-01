@@ -39,6 +39,7 @@ Route::get('/references', function () {
 
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
+Route::post('/contact', [ContactController::class, 'phonesubmit'])->name('contact.phonesubmit');
 
 Route::prefix('services')->group(function () {
     Route::get('/access-control-systems', function () {

@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-md-5 offset-md-1 mb-3">
-          <form action="{{ route('contact.submit') }}" method="POST">
+          <form action="{{ route('contact.phonesubmit') }}" method="POST">
             @csrf
 
             <h5>{{__('menu.request_callback')}}</h5>
