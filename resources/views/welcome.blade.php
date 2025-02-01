@@ -418,7 +418,11 @@
                     <div class="checkbox mb-3 mt-2 ms-2">
                         <label>
                             <input type="checkbox" value="remember-me" required>
-                            {{ __('menu.accept_the_data_management_conditions') }}
+                            {{ __('menu.accept_the') }}
+                            <a href="{{ route('gdpr') }}" target="blank">
+                              {{ __('menu.data_management_conditions') }}
+                            </a>
+                            
                         </label>
                     </div>
 

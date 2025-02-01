@@ -37,6 +37,10 @@ Route::get('/references', function () {
     return view('references');
 })->name('references');
 
+Route::get('/gdpr', function () {
+    return view('gdpr');
+})->name('gdpr');
+
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 Route::post('/phone', [ContactController::class, 'phonesubmit'])->name('contact.phonesubmit');

@@ -53,7 +53,9 @@ return [
     'name' => 'Név',
     'mail' => 'E-mail cím',
     'short_decription_message' => 'Rövid leírása, egyéb üzenet',
-    'accept_the_data_management_conditions' => 'Elfogadom az adatkezelési feltételeket.',
+    'accept_the' => 'Elfogadom az',
+    'data_management_conditions' => 'adatkezelési feltételeket.',
+
     'ask' => 'Kérjen',
     'offer' => 'árajánlatot',
     'ask_offer_description' => 'Az alábbi mezők kitöltésével gyorsan és egyszerűen kérhet árat tőlünk. Amennyiben kérdése lenne az árkéréssel kapcsolatban, keressen bizalommal elérhetőségink bármelyikén.',
