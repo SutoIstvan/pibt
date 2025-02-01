@@ -13,7 +13,7 @@
               </a>
           </h5>  
 
-          <a class="navbar-brand ms-5 d-none d-sm-block" href="https://vallalkozzdigitalisan.mkik.hu/" aria-label="Front">
+          <a class="navbar-brand ms-0 ms-lg-5 d-none d-sm-block" href="https://vallalkozzdigitalisan.mkik.hu/" aria-label="Front">
             <img class="navbar-brand-logo" height="46px" src="{{ asset('assets/img/logo-mvp.png') }}" alt="Logo">
           </a>
           
