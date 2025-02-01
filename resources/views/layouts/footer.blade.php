@@ -22,16 +22,27 @@
         </div>
 
         <div class="col-md-5 offset-md-1 mb-3">
-          <form>
+          <form action="{{ route('contact.submit') }}" method="POST">
+            @csrf
+
             <h5>{{__('menu.request_callback')}}</h5>
             <p>
               {{__('menu.request_callback_description')}}
             </p>
             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Telefon</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="{{__('menu.request_callback_phone')}}">
-              <button class="btn btn-primary" type="button">{{__('menu.request_callback_btn')}}</button>
+              <input type="hidden" name="email" value="info@pikft.hu">
+              <input type="hidden" name="name" value="Visszahívás kérése">
+
+              <input name="message" id="newsletter1" type="text" class="form-control" placeholder="{{__('menu.request_callback_phone')}}">
+              <button class="btn btn-primary" type="submit">{{__('menu.request_callback_btn')}}</button>
             </div>
+            <div class="checkbox mb-3 mt-2 ms-2">
+              <label>
+                  <input type="checkbox" value="remember-me" required>
+                  {{ __('menu.accept_the_data_management_conditions') }}
+              </label>
+          </div>
           </form>
         </div>
       </div>
