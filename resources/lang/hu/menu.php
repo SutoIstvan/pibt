@@ -29,9 +29,9 @@ return [
     'request_callback_phone' => 'Telefonszám',
     'details' => 'Részletek',
     'request_a_quote' => 'Kérjen árajánlatot',
-    'comment1' => 'Az együttműködés a Paksi Informatikai cégel valódi öröm volt. Innovatív megoldásokat kínáltak a hálózatok és az épületek biztonságának kezelésére. A szolgáltatás magas színvonala és a vevői igényekre való odafigyelés nagyon pozitív élményt nyújtott számunkra.',
-    'comment2' => 'Megbíztuk a Paksi Informatika céget a beléptető rendszerek és a videómegfigyelő rendszerek telepítésével és karbantartásával. Az eredmény felülmúlta minden várakozásunkat. Gyors és minőségi munka, valamint kiváló utólagos szolgáltatás. Nagyon köszönjük a munkátokat!',
-    'comment3' => 'A Paksi Informatika cég kiváló megoldást nyújtott IT-infrastruktúránk számára. A szakértelem és a részletekre való odafigyelés az alacsony feszültségű rendszerek terén lenyűgöző volt. Ajánlom szolgáltatásaikat mindenkinek, aki megbízható és minőségi IT-megoldásokat keres.',
+    'comment1' => 'Én nagyon meg voltam elégedve a honlap fejlesztése gyors és rugalmas volt. Szakmailag magas színvonalon, baráti hangulatban zajlott a közös munka. Sok ötlettel segített a korszerű végeredményt elérni. Én mindenkinek bátran ajánlanám',
+    'comment2' => 'A humanregen.hu egy egyedi és innovatív szolgáltatást nyújt, ezért különösen fontos volt számunkra, hogy a weboldal funkcionalitása és megjelenése tökéletesen tükrözze ezt a különlegességet. Az egyedi foglalási rendszer és a könnyen kezelhető adminisztrációs felület biztosítja a hatékony működést mind az ügyfelek, mind az üzemeltetők számára. Örömmel ajánljuk szolgáltatásainkat mindazoknak, akik professzionális, modern és megbízható webes megoldásokat keresnek!',
+    'comment3' => 'Cégünk számára kiemelten fontos a stabil és hatékony online jelenlét, ezért örömmel választottuk a mala.hu csapatát webfejlesztési és integrációs feladatainkhoz. A velük való együttműködés során egyértelművé vált, hogy valódi szakértőkkel dolgozunk, akik nemcsak gyorsan és precízen végzik a munkájukat, hanem valódi üzleti értéket teremtenek.',
     
     'professional' => 'Üdvözöljük a',
     'it' => 'Paksi Informatika',

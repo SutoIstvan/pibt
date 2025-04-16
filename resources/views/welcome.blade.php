@@ -246,7 +246,17 @@
         </a>
     </div>
     <!-- End Banner Hero -->
+    <section class="py-8 py-md-11 mb-5 mt-3">
+        <div class="container">
 
+            <div class="mb-5 text-center">
+                <h6 class="display-6 text-body-emphasis lh-2 mb-3" data-aos="fade-up">
+                    {{-- {{ __('menu.our_services') }} --}}
+                    <img src="{{ asset('dell.jpg') }}" height="80px" alt="Dell authorized partners">
+                </h6>
+            </div>
+        </div>
+    </section>
 
 
     <section class="py-8 py-md-11 mb-5 mt-5">
@@ -495,7 +505,7 @@
                             <img class="navbar-brand-logo " src="assets/img/avatar.png" height="120"
                                 alt="Logo">
                         </a>
-                        <h1 class="text-body-emphasis">Kovács Miklos</h1>
+                        <h1 class="text-body-emphasis">Márkus László</h1>
                         <p class="col-lg-8 mx-auto fs-5 text-muted">
                             {{ __('menu.comment1') }}
                         </p>
@@ -504,13 +514,30 @@
                         </div>
 
                     </div>
+
                     <div class="carousel-item" data-bs-interval="2000">
 
                         <a class="navbar-brand" href="./index.html" aria-label="Front">
                             <img class="navbar-brand-logo " src="assets/img/avatar.png" height="120"
                                 alt="Logo">
                         </a>
-                        <h1 class="text-body-emphasis">Németh Mária</h1>
+                        <h1 class="text-body-emphasis">Dari Zoltán</h1>
+                        <p class="col-lg-8 mx-auto fs-5 text-muted">
+                            {{ __('menu.comment3') }}
+                        </p>
+                        <div class="d-inline-flex gap-2 mb-5 pb-5">
+                            <img src="assets/img/stars.png" height="30" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+
+                        <a class="navbar-brand" href="./index.html" aria-label="Front">
+                            <img class="navbar-brand-logo " src="assets/img/avatar.png" height="120"
+                                alt="Logo">
+                        </a>
+                        <h1 class="text-body-emphasis">Humanregen</h1>
                         <p class="col-lg-8 mx-auto fs-5 text-muted">
                             {{ __('menu.comment2') }}
                         </p>
@@ -520,21 +547,7 @@
 
                     </div>
 
-                    <div class="carousel-item" data-bs-interval="2000">
 
-                        <a class="navbar-brand" href="./index.html" aria-label="Front">
-                            <img class="navbar-brand-logo " src="assets/img/avatar.png" height="120"
-                                alt="Logo">
-                        </a>
-                        <h1 class="text-body-emphasis">Tóth István</h1>
-                        <p class="col-lg-8 mx-auto fs-5 text-muted">
-                            {{ __('menu.comment3') }}
-                        </p>
-                        <div class="d-inline-flex gap-2 mb-5 pb-5">
-                            <img src="assets/img/stars.png" height="30" alt="">
-                        </div>
-
-                    </div>
 
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
