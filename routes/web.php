@@ -25,6 +25,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/dimop', function () {
+    return view('dimop');
+})->name('dimop');
+
 Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');

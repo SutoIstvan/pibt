@@ -96,7 +96,7 @@
                                     </button>
                                     <button type="button" class="btn btn-outline-secondary btn-lg"
                                         onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });">
-                                        Kérjen árajánlatot
+                                        Lépjen velünk kapcsolatba!
                                     </button>
                                 </div>
 
@@ -460,7 +460,7 @@
 
 
                     <button class="w-100 btn btn-lg btn-primary"
-                        type="submit">{{ __('menu.request_a_quote') }}</button>
+                        type="submit">Lépjen velünk kapcsolatba!</button>
                     <!-- <hr class="my-4">
               <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small> -->
                 </form>
@@ -489,10 +489,10 @@
 
 
 
-                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 mt-5 mt-md-0">{{ __('menu.ask') }} <span
-                        class="text-primary">{{ __('menu.offer') }}</span></h1>
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 mt-5 mt-md-0">Lépjen velünk <span
+                        class="text-primary">kapcsolatba!</span></h1>
                 <p class="col-lg-10 fs-4">
-                    {{ __('menu.ask_offer_description') }}
+                    Az alábbi mezők kitöltésével gyorsan és egyszerűen tud nekünk üzenni.
                 </p>
 
             </div>

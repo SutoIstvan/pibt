@@ -30,6 +30,11 @@
                 {{__('menu.home')}}
               </a>
             </li>
+            <li class="nav-item me-4">
+              <a class="nav-link {{ Route::is('dimop') ? 'active' : '' }}" aria-current="page" href="{{route('dimop')}}">
+                DIMOP Plusz
+              </a>
+            </li>
             <li class="nav-item me-4 dropdown">
               <a class="nav-link dropdown-toggle {{ Route::is('services*') ? 'active' : '' }}" href="#" data-bs-toggle="dropdown"
                 aria-expanded="false">{{__('menu.services')}}</a>
