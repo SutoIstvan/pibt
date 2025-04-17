@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Paksi Informatika – weboldal, webfejlesztés, webáruház, rendszerüzemeltetés, távmunka, felhős megoldások, pályázati és DIMOP támogatás cégeknek">
     <title>@yield('title', __('menu.title'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     {!! htmlScriptTagJsApi() !!}
@@ -66,8 +67,8 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="d-flex justify-content-end mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="assets/wel.png" alt="" height="500px"
-                                width="500px" style="opacity: 0.7;">
+                            <img class="img-fluid" src="assets/wel.png" alt="" height="500px" width="500px"
+                                style="opacity: 0.7;">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -80,13 +81,10 @@
                                     {{ __('menu.low_voltage_technology_systems') }}
                                 </h1>
                                 <p class="lead text-body-secondary mt-1" data-aos="fade-up" data-aos-duration="1000">
-                                    {{ __('menu.hero_description') }}
-                                    {{ __('menu.network_infrastructure') }},
-                                    {{ __('menu.server_maintenance') }},
-                                    {{ __('menu.access_control_systems') }},
-                                    {{ __('menu.surveillance_systems') }},
-                                    {{ __('menu.computer_services') }},
-                                    {{ __('menu.web_development') }}.
+                                    A Paksi Informatika több mint 20 éve kínál vállalati IT megoldásokat –
+                                    szerverüzemeltetés, hálózatépítés, beléptető rendszerek, webfejlesztés és digitális
+                                    infrastruktúra-fejlesztés pályázatokhoz is. Megbízható partner a
+                                    digitalizációban!
                                 </p>
 
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-2 aos-init aos-animate"
@@ -110,37 +108,37 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="d-flex justify-content-end mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="assets/ser.png" alt="" height="500px"
-                                width="500px" style="opacity: 0.7;">
+                            <img class="img-fluid" src="assets/ser.png" alt="" height="500px" width="500px"
+                                style="opacity: 0.7;">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
 
                                 <h1 class="display-6 text-body-emphasis lh-2 mb-3 " data-aos="fade-up">
-                                  <span class="text-primary">
-                                    Szerver üzemeltetés
-                                  </span>
-                                  <small>
-                                    Megbízhatóság és stabilitás.
-                                  </small>
+                                    <span class="text-primary">
+                                        Szerver üzemeltetés
+                                    </span>
+                                    <small>
+                                        Megbízhatóság és stabilitás.
+                                    </small>
                                 </h1>
                                 <p class="lead text-body-secondary mt-1" data-aos="fade-up" data-aos-duration="1000">
-                                  Célunk, hogy ügyfeleink számára megbízható, hatékony IT infrastruktúrát
-                                  biztosítsunk, amely támogatja mindennapi működésüket. Szolgáltatásaink között
-                                  szerepel a szerverek és IT rendszerek tervezése, üzemeltetése, karbantartása,
-                                  valamint nyílt forráskódú megoldások, automatizálás és webfejlesztés.
+                                    Célunk, hogy ügyfeleink számára megbízható, hatékony IT infrastruktúrát
+                                    biztosítsunk, amely támogatja mindennapi működésüket. Szolgáltatásaink között
+                                    szerepel a szerverek és IT rendszerek tervezése, üzemeltetése, karbantartása,
+                                    valamint nyílt forráskódú megoldások, automatizálás és webfejlesztés.
                                 </p>
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4 aos-init aos-animate"
-                                        data-aos="fade-up" data-aos-duration="2000">
-                                        <button type="button" class="btn btn-outline-primary btn-lg"
-                                            onclick="window.location.href='http://pibt.local/services/server-maintenance'">
-                                            Részletek
-                                        </button>
-                                        <button type="button" class="btn btn-outline-secondary btn-lg"
-                                            onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });">
-                                            Kérjen árajánlatot
-                                        </button>
-                                    </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4 aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-duration="2000">
+                                    <button type="button" class="btn btn-outline-primary btn-lg"
+                                        onclick="window.location.href='http://pibt.local/services/server-maintenance'">
+                                        Részletek
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary btn-lg"
+                                        onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });">
+                                        Kérjen árajánlatot
+                                    </button>
+                                </div>
 
                             </div>
                         </div>
@@ -152,8 +150,8 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="d-flex justify-content-end mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="assets/web.png" alt="" height="500px"
-                                width="500px" style="opacity: 0.7;">
+                            <img class="img-fluid" src="assets/web.png" alt="" height="500px" width="500px"
+                                style="opacity: 0.7;">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -167,23 +165,23 @@
                                     </small>
                                 </h1>
 
-                                    <p class="mt-4">
-                                        A Paksi Informatika webfejlesztési szolgáltatásokat kínál. Modern,
-                                        felhasználóbarát és keresőoptimalizált weboldalakat készítünk, amelyek minden
-                                        eszközön jól működnek. Fejlesztői csapatunk a legújabb technológiákat
-                                        alkalmazza, hogy egyedi igényeknek megfelelő, hatékony megoldásokat nyújtson,
-                                        garantálva ezzel a sikeres online jelenlétet.
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4 aos-init aos-animate"
-                                        data-aos="fade-up" data-aos-duration="2000">
-                                        <button type="button" class="btn btn-outline-primary btn-lg"
-                                            onclick="window.location.href='http://pibt.local/services/web-development'">
-                                            Részletek
-                                        </button>
-                                        <button type="button" class="btn btn-outline-secondary btn-lg"
-                                            onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });">
-                                            Kérjen árajánlatot
-                                        </button>
-                                    </div>
+                                <p class="mt-4">
+                                    A Paksi Informatika webfejlesztési szolgáltatásokat kínál. Modern,
+                                    felhasználóbarát és keresőoptimalizált weboldalakat készítünk, amelyek minden
+                                    eszközön jól működnek. Fejlesztői csapatunk a legújabb technológiákat
+                                    alkalmazza, hogy egyedi igényeknek megfelelő, hatékony megoldásokat nyújtson,
+                                    garantálva ezzel a sikeres online jelenlétet.
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4 aos-init aos-animate"
+                                    data-aos="fade-up" data-aos-duration="2000">
+                                    <button type="button" class="btn btn-outline-primary btn-lg"
+                                        onclick="window.location.href='http://pibt.local/services/web-development'">
+                                        Részletek
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary btn-lg"
+                                        onclick="document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });">
+                                        Kérjen árajánlatot
+                                    </button>
+                                </div>
 
                             </div>
                         </div>
@@ -196,13 +194,13 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="d-flex justify-content-end mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="assets/sec.png" alt=""
-                                height="500px" width="500px" style="opacity: 0.7;">
+                            <img class="img-fluid" src="assets/sec.png" alt="" height="500px"
+                                width="500px" style="opacity: 0.7;">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
 
-                                
+
                                 <h1 class="display-6 text-body-emphasis lh-2 mb-3 " data-aos="fade-up">
                                     <span class="text-primary">
                                         Beléptető rendszerek
@@ -249,12 +247,29 @@
     <section class="py-8 py-md-11 mb-5 mt-3">
         <div class="container">
 
-            <div class="mb-5 text-center">
-                <h6 class="display-6 text-body-emphasis lh-2 mb-3" data-aos="fade-up">
-                    {{-- {{ __('menu.our_services') }} --}}
+            <div class="row mb-5 ">
+                {{-- <div class="col-6 ">
+                    <div class="d-flex align-items-center ms-0 ms-lg-5">
+                      <a class="navbar-brand" href="https://vallalkozzdigitalisan.mkik.hu/" aria-label="Front">
+                        <img class="navbar-brand-logo" height="46px" src="{{ asset('assets/img/logo-mvp.png') }}" alt="Logo">
+                      </a>
+                      <h5 class="mb-0 ms-3" style="font-size:15px; color: #726f6f;">
+                        <a class="nav-link p-0" style="color: inherit; text-decoration: none;" href="https://vallalkozzdigitalisan.mkik.hu/">
+                          Modern Vállalkozások Programja - <br>Minősített beszállító
+                        </a>
+                      </h5>
+                    </div>
+                  </div> --}}
+
+                  <div class="col-12 text-center d-flex justify-content-center align-items-center gap-4">
+                    <a href="https://vallalkozzdigitalisan.mkik.hu/" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ asset('mvp.png') }}" height="80px" alt="Modern Vállalkozások Programja - Minősített beszállító">
+                    </a>
                     <img src="{{ asset('dell.jpg') }}" height="80px" alt="Dell authorized partners">
-                </h6>
+                </div>
+                
             </div>
+
         </div>
     </section>
 
@@ -430,9 +445,9 @@
                             <input type="checkbox" value="remember-me" required>
                             {{ __('menu.accept_the') }}
                             <a href="{{ route('gdpr') }}" target="blank">
-                              {{ __('menu.data_management_conditions') }}
+                                {{ __('menu.data_management_conditions') }}
                             </a>
-                            
+
                         </label>
                     </div>
 
