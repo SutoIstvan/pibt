@@ -54,7 +54,7 @@
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
         <p>
           <img class="mb-1" src="favicon.ico" height="22" alt="">
-          © 2024 Paksi Informatika. {{__('menu.all_rights_reserved')}}
+          © 2025 Paksi Informatika. {{__('menu.all_rights_reserved')}}
         </p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3"><a class="link-body-emphasis" href="#"><i style="color: #006aff;"

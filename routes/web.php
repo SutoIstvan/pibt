@@ -25,7 +25,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/dimop', function () {
+Route::get('/dimop-plusz-wiki', function () {
+    return view('dimopwiki');
+})->name('dimopwiki');
+
+Route::get('/dimop-plusz-palyazati-lehetosegek-vallalkozasoknak', function () {
     return view('dimop');
 })->name('dimop');
 
