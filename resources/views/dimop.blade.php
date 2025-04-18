@@ -19,10 +19,10 @@
     @include('layouts.nav')
 
 
-    <div class="container px-5">
+    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-10">
-                <div class="mt-5 px-5 text-center" data-aos="fade-up">
+            <div class="col-12 col-md-12">
+                <div class="mt-5 text-center" data-aos="fade-up">
                     <h6 class="display-6 text-body-emphasis lh-2 mb-3">
                         DIMOP Plusz-pályázati lehetőségek vállalkozásoknak
                     </h6>
@@ -36,23 +36,23 @@
         </div>
     </div>
 
-    <div class="container px-5">
+    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-10">
-                <div class="mt-5 px-5 text-center" data-aos="fade-up">
-                    <img src="{{ asset('4d989ac8-9d44-4e1a-80c7-2f4dbfda3507.jpg') }}" class="img-fluid" alt="">
+            <div class="col-12 col-md-12">
+                <div class="mt-5 text-center" data-aos="fade-up">
+                    <img src="{{ asset('4d989ac8-9d44-4e1a-80c7-2f4dbfda3507.jpg') }}" class="img-fluid" style="max-height: 400px" alt="">
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="container  px-5 py-5">
+    <div class="container col-12 col-md-10">
 
-        <div class="container px-5">
+        <div class="">
             <div class="row">
-                <div class="col-12 col-md-6 mt-5 px-5 " data-aos="fade-up">
-                    <h2 class="mt-5">Kiknek szól?</h2>
+                <div class="col-12 col-md-6 mt-5  " data-aos="fade-up">
+                    <h2>Kiknek szól?</h2>
 
                     <ul>
                         <li>Kis- és középvállalkozásoknak, akik:</li>
@@ -65,8 +65,8 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 mt-5 px-5 " data-aos="fade-up">
-                    <h2 class="mt-5">Miért a PIKFT?</h2>
+                <div class="col-12 col-md-6 mt-5  " data-aos="fade-up">
+                    <h2>Miért a PIKFT?</h2>
                     <ul>
                         <li>Tapasztalatunk van a pályázati célterületeken való fejlesztésben.</li>
                         <li>Segítünk eligazodni a feltételek és lehetőségek között.</li>
@@ -78,10 +78,10 @@
         </div>
 
 
-        <div class="container px-5">
+        <div class="container">
             <div class="row justify-content-center">
-                <div class="col-10">
-                    <div class="mt-5 px-5 text-center" data-aos="fade-up">
+                <div class="col-12 col-md-10">
+                    <div class="mt-5 text-center" data-aos="fade-up">
                         <h6 class="display-6 text-body-emphasis lh-2 mb-3">
                             DIMOP Plusz Pályázati Kisokos – Érthetően
                         </h6>
