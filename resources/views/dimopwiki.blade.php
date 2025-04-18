@@ -43,9 +43,10 @@
                 <h2 class="mt-5">1. Alapszintű felhőalapú szolgáltatások</h2>
                 <ul>
                     <li><i class="bi bi-envelope-fill text-primary me-2"></i> <strong>Vállalati email
-                            szolgáltatások:</strong> Saját domain alatti profi levelezés.</li>
+                            szolgáltatások:</strong> A vállalati e-mail szolgáltatás azt jelenti, hogy a cég saját domain név alatt (pl. info@cegem.hu) hoz létre e-mail fiókokat a munkatársak számára. Ez sokkal professzionálisabb benyomást kelt, mint az ingyenes Gmail vagy Freemail címek, és lehetővé teszi az egységes céges kommunikációt. Emellett általában együtt jár naptármegosztással, kontaktlistákkal, biztonságos hozzáféréssel és levelezési archívummal.
+                            </li>
                     <li><i class="bi bi-file-text-fill text-primary me-2"></i> <strong>Produktivitási és irodai
-                            alkalmazások:</strong> Szövegszerkesztés, táblázatok, jegyzetek, távoli munkavégzés.</li>
+                            alkalmazások:</strong> Ezek olyan digitális eszközök, amelyeket a mindennapi irodai munkában használunk. Ide tartozik a szövegszerkesztés (pl. szerződések, levelek írása), táblázatkezelés (pl. árlisták, kimutatások), prezentációkészítés (pl. ügyfélbemutatók), jegyzetelés és közös dokumentumszerkesztés. Felhőalapú működés esetén ezek az eszközök több felhasználó által egyszerre is használhatók, akár távolról is.</li>
                     <li><i class="bi bi-cloud-fill text-primary me-2"></i> <strong>Adattárolási szolgáltatások:</strong>
                         Biztonságos fájlmentés és megosztás.</li>
                     <li><i class="bi bi-server text-primary me-2"></i> <strong>Infrastruktúra és
