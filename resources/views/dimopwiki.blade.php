@@ -48,24 +48,24 @@
 <p><strong>Cél:</strong> Csapatmunka és távoli munkavégzés támogatása modern, felhőalapú eszközökkel.</p>
 <ul>
     <li><i class="bi bi-camera-video-fill text-success me-2"></i> <strong>Online videómegbeszélések:</strong><br>
-        <strong>Funkciók:</strong><br>
-        HD videó és hanghívás: lehetővé teszi, hogy a csapat tagjai egymást látva és hallva kommunikáljanak, mintha egy irodában ülnének. Ideális heti státuszmegbeszélésekhez vagy ügyféltalálkozókhoz.<br>
-        Képernyőmegosztás: egy kolléga megmutathatja a saját képernyőjét a többieknek, például egy prezentációt vagy Excel táblát.<br>
-        Naptár integráció: az időpontok egyszerűen beilleszthetők a Google vagy Outlook naptárba, és automatikusan emlékeztetőt küldenek.
+        <strong>HD videó és hanghívás:</strong><br>
+        Lehetővé teszi, hogy a csapat tagjai egymást látva és hallva kommunikáljanak, mintha egy irodában ülnének. Ideális heti státuszmegbeszélésekhez vagy ügyféltalálkozókhoz.<br>
+        <strong>Képernyőmegosztás:</strong><br> egy kolléga megmutathatja a saját képernyőjét a többieknek, például egy prezentációt vagy Excel táblát.<br>
+            <strong>Naptár integráció: </strong><br>az időpontok egyszerűen beilleszthetők a Google vagy Outlook naptárba, és automatikusan emlékeztetőt küldenek.
     </li>
     <li><i class="bi bi-kanban-fill text-success me-2"></i> <strong>Projektmenedzsment és kollaboráció:</strong><br>
-        <strong>Funkciók:</strong><br>
-        Feladatkezelés: minden projekt külön feladatokra bontható, amelyeket munkatársakhoz lehet rendelni, határidővel.<br>
-        Naptár és idővonal: a projektek ütemezése vizuálisan is követhető, segít megérteni, ki mit mikorra végez el.<br>
-        Fájlmegosztás: a projekthez kapcsolódó dokumentumokat (pl. ajánlat, tervrajz) fel lehet tölteni, és mindenki hozzáférhet.<br>
-        Státuszjelzés: minden feladathoz hozzárendelhető egy állapot (pl. „folyamatban”, „készen van”, „várakozik”), így átlátható a haladás.
+        <strong>Feladatkezelés:</strong><br>
+        Minden projekt külön feladatokra bontható, amelyeket munkatársakhoz lehet rendelni, határidővel.<br>
+        <strong>Naptár és idővonal: </strong><br>a projektek ütemezése vizuálisan is követhető, segít megérteni, ki mit mikorra végez el.<br>
+        <strong>Fájlmegosztás: </strong><br>a projekthez kapcsolódó dokumentumokat (pl. ajánlat, tervrajz) fel lehet tölteni, és mindenki hozzáférhet.<br>
+        <strong>Státuszjelzés:</strong><br> minden feladathoz hozzárendelhető egy állapot (pl. „folyamatban”, „készen van”, „várakozik”), így átlátható a haladás.
     </li>
     <li><i class="bi bi-chat-dots-fill text-success me-2"></i> <strong>Valós idejű üzenetküldés:</strong><br>
-        <strong>Funkciók:</strong><br>
-        Chat: egyszerű, gyors szöveges üzenetek küldése munkatársaknak vagy csoportoknak (pl. „megbeszélés kezdődik!”).<br>
-        Csatornák: külön témákhoz, projektekhez létrehozhatóak külön szobák (pl. #marketing, #webfejlesztés), ahol csak az érintettek kommunikálnak.<br>
-        Fájlmegosztás: képek, PDF-ek, dokumentumok azonnal megoszthatók a beszélgetés során.<br>
-        Értesítések: ha valaki megemlít egy kollégát, automatikus értesítést kap, hogy ne maradjon le fontos üzenetről.
+        <strong>Chat: </strong><br>
+        Egyszerű, gyors szöveges üzenetek küldése munkatársaknak vagy csoportoknak (pl. „megbeszélés kezdődik!”).<br>
+        <strong>Csatornák:</strong><br> külön témákhoz, projektekhez létrehozhatóak külön szobák (pl. #marketing, #webfejlesztés), ahol csak az érintettek kommunikálnak.<br>
+        <strong>Fájlmegosztás:</strong><br> képek, PDF-ek, dokumentumok azonnal megoszthatók a beszélgetés során.<br>
+        <strong>Értesítések:</strong><br> ha valaki megemlít egy kollégát, automatikus értesítést kap, hogy ne maradjon le fontos üzenetről.
     </li>
 </ul>
 
