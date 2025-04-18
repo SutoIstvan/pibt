@@ -7,7 +7,7 @@
     <meta name="description"
         content="Paksi Informatika – weboldal, webfejlesztés, webáruház, rendszerüzemeltetés, távmunka, felhős megoldások, pályázati és DIMOP támogatás cégeknek">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DIMOP Plusz 1.2.6-24 Pályázati Wiki – PIKFT.HU</title>
+    <title>DIMOP Plusz Pályázati Kisokos – PIKFT.HU</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -23,7 +23,7 @@
             <div class="col-10">
                 <div class="mt-5 px-5 text-center" data-aos="fade-up">
                     <h6 class="display-6 text-body-emphasis lh-2 mb-3">
-                        DIMOP Plusz-1.2.6-24 Pályázati Wiki – Érthetően
+                        DIMOP Plusz Pályázati Kisoksos – Érthetően
                     </h6>
                     <p>
                         Ez a dokumentum segítéget nyújt abban, hogy laikusok számára is átlátható legyen a DIMOP
