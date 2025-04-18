@@ -23,7 +23,7 @@
                         DIMOP Plusz Pályázati Kisokos – Érthetően
                     </h6>
                     <p>
-                        Ez a dokumentum segítséget nyújt abban, hogy laikusok számára is átlátható legyen a DIMOP Plusz-pályázat egyes célterületeinek tartalma. Itt funkcionális célterületenként összegyűjtjük, mit jelentenek az egyes részterületek, és milyen eszközökre vagy szolgáltatásokra van szükség a pályázathoz.
+                        Ez a dokumentum segítséget nyújt abban, hogy átlátható legyen a DIMOP Plusz-pályázat egyes célterületeinek tartalma. Itt funkcionális célterületenként összegyűjtjük, mit jelentenek az egyes részterületek, és milyen eszközökre vagy szolgáltatásokra van szükség a pályázathoz.
                     </p>
                 </div>
             </div>
