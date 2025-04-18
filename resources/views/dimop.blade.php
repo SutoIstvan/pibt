@@ -36,6 +36,16 @@
         </div>
     </div>
 
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="mt-5 px-5 text-center" data-aos="fade-up">
+                    <img src="{{ asset('4d989ac8-9d44-4e1a-80c7-2f4dbfda3507.jpg') }}" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container  px-5 py-5">
 
