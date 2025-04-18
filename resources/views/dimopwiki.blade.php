@@ -7,7 +7,7 @@
     <meta name="description"
         content="Paksi Informatika – weboldal, webfejlesztés, webáruház, rendszerüzemeltetés, távmunka, felhős megoldások, pályázati és DIMOP támogatás cégeknek">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DIMOP Plusz Pályázati Kisokos – PIKFT.HU</title>
+    <title>DIMOP Plusz Pályázati Kisokos Érthetően – PIKFT.HU</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
