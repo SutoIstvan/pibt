@@ -2,69 +2,64 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use App\Rules\ReCaptchaV3;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Http;
-use Symfony\Component\HttpFoundation\IpUtils;
 
 class ContactController extends Controller
 {
-    public function submit(Request $request): RedirectResponse
+    public function submit(Request $request)
     {
+        // dd($request);
         // Валидация данных
-        // $validated = $request->validate([
-        //     'name' => 'required|max:255',
-        //     'email' => 'required|email',
-        //     'message' => 'required|min:10',
-        // ]);
+        $validated = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|email',
+            'message' => 'required|min:10',
+            'g-recaptcha-response' => 'recaptcha',
+        ]);
 
-        $recaptcha_response = $request->input('g-recaptcha-response');
+        // dd($request);
+        // Создаем текстовое сообщение
+        $message = "Новое сообщение от: {$validated['name']}\n";
+        $message .= "Email: {$validated['email']}\n\n";
+        $message .= "Сообщение:\n{$validated['message']}";
 
-        // dd($recaptcha_response);
-        if (is_null($recaptcha_response)) {
-            return redirect()->back()->with('success', 'Please Complete the Recaptcha to proceed');
-        }
+        // Логика для отправки письма или сохранения данных
 
-        $url = "https://www.google.com/recaptcha/api/siteverify";
+        Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
+            $message->to('info@pikft.hu')
+                    ->subject('Ajánlatkérés');
+            $message->from($validated['email'], $validated['name']);
+        });
 
-        $body = [
-            'secret' => config('6LcEpIIqAAAAACztP6F1u1k_QCpMAZdgL-6tnL61'),
-            'response' => $recaptcha_response,
-            'remoteip' => IpUtils::anonymize($request->ip()) //anonymize the ip to be GDPR compliant. Otherwise just pass the default ip address
-        ];
+        return redirect()->back()->with('success', 'Köszönjük! Üzenetét sikeresen elküldtük! Kérése feldolgozása után munkatársunk felveszi Önnel a kapcsolatot.!');
+    }
 
-        $response = Http::asForm()->post($url, $body);
+    public function phonesubmit(Request $request)
+    {
+        // dd($request);
+        // Валидация данных
+        $validated = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|email',
+            'message' => 'required|min:10',
+        ]);
 
-        $result = json_decode($response);
+        // dd($request);
+        // Создаем текстовое сообщение
+        $message = "Новое сообщение от: {$validated['name']}\n";
+        $message .= "Email: {$validated['email']}\n\n";
+        $message .= "Сообщение:\n{$validated['message']}";
 
-        if ($response->successful() && $result->success == true) {
-            $request->authenticate();
+        // Логика для отправки письма или сохранения данных
 
-            $request->session()->regenerate();
+        Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
+            $message->to('info@pikft.hu')
+                    ->subject('Ajánlatkérés');
+            $message->from($validated['email'], $validated['name']);
+        });
 
-            return "ok";
-            // return redirect()->intended(RouteServiceProvider::HOME);
-        } else {
-
-            return redirect()->back()->with('success', 'Please Complete the Recaptcha Again to proceed');
-        }
-
-        //  dd($recaptcha_response);
-
-        // // Создаем текстовое сообщение
-        // $message = "Новое сообщение от: {$validated['name']}\n";
-        // $message .= "Email: {$validated['email']}\n\n";
-        // $message .= "Сообщение:\n{$validated['message']}";
-
-        // // Логика для отправки письма или сохранения данных
-
-        // Mail::send('emails.contact', ['data' => $validated], function ($message) use ($validated) {
-        //     $message->to('info@pikft.hu')
-        //             ->subject('Ajánlatkérés');
-        //     $message->from($validated['email'], $validated['name']);
-        // });
-
-        // return redirect()->back()->with('success', 'Ваше сообщение успешно отправлено!');
+        return redirect()->back();
     }
 }

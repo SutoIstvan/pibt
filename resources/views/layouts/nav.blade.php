@@ -4,11 +4,16 @@
           <a class="navbar-brand" href="{{ route('home') }}" aria-label="Front">
               <img class="navbar-brand-logo" height="50px" src="{{ asset('assets/img/logo.png') }}" alt="Logo">
           </a>
+
+
+
           <h5 class="mt-2 me-auto" style="color: #0d6efd !important">
-              <a href="{{ route('home') }}" style="text-decoration: none">
-                Paksi informatika
+              <a class="nav-link" href="{{ route('home') }}" style="text-decoration: none; font-size:16px">
+                Paksi <br> informatika
               </a>
           </h5>  
+
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
               aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -23,6 +28,11 @@
             <li class="nav-item me-4">
               <a class="nav-link {{ Route::is('home') ? 'active' : '' }}" aria-current="page" href="{{route('home')}}">
                 {{__('menu.home')}}
+              </a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link {{ Route::is('dimop') ? 'active' : '' }}" aria-current="page" href="{{route('dimop')}}">
+                DIMOP Plusz
               </a>
             </li>
             <li class="nav-item me-4 dropdown">
