@@ -245,34 +245,38 @@
         </a>
     </div>
     <!-- End Banner Hero -->
-    <section class="py-8 py-md-11 mb-5 mt-3">
-        <div class="container">
+<section class="py-8 py-md-11 mb-5 mt-3">
+    <div class="container">
 
-            <div class="row mb-5 ">
-                {{-- <div class="col-6 ">
-                    <div class="d-flex align-items-center ms-0 ms-lg-5">
-                      <a class="navbar-brand" href="https://vallalkozzdigitalisan.mkik.hu/" aria-label="Front">
-                        <img class="navbar-brand-logo" height="46px" src="{{ asset('assets/img/logo-mvp.png') }}" alt="Logo">
-                      </a>
-                      <h5 class="mb-0 ms-3" style="font-size:15px; color: #726f6f;">
-                        <a class="nav-link p-0" style="color: inherit; text-decoration: none;" href="https://vallalkozzdigitalisan.mkik.hu/">
-                          Modern Vállalkozások Programja - <br>Minősített beszállító
-                        </a>
-                      </h5>
-                    </div>
-                  </div> --}}
+        <div class="row justify-content-center align-items-center text-center g-4">
 
-                  <div class="col-12 text-center d-flex justify-content-center align-items-center gap-4">
-                    <a href="https://vallalkozzdigitalisan.mkik.hu/" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset('mvp.png') }}" height="80px" alt="Modern Vállalkozások Programja - Minősített beszállító">
-                    </a>
-                    <img src="{{ asset('dell.jpg') }}" height="80px" alt="Dell authorized partners">
-                </div>
-                
+            <div class="col-12 col-lg-3">
+                <a href="https://vallalkozzdigitalisan.mkik.hu/" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ asset('mvp.png') }}"
+                         class="img-fluid"
+                         style="max-height:80px"
+                         alt="Modern Vállalkozások Programja">
+                </a>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <img src="{{ asset('dell.jpg') }}"
+                     class="img-fluid"
+                     style="max-height:70px"
+                     alt="Dell authorized partners">
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <img src="{{ asset('microsoft.png') }}"
+                     class="img-fluid"
+                     style="max-height:70px"
+                     alt="Microsoft partner">
             </div>
 
         </div>
-    </section>
+
+    </div>
+</section>
 
 
     <section class="py-8 py-md-11 mb-5 mt-5">
