@@ -30,6 +30,13 @@
                 {{__('menu.home')}}
               </a>
             </li>
+
+            <li class="nav-item me-4">
+              <a class="nav-link {{ Route::is('dimopplusz') ? 'active' : '' }}" aria-current="page" href="{{route('dimopplusz')}}">
+                DIMOP Plusz 1.2.6/B
+              </a>
+            </li>
+
             <li class="nav-item me-4">
               <a class="nav-link {{ Route::is('dimop') ? 'active' : '' }}" aria-current="page" href="{{route('dimop')}}">
                 DIMOP Plusz

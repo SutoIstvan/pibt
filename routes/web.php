@@ -33,6 +33,10 @@ Route::get('/dimop-plusz-palyazati-lehetosegek-vallalkozasoknak', function () {
     return view('dimop');
 })->name('dimop');
 
+Route::get('/dimop-plusz-1-2-6-b-palyazati-lehetosegek-vallalkozasoknak', function () {
+    return view('dimopplusz');
+})->name('dimopplusz');
+
 Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
