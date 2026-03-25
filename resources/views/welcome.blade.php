@@ -48,7 +48,7 @@
 
 </head>
 
-<body>
+<body data-bs-theme="light">
     {{-- <body data-bs-theme="dark"> --}}
 
     @include('layouts.nav')

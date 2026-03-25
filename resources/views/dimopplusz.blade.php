@@ -1193,33 +1193,33 @@
   <section class="py-5" id="jogosultsag">
     <div class="container py-4">
       <div class="section-label">Jogosultság</div>
-      <div class="section-title">Önnek szól ez a pályázat?</div>
-      <p class="section-sub mb-5">Gyorsan ellenőrizze, hogy vállalkozása belefér-e a célcsoportba.</p>
+      <div class="section-title">Neked szól ez a pályázat?</div>
+      <p class="section-sub mb-5">Gyorsan ellenőrizd, hogy a vállalkozásod belefér-e a célcsoportba.</p>
 
       <div class="row g-4">
         <div class="col-lg-6">
           <div class="elig-card">
             <h3>✅ Jellemzően jogosult, ha...</h3>
             <ul class="elig-list">
-              <li><span class="elig-dot">✓</span>Mikro- vagy kisvállalkozás (max. 50 fő)</li>
-              <li><span class="elig-dot">✓</span>Legalább 1 lezárt üzleti év</li>
-              <li><span class="elig-dot">✓</span>A fejlesztés magyarországi telephelyen valósul meg</li>
-              <li><span class="elig-dot">✓</span>Kevésbé fejlett régióban működik (pl. Dél-Dunántúl)</li>
-              <li><span class="elig-dot">✓</span>Digitálisan még alacsonyabb fejlettségi szinten van</li>
+              <li><span class="elig-dot">✓</span>Mikro- vagy kisvállalkozást üzemeltetsz (max. 50 fő)</li>
+              <li><span class="elig-dot">✓</span>Van legalább 1 lezárt üzleti éved</li>
+              <li><span class="elig-dot">✓</span>A fejlesztést magyarországi telephelyen valósítod meg</li>
+              <li><span class="elig-dot">✓</span>Kevésbé fejlett régióban működsz (pl. Dél-Dunántúl)</li>
+              <li><span class="elig-dot">✓</span>A vállalkozásod digitális fejlettsége még alacsonyabb szinten van</li>
             </ul>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="elig-card">
-            <h3>❓ Nem biztos benne?</h3>
+            <h3>❓ Nem vagy biztos benne?</h3>
             <ul class="elig-list">
-              <li><span class="elig-dot">→</span>Nem egyértelmű a vállalkozás méretkategóriája</li>
-              <li><span class="elig-dot">→</span>Speciális iparágban tevékenykedik</li>
-              <li><span class="elig-dot">→</span>Egyedi fejlesztési igény, ami nem illik a kategóriákba</li>
-              <li><span class="elig-dot">→</span>Több telephellyel, összetett cégstruktúrával rendelkezik</li>
+              <li><span class="elig-dot">→</span>Nem egyértelmű a vállalkozásod méretkategóriája</li>
+              <li><span class="elig-dot">→</span>Speciális iparágban működsz</li>
+              <li><span class="elig-dot">→</span>Egyedi fejlesztési igényed van, ami nem illik a kategóriákba</li>
+              <li><span class="elig-dot">→</span>Több telephellyel vagy összetett cégstruktúrával működsz</li>
             </ul>
             <div class="elig-note">
-              <strong>Ne adja fel azonnal!</strong> Vegye fel velünk a kapcsolatot – 20+ év tapasztalatával szinte minden esetre van megoldás.
+              <strong>Ne add fel azonnal!</strong> Vedd fel velünk a kapcsolatot. 20+ év tapasztalattal szinte minden esetre van megoldás.
             </div>
           </div>
         </div>
@@ -1422,12 +1422,10 @@
           © 2025 Paksi Informatika. {{__('menu.all_rights_reserved')}}
         </p>
         <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><i style="color: #006aff;"
-                class="fa-brands fa-twitter"></i></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><i style="color: #006aff;"
-                class="fa-brands fa-instagram"></i></use></svg></a></li>
-          <li class="ms-3 me-3"><a class="link-body-emphasis" href="#"><i style="color: #006aff;"
-                class="fa-brands fa-facebook"></i></use></svg></a></li>
+
+          <li class="ms-3 me-3">                  <a href="{{ route('gdpr') }}" target="blank">
+                    Adatkezelési feltételeket
+                  </a></li>
         </ul>
       </div>
     </footer>

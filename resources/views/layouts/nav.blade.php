@@ -109,7 +109,7 @@
               </a>
             </li>
 
-            <li class="nav-item me-4 dropdown">
+            <!-- <li class="nav-item me-4 dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 @if(app()->getLocale() == 'hu')
@@ -130,7 +130,7 @@
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> -->
 
             {{-- <li class="nav-item me-4 dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
