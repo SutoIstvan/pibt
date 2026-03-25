@@ -1274,7 +1274,7 @@
 
   <!-- CONTACT FORM -->
 
-  <div class="container col-xl-12 col-xxl-12" data-aos="fade-up" id="contact-form">
+  <div class="container col-xl-12 col-xxl-12" data-aos="fade-up" id="kapcsolat">
     <div class="row align-items-center g-lg-5 py-5">
 
       <div class="col-md-10 mx-auto col-lg-6">
