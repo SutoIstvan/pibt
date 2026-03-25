@@ -783,13 +783,16 @@
 
 
 
-                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 mt-5 mt-md-0">Lépjen velünk <span
-                        class="text-primary">kapcsolatba!</span></h1>
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3 mt-5 mt-md-0">Kezdjük el <span
+                        class="text-primary">együtt</span>!</h1>
                 <p class="col-lg-10 fs-4">
-                    Az alábbi mezők kitöltésével gyorsan és egyszerűen tud nekünk üzenni.
+                    Ingyenes konzultáció – kötelezettség nélkül.
+                </p>
+                <p class="col-lg-10 fs-8">
+                    Mesélje el vállalkozása helyzetét, és mi megmutatjuk, hogyan tudunk segíteni a DIMOP Plusz pályázat keretében. Nincs kötelezettség, csak lehetőség.
                 </p>
 
-                        <div class="d-flex flex-column gap-3">
+                        <div class="d-flex flex-column gap-3 col-lg-10">
           <div class="contact-item">
             <div class="contact-icon">📞</div>
             <div>
