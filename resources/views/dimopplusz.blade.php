@@ -1244,17 +1244,17 @@
         <div class="col-6 col-lg-3 text-center step-item active" style="position:relative; z-index:1">
           <div class="step-circle">02</div>
           <h3>Tervezés</h3>
-          <p>Összerakjuk a szakmai tartalmat a pályázatíróval együtt</p>
+          <p>Összerakjuk a szakmai tartalmat</p>
         </div>
         <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
           <div class="step-circle">03</div>
-          <h3>Beadás &amp; döntés</h3>
-          <p>Segítünk az előkészítésben, várjuk a döntést</p>
+          <h3>Elkészítés és Beadás</h3>
+          <p>Elkészítjük és beadjuk pályázatot</p>
         </div>
         <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
           <div class="step-circle">04</div>
-          <h3>Megvalósítás</h3>
-          <p>Leszállítjuk, bevezetjük, betanítjuk – és utána is ott vagyunk</p>
+          <h3>Megvalósítás és üzemeltetés</h3>
+          <p>Leszállítjuk, bevezetjük – és utána is támogatunk.</p>
         </div>
       </div>
     </div>
@@ -1344,7 +1344,7 @@
           Ingyenes konzultáció – kötelezettség nélkül.
         </p>
         <p class="col-lg-10 fs-8">
-          Mesélje el vállalkozása helyzetét, és mi megmutatjuk, hogyan tudunk segíteni a DIMOP Plusz pályázat keretében. Nincs kötelezettség, csak lehetőség.
+          Mondd el a vállalkozásod helyzetét, és megmutatjuk, hogyan tudunk segíteni a DIMOP Plusz pályázatban. Nincs kötelezettség, csak lehetőség.
         </p>
 
         <div class="d-flex flex-column gap-3 col-lg-10">
