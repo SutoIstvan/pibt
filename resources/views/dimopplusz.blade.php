@@ -280,7 +280,19 @@
       position: absolute; top: 30px; left: 15%; right: 15%;
       height: 2px; background: var(--border); z-index: 0;
     }
- 
+     .steps-row {
+      position: relative;
+    }
+    .steps-row::before {
+      content: '';
+      position: absolute;
+      top: 55px;
+      left: calc(12.5% + 30px);
+      right: calc(12.5% + 30px);
+      height: 2px;
+      background: var(--border);
+      z-index: 0;
+    }
     /* ── ELIGIBILITY ── */
     .elig-card {
       background: #fff;
@@ -499,15 +511,7 @@
       </div>
     </div>
  
-    <!-- USP Banner -->
-    <div class="usp-banner d-flex align-items-start gap-4">
-      <div class="usp-icon flex-shrink-0">💡</div>
-      <div>
-        <h3>Ha nincs benne a listában – akkor is megoldjuk</h3>
-        <p>Minden vállalkozás más. Ha a fejlesztési célod nem illik pontosan a sztenderd kategóriákba, <strong>nálunk mindig van megoldás</strong>. 20+ év tapasztalatával nem csak kivitelezünk – gondolkodunk és tervezünk. Keressen meg bennünket, és együtt megtaláljuk a legjobb utat.</p>
-      </div>
-    </div>
-  </div>
+
 </section>
 
 
@@ -522,18 +526,17 @@
       <!-- Digital Start -->
       <div class="col-lg-4">
         <div class="pkg-card">
-          <div class="pkg-name">Alap csomag</div>
-          <div class="pkg-title">Digital Start</div>
-          <div class="pkg-sub">1-2 fős vállalkozásoknak</div>
+          <!-- <div class="pkg-name">Kereskedői csomag:</div> -->
+          <div class="pkg-title" style="color:#2196f3;">Kereskedői csomag:</div>
+          <!-- <div class="pkg-sub">1-2 fős vállalkozásoknak</div> -->
           <div class="pkg-divider"></div>
           <ul class="pkg-features">
-            <li><span class="pkg-check">✓</span>Alapeszközök (laptop, okostelefon, nyomtató)</li>
-            <li><span class="pkg-check">✓</span>Felhő irodai megoldások bevezetése</li>
-            <li><span class="pkg-check">✓</span>IT üzemeltetési alapszolgáltatás</li>
-            <li><span class="pkg-check">✓</span>Kiberbiztonsági alapcsomag, IBSZ</li>
-            <li><span class="pkg-check">✓</span>1 napos digitális képzés</li>
+            <li><span class="pkg-check">✓</span>HARDVER (ügyfél által választott)</li>
+            <li><span class="pkg-check">✓</span>Szoftver (Unas +ERP +AI)</li>
+            <li><span class="pkg-check">✓</span>Szolgáltatás (Kialakítás, Bevezetés, Üzemeltetés)</li>
+            <li><span class="pkg-check">✓</span>Képzés (Használat, Kezelés, IKT oktatás)</li>
           </ul>
-          <div class="pkg-note"><strong>Becsült projektérték:</strong> ~4–5 M Ft · Önerő kb. 10%</div>
+          <div class="pkg-note"><strong>Projektérték:</strong> ~13 M Ft · Önerő kb. 10%</div>
           <a href="#kapcsolat" class="btn-pkg">Érdekel ez a csomag</a>
         </div>
       </div>
@@ -542,9 +545,9 @@
       <div class="col-lg-4">
         <div class="pkg-card featured">
           <div class="pkg-popular">Legnépszerűbb</div>
-          <div class="pkg-name">Közepes csomag</div>
-          <div class="pkg-title">Digital Pro</div>
-          <div class="pkg-sub">3-5 fős csapatoknak</div>
+          <!-- <div class="pkg-name">Közepes csomag</div> -->
+          <div class="pkg-title" style="color:#2196f3;">Digital Pro</div>
+          <!-- <div class="pkg-sub">3-5 fős csapatoknak</div> -->
           <div class="pkg-divider"></div>
           <ul class="pkg-features">
             <li><span class="pkg-check">✓</span>Teljes hardverkészlet (laptop, telefon, tablet, monitor)</li>
@@ -562,9 +565,9 @@
       <!-- Digital Max -->
       <div class="col-lg-4">
         <div class="pkg-card">
-          <div class="pkg-name">Teljes csomag</div>
-          <div class="pkg-title">Digital Max</div>
-          <div class="pkg-sub">5+ fős vállalkozásoknak</div>
+          <!-- <div class="pkg-name">Teljes csomag</div> -->
+          <div class="pkg-title" style="color:#2196f3;">Digital Max</div>
+          <!-- <div class="pkg-sub">5+ fős vállalkozásoknak</div> -->
           <div class="pkg-divider"></div>
           <ul class="pkg-features">
             <li><span class="pkg-check">✓</span>Komplett hardverpark az egész csapatnak</li>
@@ -582,6 +585,20 @@
   </div>
 </section>
  
+<section class="py-5" id="mire">
+  <div class="container py-4 px-lg-5 px-0">
+
+    <!-- USP Banner -->
+    <div class="usp-banner d-flex align-items-start gap-4">
+      <div class="usp-icon flex-shrink-0">💡</div>
+      <div>
+        <h3>Valami másra gondoltál?</h3>
+        <p>Ha a fejlesztési célod nem illik pontosan a sztenderd kategóriákba, alakítsuk együtt!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════ MIÉRT MI ═══════════════ -->
 <section class="py-5 why-section" id="miert-mi">
   <div class="container py-4">
@@ -643,24 +660,23 @@
     <div class="section-title">A pályázattól a megvalósításig</div>
     <p class="section-sub mb-5">Egyszerű, átlátható folyamat – mi végig ott vagyunk mellette.</p>
  
-    <div class="row g-4 position-relative">
-      <div class="steps-line d-none d-lg-block"></div>
-      <div class="col-6 col-lg-3 text-center step-item position-relative" style="z-index:1">
+    <div class="row g-4 steps-row">
+      <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
         <div class="step-circle">01</div>
         <h3>Konzultáció</h3>
         <p>Felmérjük a vállalkozás igényeit és a jogosultságot</p>
       </div>
-      <div class="col-6 col-lg-3 text-center step-item active position-relative" style="z-index:1">
+      <div class="col-6 col-lg-3 text-center step-item active" style="position:relative; z-index:1">
         <div class="step-circle">02</div>
         <h3>Tervezés</h3>
         <p>Összerakjuk a szakmai tartalmat a pályázatíróval együtt</p>
       </div>
-      <div class="col-6 col-lg-3 text-center step-item position-relative" style="z-index:1">
+      <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
         <div class="step-circle">03</div>
         <h3>Beadás &amp; döntés</h3>
         <p>Segítünk az előkészítésben, várjuk a döntést</p>
       </div>
-      <div class="col-6 col-lg-3 text-center step-item position-relative" style="z-index:1">
+      <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
         <div class="step-circle">04</div>
         <h3>Megvalósítás</h3>
         <p>Leszállítjuk, bevezetjük, betanítjuk – és utána is ott vagyunk</p>
@@ -670,7 +686,7 @@
 </section>
  
 <!-- ═══════════════ JOGOSULTSÁG ═══════════════ -->
-<section class="py-5" id="jogosultsag" style="background: var(--blue-faint);">
+<section class="py-5" id="jogosultsag">
   <div class="container py-4">
     <div class="section-label">Jogosultság</div>
     <div class="section-title">Önnek szól ez a pályázat?</div>
@@ -835,8 +851,29 @@
   
     <!-- FOOTER -->
 
-    @include('layouts.footer')
+    <!-- @include('layouts.footer') -->
   
+    <div class="container" data-aos="fade-up">
+    <footer class="pt-5">
+
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+        <p>
+          <img class="mb-1" src="favicon.ico" height="22" alt="">
+          © 2025 Paksi Informatika. {{__('menu.all_rights_reserved')}}
+        </p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i style="color: #006aff;"
+                class="fa-brands fa-twitter"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i style="color: #006aff;"
+                class="fa-brands fa-instagram"></i></use></svg></a></li>
+          <li class="ms-3 me-3"><a class="link-body-emphasis" href="#"><i style="color: #006aff;"
+                class="fa-brands fa-facebook"></i></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
     <!-- TOP BUTTON  -->
 
     <button type="button" class="btn btn-outline-primary btn-lg" id="btn-back-to-top">
