@@ -32,7 +32,7 @@
             </li>
 
             <li class="nav-item me-4">
-              <a class="nav-link {{ Route::is('dimopplusz') ? 'active' : '' }}" aria-current="page" href="{{route('dimopplusz')}}">
+              <a class="nav-link {{ Route::is('dimopplusz') ? 'active' : '' }}" aria-current="page" href="{{route('dimopplusz')}}" style="color: #ff6e31; font-weight: 500;">
                 DIMOP Plusz 1.2.6/B
               </a>
             </li>

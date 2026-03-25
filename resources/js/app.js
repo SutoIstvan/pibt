@@ -47,7 +47,7 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 // Установите тему в зависимости от системных настроек
 if (prefersDarkScheme.matches) {
-    setTheme('dark');
+    setTheme('light');
 } else {
     setTheme('light');
 }

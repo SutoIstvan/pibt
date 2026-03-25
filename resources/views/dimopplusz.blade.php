@@ -412,8 +412,6 @@
       list-style: none;
       padding: 0;
       margin-bottom: 26px;
-      min-height: 235px;
-
     }
 
     .pkg-features li {
@@ -775,7 +773,7 @@
     .pkg-header {
       margin: -32px -26px 0;
       /* перекрывает padding карточки */
-      padding: 28px 26px 24px;
+      padding: 28px 26px 4px 26px;
       border-radius: 12px 12px 0 0;
       background-size: cover;
       background-position: center;
@@ -859,6 +857,8 @@
             <div class="mb-3">
               <div class="hero-stat-num">3–12 M Ft</div>
               <div class="hero-stat-lbl">vissza nem térítendő támogatás</div>
+              <div class="hero-stat-lbl">A támogatás 4 részletben előre lehívható</div>
+
             </div>
             <div class="hero-divider"></div>
             <div class="mb-3">
@@ -970,19 +970,6 @@
       <p class="section-sub mb-5">Három előre összerakott csomag, amely a legtöbb vállalkozás igényét lefedi. De ha valami más kell – egyeztessünk.</p>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div class="row g-4 align-items-stretch">
         <!-- Digital Start -->
         <div class="col-lg-4">
@@ -991,7 +978,7 @@
             <div class="pkg-header" style="background-image: url('./assets/title-11.png');">
               <div class="pkg-header-overlay"></div>
               <div class="pkg-header-content d-flex align-items-center gap-3">
-                <svg height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style="margin-bottom: 10px;" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
@@ -1002,7 +989,8 @@
                   </g>
                 </svg>
                 <div>
-                  <div class="pkg-title" style="color:#2196f3; margin:0;">Kereskedői csomag:</div>
+                  <div class="pkg-title" style="color:#2196f3; margin:0;">ShopMaster</div>
+                  <p>Kereskedői csomag</p>
                 </div>
               </div>
             </div> <!-- <div class="pkg-sub">1-2 fős vállalkozásoknak</div> -->
@@ -1031,8 +1019,8 @@
           <div class="pkg-card featured">
             <div class="pkg-header" style="background-image: url('./assets/title-22.png');">
               <div class="pkg-header-overlay"></div>
-              <div class="pkg-header-content d-flex align-items-center gap-3">
-                <svg height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="pkg-header-content d-flex align-items-center gap-3" >
+                <svg style="margin-bottom: 10px;" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
@@ -1042,19 +1030,18 @@
                   </g>
                 </svg>
                 <div>
-                  <div class="pkg-title" style="color:#2196f3; margin:0;">Digitális iroda AI csomag:</div>
+                  <div class="pkg-title" style="color:#2196f3; margin:0;">SmartOffice AI</div>
+                  <p>Digitális irodai csomag</p>
                 </div>
               </div>
+              
             </div>
             <div class="pkg-body"></div>
             <ul class="pkg-features">
-              <li><span class="pkg-check">✓</span>AI-alapú irodai működés</li>
-              <li><span class="pkg-check">✓</span>Gyorsabb dokumentumkészítés</li>
-              <li><span class="pkg-check">✓</span>Automatizált meeting jegyzőkönyvek</li>
-              <li><span class="pkg-check">✓</span>Egységes kommunikáció (Teams)</li>
-              <li><span class="pkg-check">✓</span>Biztonságos adatkezelés</li>
-              <li><span class="pkg-check">✓</span>Felhő alapú működés</li>
-              <li><span class="pkg-check">✓</span>Hatékony csapatmunka</li>
+              <li><span class="pkg-check">✓</span>HARDVER (ügyfél által választott)</li>
+              <li><span class="pkg-check">✓</span>Szoftver (Unas +ERP +AI)</li>
+              <li><span class="pkg-check">✓</span>Szolgáltatás (Kialakítás, Bevezetés, Üzemeltetés)</li>
+              <li><span class="pkg-check">✓</span>Képzés (Használat, Kezelés, IKT oktatás)</li>
             </ul>
             <!-- <div class="pkg-note"><strong>Projektérték:</strong> ~13 M Ft · Önerő kb. 10%</div> -->
 
@@ -1076,7 +1063,7 @@
               <div class="pkg-header-overlay"></div>
               <div class="pkg-header-content d-flex align-items-center gap-3">
 
-                <svg height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style="margin-bottom: 10px;" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
@@ -1087,18 +1074,17 @@
                 </svg>
 
                 <div>
-                  <div class="pkg-title" style="color:#2196f3; margin:0;">Moduláris vállalati rendszer</div>
+                  <div class="pkg-title" style="color:#2196f3; margin:0;">ERP CRM AI</div>
+                  <p>Moduláris vállalatirányítási csomag</p>
                 </div>
               </div>
             </div>
             <div class="pkg-body"></div>
             <ul class="pkg-features">
-              <li><span class="pkg-check">✓</span>Egységes vállalatirányítás</li>
-              <li><span class="pkg-check">✓</span>Átlátható pénzügy</li>
-              <li><span class="pkg-check">✓</span>Automatizált folyamatok</li>
-              <li><span class="pkg-check">✓</span>Pontos készletkezelés</li>
-              <li><span class="pkg-check">✓</span>Jobb döntéstámogatás</li>
-              <li><span class="pkg-check">✓</span>Skálázható rendszer</li>
+              <li><span class="pkg-check">✓</span>HARDVER (ügyfél által választott)</li>
+              <li><span class="pkg-check">✓</span>Szoftver (Unas +ERP +AI)</li>
+              <li><span class="pkg-check">✓</span>Szolgáltatás (Kialakítás, Bevezetés, Üzemeltetés)</li>
+              <li><span class="pkg-check">✓</span>Képzés (Használat, Kezelés, IKT oktatás)</li>
             </ul>
             <!-- <div class="pkg-note"><strong>Projektérték:</strong> ~13 M Ft · Önerő kb. 10%</div> -->
 
@@ -1130,7 +1116,7 @@
       <div>
         <h2 class="mb-1">Valami másra gondoltál?</h2>
         <p class="mb-0">
-          Ha a fejlesztési célod nem illik pontosan a sztenderd kategóriákba, alakítsuk együtt!
+          Ha a fejlesztési célod nem illik pontosan a fenti csomagokba alakítsuk ki eggyütt!
         </p>
       </div>
     </div>
@@ -1166,72 +1152,42 @@
           <div class="why-card">
             <div class="why-num">02</div>
             <h3>20+ év tapasztalat</h3>
-            <p>Több mint két évtizede támogatjuk a Dél-Dunántúl kis- és középvállalkozásait. Tudjuk, mi működik a valóságban – nem csak papíron.</p>
+            <p>Több mint két évtizede támogatjuk a Magyarország kis- és középvállalkozásait. Tudjuk, mi működik a valóságban – nem csak papíron.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="why-card">
             <div class="why-num">03</div>
-            <h3>Tanácsadó is, nem csak kivitelező</h3>
-            <p>A pályázat során végig mellette állunk: segítünk a szakmai tartalom összeállításában, és a nyertes projekt megvalósításában is.</p>
+            <h3>Tanácsadás és megvalósítás egy kézben</h3>
+            <p>A pályázat során végig melletted állunk: a megírástól és benyújtástól a szakmai tartalom összeállításán át a nyertes projekt megvalósításáig.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="why-card">
             <div class="why-num">04</div>
-            <h3>Helyi jelenlét, gyors reakció</h3>
-            <p>Nem egy névtelen call center, hanem egy helyi csapat, amely személyesen ismeri ügyfeleit és gyorsan tud reagálni.</p>
+            <h3>Országos lefedettség, gyors reakció</h3>
+            <p>Nem egy névtelen call center, hanem egy szervezett csapat, amely saját és partneri erőforrásokkal is gyorsan és hatékonyan reagál.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="why-card">
             <div class="why-num">05</div>
             <h3>Pályázati keret maximális kihasználása</h3>
-            <p>Célunk, hogy a rendelkezésre álló keretből a lehető legtöbbet hozza ki vállalkozása – minden forint számít.</p>
+            <p>Célunk, hogy a rendelkezésre álló keretből a lehető legtöbbet hozd ki – minden forint számít.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="why-card">
             <div class="why-num">06</div>
             <h3>Hosszú távú partner</h3>
-            <p>A bevezetés után sem marad magára: folyamatos üzemeltetési és fejlesztési támogatással biztosítjuk a fenntartható digitális működést.</p>
+            <p>A bevezetés után sem maradsz egyedül: folyamatos üzemeltetési és fejlesztési támogatással biztosítjuk a fenntartható működést.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ FOLYAMAT ═══════════════ -->
-  <section class="py-5" id="folyamat">
-    <div class="container py-4">
-      <div class="section-label">Hogyan működik?</div>
-      <div class="section-title">A pályázattól a megvalósításig</div>
-      <p class="section-sub mb-5">Egyszerű, átlátható folyamat – mi végig ott vagyunk mellette.</p>
 
-      <div class="row g-4 steps-row">
-        <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
-          <div class="step-circle">01</div>
-          <h3>Konzultáció</h3>
-          <p>Felmérjük a vállalkozás igényeit és a jogosultságot</p>
-        </div>
-        <div class="col-6 col-lg-3 text-center step-item active" style="position:relative; z-index:1">
-          <div class="step-circle">02</div>
-          <h3>Tervezés</h3>
-          <p>Összerakjuk a szakmai tartalmat a pályázatíróval együtt</p>
-        </div>
-        <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
-          <div class="step-circle">03</div>
-          <h3>Beadás &amp; döntés</h3>
-          <p>Segítünk az előkészítésben, várjuk a döntést</p>
-        </div>
-        <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
-          <div class="step-circle">04</div>
-          <h3>Megvalósítás</h3>
-          <p>Leszállítjuk, bevezetjük, betanítjuk – és utána is ott vagyunk</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ═══════════════ JOGOSULTSÁG ═══════════════ -->
   <section class="py-5" id="jogosultsag">
@@ -1270,6 +1226,41 @@
       </div>
     </div>
   </section>
+
+
+    <!-- ═══════════════ FOLYAMAT ═══════════════ -->
+  <section class="py-5" id="folyamat">
+    <div class="container py-4">
+      <div class="section-label">Hogyan működik?</div>
+      <div class="section-title">A pályázattól a megvalósításig</div>
+      <p class="section-sub mb-5">Egyszerű, átlátható folyamat – mi végig ott vagyunk mellette.</p>
+
+      <div class="row g-4 steps-row">
+        <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
+          <div class="step-circle">01</div>
+          <h3>Konzultáció</h3>
+          <p>Felmérjük a vállalkozás igényeit és a jogosultságot</p>
+        </div>
+        <div class="col-6 col-lg-3 text-center step-item active" style="position:relative; z-index:1">
+          <div class="step-circle">02</div>
+          <h3>Tervezés</h3>
+          <p>Összerakjuk a szakmai tartalmat a pályázatíróval együtt</p>
+        </div>
+        <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
+          <div class="step-circle">03</div>
+          <h3>Beadás &amp; döntés</h3>
+          <p>Segítünk az előkészítésben, várjuk a döntést</p>
+        </div>
+        <div class="col-6 col-lg-3 text-center step-item" style="position:relative; z-index:1">
+          <div class="step-circle">04</div>
+          <h3>Megvalósítás</h3>
+          <p>Leszállítjuk, bevezetjük, betanítjuk – és utána is ott vagyunk</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
 
   <!-- CONTACT FORM -->
@@ -1401,7 +1392,27 @@
 
   <!-- @include('layouts.footer') -->
 
-  <div class="container" data-aos="fade-up">
+
+    <section class="py-8 py-md-11 mb-5 mt-3">
+    <div class="container">
+
+        <div class="row justify-content-center align-items-center text-center g-4">
+
+            <div class="col-12 col-lg-6" data-aos="fade-up">
+                <img src="http://pibt.test/dell.jpg" class="img-fluid" style="max-height:70px" alt="Dell authorized partners">
+            </div>
+
+            <div class="col-12 col-lg-6" data-aos="fade-up">
+                <img src="http://pibt.test/microsoft.png" class="img-fluid" style="max-height:70px" alt="Microsoft partner">
+            </div>
+
+        </div>
+
+    </div>
+  </section>
+
+
+  <div class="container" data-aos="">
     <footer class="pt-5">
 
 
