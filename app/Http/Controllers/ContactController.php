@@ -16,14 +16,20 @@ class ContactController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required|min:10',
+            'company' => 'nullable|max:255',
+            'phone' => 'nullable|max:50',
+            'service' => 'nullable|string|max:255',
             'g-recaptcha-response' => 'recaptcha',
         ]);
 
         // dd($request);
         // Создаем текстовое сообщение
-        $message = "Новое сообщение от: {$validated['name']}\n";
+        $message = "Név: {$validated['name']}\n";
         $message .= "Email: {$validated['email']}\n\n";
-        $message .= "Сообщение:\n{$validated['message']}";
+        $message .= "Cég: {$validated['company']}\n";
+        $message .= "Telefon: {$validated['phone']}\n";
+        $message .= "Szolgáltatás: {$validated['service']}\n";
+        $message .= "Üzenet:\n{$validated['message']}";
 
         // Логика для отправки письма или сохранения данных
 

@@ -982,48 +982,6 @@
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
-                    <path d="M9.50004 2H14.5L15.1518 8.51737C15.3382 10.382 13.874 12 12 12C10.1261 12 8.66184 10.382 8.8483 8.51737L9.50004 2Z" stroke="#2196f3" stroke-width="1.5"></path>
-                    <path d="M3.32975 5.35133C3.50783 4.46093 3.59687 4.01573 3.77791 3.65484C4.15938 2.89439 4.84579 2.33168 5.66628 2.10675C6.05567 2 6.50969 2 7.41771 2H9.50002L8.77549 9.24527C8.61911 10.8091 7.30318 12 5.73155 12C3.8011 12 2.35324 10.2339 2.73183 8.34093L3.32975 5.35133Z" stroke="#2196f3" stroke-width="1.5"></path>
-                    <path d="M20.6703 5.35133C20.4922 4.46093 20.4031 4.01573 20.2221 3.65484C19.8406 2.89439 19.1542 2.33168 18.3337 2.10675C17.9443 2 17.4903 2 16.5823 2H14.5L15.2245 9.24527C15.3809 10.8091 16.6968 12 18.2685 12C20.1989 12 21.6468 10.2339 21.2682 8.34093L20.6703 5.35133Z" stroke="#2196f3" stroke-width="1.5"></path>
-                    <path opacity="0.5" d="M8.75 21.5C8.75 21.9142 9.08579 22.25 9.5 22.25C9.91421 22.25 10.25 21.9142 10.25 21.5H8.75ZM13.75 21.5C13.75 21.9142 14.0858 22.25 14.5 22.25C14.9142 22.25 15.25 21.9142 15.25 21.5H13.75ZM13.75 16.201L14.125 15.5514L13.75 16.201ZM14.299 16.75L13.6495 17.125V17.125L14.299 16.75ZM9.70096 16.75L10.3505 17.125L9.70096 16.75ZM10.25 16.201L10.625 16.8505L10.25 16.201ZM12.5 21.25H11.5V22.75H12.5V21.25ZM4.25 14V11H2.75V14H4.25ZM19.75 11V14H21.25V11H19.75ZM11.5 21.25C9.59318 21.25 8.23851 21.2484 7.21085 21.1102C6.20476 20.975 5.62511 20.7213 5.2019 20.2981L4.14124 21.3588C4.88961 22.1071 5.83855 22.4392 7.01098 22.5969C8.16182 22.7516 9.63558 22.75 11.5 22.75V21.25ZM2.75 14C2.75 15.8644 2.74841 17.3382 2.90313 18.489C3.06076 19.6614 3.39288 20.6104 4.14124 21.3588L5.2019 20.2981C4.77869 19.8749 4.52502 19.2952 4.38976 18.2892C4.25159 17.2615 4.25 15.9068 4.25 14H2.75ZM12.5 22.75C14.3644 22.75 15.8382 22.7516 16.989 22.5969C18.1614 22.4392 19.1104 22.1071 19.8588 21.3588L18.7981 20.2981C18.3749 20.7213 17.7952 20.975 16.7892 21.1102C15.7615 21.2484 14.4068 21.25 12.5 21.25V22.75ZM19.75 14C19.75 15.9068 19.7484 17.2615 19.6102 18.2892C19.475 19.2952 19.2213 19.8749 18.7981 20.2981L19.8588 21.3588C20.6071 20.6104 20.9392 19.6614 21.0969 18.489C21.2516 17.3382 21.25 15.8644 21.25 14H19.75ZM10.25 21.5V18.5H8.75V21.5H10.25ZM13.75 18.5V21.5H15.25V18.5H13.75ZM12 16.75C12.4811 16.75 12.7918 16.7507 13.0273 16.7721C13.2524 16.7925 13.3341 16.8269 13.375 16.8505L14.125 15.5514C13.8178 15.3741 13.4918 15.308 13.1627 15.2782C12.8438 15.2493 12.4535 15.25 12 15.25V16.75ZM15.25 18.5C15.25 18.0465 15.2507 17.6562 15.2218 17.3373C15.192 17.0082 15.1259 16.6822 14.9486 16.375L13.6495 17.125C13.6731 17.1659 13.7075 17.2476 13.7279 17.4727C13.7493 17.7082 13.75 18.0189 13.75 18.5H15.25ZM13.375 16.8505C13.489 16.9163 13.5837 17.011 13.6495 17.125L14.9486 16.375C14.7511 16.033 14.467 15.7489 14.125 15.5514L13.375 16.8505ZM10.25 18.5C10.25 18.0189 10.2507 17.7082 10.2721 17.4727C10.2925 17.2476 10.3269 17.1659 10.3505 17.125L9.05144 16.375C8.87407 16.6822 8.80802 17.0082 8.77818 17.3373C8.74928 17.6562 8.75 18.0465 8.75 18.5H10.25ZM12 15.25C11.5465 15.25 11.1562 15.2493 10.8373 15.2782C10.5082 15.308 10.1822 15.3741 9.875 15.5514L10.625 16.8505C10.6659 16.8269 10.7476 16.7925 10.9727 16.7721C11.2082 16.7507 11.5189 16.75 12 16.75V15.25ZM10.3505 17.125C10.4163 17.011 10.511 16.9163 10.625 16.8505L9.875 15.5514C9.53296 15.7489 9.24892 16.033 9.05144 16.375L10.3505 17.125Z" fill="#2196f3"></path>
-                  </g>
-                </svg>
-                <div>
-                  <div class="pkg-title" style="color:#2196f3; margin:0;">ShopMaster</div>
-                  <p>Kereskedői csomag</p>
-                </div>
-              </div>
-            </div> <!-- <div class="pkg-sub">1-2 fős vállalkozásoknak</div> -->
-            <div class="pkg-body"></div>
-            <ul class="pkg-features">
-              <li><span class="pkg-check">✓</span>HARDVER (ügyfél által választott)</li>
-              <li><span class="pkg-check">✓</span>Szoftver (Unas +ERP +AI)</li>
-              <li><span class="pkg-check">✓</span>Szolgáltatás (Kialakítás, Bevezetés, Üzemeltetés)</li>
-              <li><span class="pkg-check">✓</span>Képzés (Használat, Kezelés, IKT oktatás)</li>
-            </ul>
-            <!-- <div class="pkg-note"><strong>Projektérték:</strong> ~13 M Ft · Önerő kb. 10%</div> -->
-
-            <div class="pkg-note-pr"><strong>Hardver:</strong> 3 300 000 Ft</div>
-            <div class="pkg-note-pr"><strong>Szoftver:</strong> 1 320 000 Ft / 12 hó</div>
-            <div class="pkg-note-pr"><strong>Szolgáltatás:</strong> 5 940 000 Ft</div>
-            <div class="pkg-note-pr"><strong>Képzés:</strong> 1 980 000 Ft</div>
-
-            <div class="pkg-note"><strong>Projektérték:</strong> 13 200 000 M Ft</div>
-
-            <a href="#kapcsolat" class="btn-pkg mt-4">Érdekel ez a csomag</a>
-          </div>
-        </div>
-
-        <!-- Digital Pro -->
-        <div class="col-lg-4">
-          <div class="pkg-card featured">
-            <div class="pkg-header" style="background-image: url('./assets/title-22.png');">
-              <div class="pkg-header-overlay"></div>
-              <div class="pkg-header-content d-flex align-items-center gap-3" >
-                <svg style="margin-bottom: 10px;" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
                     <path d="M4.5 9.5C4.5 5.35786 7.85786 2 12 2C16.1421 2 19.5 5.35786 19.5 9.5C19.5 11.7206 18.5349 13.7159 17.0012 15.0892C15.8805 16.0927 15.3201 16.5945 15.1692 16.7807C14.6824 17.3815 14.6609 17.4296 14.5381 18.193C14.5 18.4297 14.5 18.7865 14.5 19.5C14.5 20.4346 14.5 20.9019 14.299 21.25C14.1674 21.478 13.978 21.6674 13.75 21.799C13.4019 22 12.9346 22 12 22C11.0654 22 10.5981 22 10.25 21.799C10.022 21.6674 9.83261 21.478 9.70096 21.25C9.5 20.9019 9.5 20.4346 9.5 19.5C9.5 18.7865 9.5 18.4297 9.46192 18.193C9.3391 17.4296 9.31762 17.3815 8.83082 16.7807C8.67987 16.5945 8.11945 16.0927 6.99876 15.0892C5.4651 13.7159 4.5 11.7206 4.5 9.5Z" stroke="#2196f3" stroke-width="1.5"></path>
                     <path opacity="0.5" d="M14.5 19.5H9.5" stroke="#2196f3" stroke-width="1.5"></path>
                     <path opacity="0.5" d="M12.7855 8.5L10.6426 11.5H13.6426L11.4998 14.5" stroke="#2196f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1034,7 +992,49 @@
                   <p>Digitális irodai csomag</p>
                 </div>
               </div>
-              
+            </div> <!-- <div class="pkg-sub">1-2 fős vállalkozásoknak</div> -->
+            <div class="pkg-body"></div>
+            <ul class="pkg-features">
+              <li><span class="pkg-check">✓</span>HARDVER (ügyfél által választott)</li>
+              <li><span class="pkg-check">✓</span>Szoftver (Unas +ERP +AI)</li>
+              <li><span class="pkg-check">✓</span>Szolgáltatás (Kialakítás, Bevezetés, Üzemeltetés)</li>
+              <li><span class="pkg-check">✓</span>Képzés (Használat, Kezelés, IKT oktatás)</li>
+            </ul>
+
+            <div class="pkg-note-pr"><strong>Hardver:</strong> 3 300 000 Ft</div>
+            <div class="pkg-note-pr"><strong>Szoftver:</strong> 1 320 000 Ft / 12 hó</div>
+            <div class="pkg-note-pr"><strong>Szolgáltatás:</strong> 5 940 000 Ft</div>
+            <div class="pkg-note-pr"><strong>Képzés:</strong> 1 980 000 Ft</div>
+
+            <div class="pkg-note"><strong>Projektérték:</strong> 13 200 000 M Ft</div>
+
+            <a href="#kapcsolat" class="btn-pkg mt-4" data-service="SmartOffice AI csomag">Érdekel ez a csomag</a>
+          </div>
+        </div>
+
+        <!-- Digital Pro -->
+        <div class="col-lg-4">
+          <div class="pkg-card featured">
+            <div class="pkg-header" style="background-image: url('./assets/title-22.png');">
+              <div class="pkg-header-overlay"></div>
+              <div class="pkg-header-content d-flex align-items-center gap-3">
+                <svg style="margin-bottom: 10px;" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M9.50004 2H14.5L15.1518 8.51737C15.3382 10.382 13.874 12 12 12C10.1261 12 8.66184 10.382 8.8483 8.51737L9.50004 2Z" stroke="#2196f3" stroke-width="1.5"></path>
+                    <path d="M3.32975 5.35133C3.50783 4.46093 3.59687 4.01573 3.77791 3.65484C4.15938 2.89439 4.84579 2.33168 5.66628 2.10675C6.05567 2 6.50969 2 7.41771 2H9.50002L8.77549 9.24527C8.61911 10.8091 7.30318 12 5.73155 12C3.8011 12 2.35324 10.2339 2.73183 8.34093L3.32975 5.35133Z" stroke="#2196f3" stroke-width="1.5"></path>
+                    <path d="M20.6703 5.35133C20.4922 4.46093 20.4031 4.01573 20.2221 3.65484C19.8406 2.89439 19.1542 2.33168 18.3337 2.10675C17.9443 2 17.4903 2 16.5823 2H14.5L15.2245 9.24527C15.3809 10.8091 16.6968 12 18.2685 12C20.1989 12 21.6468 10.2339 21.2682 8.34093L20.6703 5.35133Z" stroke="#2196f3" stroke-width="1.5"></path>
+                    <path opacity="0.5" d="M8.75 21.5C8.75 21.9142 9.08579 22.25 9.5 22.25C9.91421 22.25 10.25 21.9142 10.25 21.5H8.75ZM13.75 21.5C13.75 21.9142 14.0858 22.25 14.5 22.25C14.9142 22.25 15.25 21.9142 15.25 21.5H13.75ZM13.75 16.201L14.125 15.5514L13.75 16.201ZM14.299 16.75L13.6495 17.125V17.125L14.299 16.75ZM9.70096 16.75L10.3505 17.125L9.70096 16.75ZM10.25 16.201L10.625 16.8505L10.25 16.201ZM12.5 21.25H11.5V22.75H12.5V21.25ZM4.25 14V11H2.75V14H4.25ZM19.75 11V14H21.25V11H19.75ZM11.5 21.25C9.59318 21.25 8.23851 21.2484 7.21085 21.1102C6.20476 20.975 5.62511 20.7213 5.2019 20.2981L4.14124 21.3588C4.88961 22.1071 5.83855 22.4392 7.01098 22.5969C8.16182 22.7516 9.63558 22.75 11.5 22.75V21.25ZM2.75 14C2.75 15.8644 2.74841 17.3382 2.90313 18.489C3.06076 19.6614 3.39288 20.6104 4.14124 21.3588L5.2019 20.2981C4.77869 19.8749 4.52502 19.2952 4.38976 18.2892C4.25159 17.2615 4.25 15.9068 4.25 14H2.75ZM12.5 22.75C14.3644 22.75 15.8382 22.7516 16.989 22.5969C18.1614 22.4392 19.1104 22.1071 19.8588 21.3588L18.7981 20.2981C18.3749 20.7213 17.7952 20.975 16.7892 21.1102C15.7615 21.2484 14.4068 21.25 12.5 21.25V22.75ZM19.75 14C19.75 15.9068 19.7484 17.2615 19.6102 18.2892C19.475 19.2952 19.2213 19.8749 18.7981 20.2981L19.8588 21.3588C20.6071 20.6104 20.9392 19.6614 21.0969 18.489C21.2516 17.3382 21.25 15.8644 21.25 14H19.75ZM10.25 21.5V18.5H8.75V21.5H10.25ZM13.75 18.5V21.5H15.25V18.5H13.75ZM12 16.75C12.4811 16.75 12.7918 16.7507 13.0273 16.7721C13.2524 16.7925 13.3341 16.8269 13.375 16.8505L14.125 15.5514C13.8178 15.3741 13.4918 15.308 13.1627 15.2782C12.8438 15.2493 12.4535 15.25 12 15.25V16.75ZM15.25 18.5C15.25 18.0465 15.2507 17.6562 15.2218 17.3373C15.192 17.0082 15.1259 16.6822 14.9486 16.375L13.6495 17.125C13.6731 17.1659 13.7075 17.2476 13.7279 17.4727C13.7493 17.7082 13.75 18.0189 13.75 18.5H15.25ZM13.375 16.8505C13.489 16.9163 13.5837 17.011 13.6495 17.125L14.9486 16.375C14.7511 16.033 14.467 15.7489 14.125 15.5514L13.375 16.8505ZM10.25 18.5C10.25 18.0189 10.2507 17.7082 10.2721 17.4727C10.2925 17.2476 10.3269 17.1659 10.3505 17.125L9.05144 16.375C8.87407 16.6822 8.80802 17.0082 8.77818 17.3373C8.74928 17.6562 8.75 18.0465 8.75 18.5H10.25ZM12 15.25C11.5465 15.25 11.1562 15.2493 10.8373 15.2782C10.5082 15.308 10.1822 15.3741 9.875 15.5514L10.625 16.8505C10.6659 16.8269 10.7476 16.7925 10.9727 16.7721C11.2082 16.7507 11.5189 16.75 12 16.75V15.25ZM10.3505 17.125C10.4163 17.011 10.511 16.9163 10.625 16.8505L9.875 15.5514C9.53296 15.7489 9.24892 16.033 9.05144 16.375L10.3505 17.125Z" fill="#2196f3"></path>
+                  </g>
+                </svg>
+                <div>
+                  <div class="pkg-title" style="color:#2196f3; margin:0;">ShopMaster</div>
+                  <p>Kereskedői csomag</p>
+
+                </div>
+              </div>
+
             </div>
             <div class="pkg-body"></div>
             <ul class="pkg-features">
@@ -1052,7 +1052,7 @@
 
             <div class="pkg-note"><strong>Projektérték:</strong> 13 200 000 M Ft</div>
 
-            <a href="#kapcsolat" class="btn-pkg">Érdekel ez a csomag</a>
+            <a href="#kapcsolat" class="btn-pkg" data-service="ShopMaster Kereskedői csomag">Érdekel ez a csomag</a>
           </div>
         </div>
 
@@ -1094,7 +1094,7 @@
             <div class="pkg-note-pr"><strong>Képzés:</strong> 1 980 000 Ft</div>
 
             <div class="pkg-note"><strong>Projektérték:</strong> 13 200 000 M Ft</div>
-            <a href="#kapcsolat" class="btn-pkg">Érdekel ez a csomag</a>
+            <a href="#kapcsolat" class="btn-pkg" data-service="ERP CRM AI Moduláris vállalatirányítási csomag">Érdekel ez a csomag</a>
           </div>
         </div>
       </div>
@@ -1106,29 +1106,29 @@
 
       <!-- USP Banner -->
       <div class="usp-banner align-items-start gap-4">
-        
-<div class="row">
-  <div class="col-12 col-lg-9">
-    
-    <div class="d-flex align-items-start gap-3">
-      <div class="usp-icon">💡</div>
 
-      <div>
-        <h2 class="mb-1">Valami másra gondoltál?</h2>
-        <p class="mb-0">
-          Ha a fejlesztési célod nem illik pontosan a fenti csomagokba alakítsuk ki eggyütt!
-        </p>
-      </div>
-    </div>
+        <div class="row">
+          <div class="col-12 col-lg-9">
 
-  </div>
+            <div class="d-flex align-items-start gap-3">
+              <div class="usp-icon">💡</div>
 
-  <div class="col-12 col-lg-3">
-    <a style="background:#1565c0; color:white;" href="#kapcsolat" class="btn-pkg mt-2">
-      Kérek ingyenes konzultációt
-    </a>
-  </div>
-</div>
+              <div>
+                <h2 class="mb-1">Valami másra gondoltál?</h2>
+                <p class="mb-0">
+                  Ha a fejlesztési célod nem illik pontosan a fenti csomagokba alakítsuk ki eggyütt!
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <a style="background:#1565c0; color:white;" href="#kapcsolat" data-service="Alakítsuk ki eggyütt a csomagot" class="btn-pkg mt-2">
+              Kérek ingyenes konzultációt
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1228,7 +1228,7 @@
   </section>
 
 
-    <!-- ═══════════════ FOLYAMAT ═══════════════ -->
+  <!-- ═══════════════ FOLYAMAT ═══════════════ -->
   <section class="py-5" id="folyamat">
     <div class="container py-4">
       <div class="section-label">Hogyan működik?</div>
@@ -1271,25 +1271,51 @@
       <div class="col-md-10 mx-auto col-lg-6">
         <form action="{{ route('contact.submit') }}" method="POST"
           class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-
           @csrf
 
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input name="name" class="form-control" id="floatingInput"
+                  placeholder="{{ __('menu.name') }}" required>
+                <label for="floatingInput">{{ __('menu.name') }}</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input name="company" class="form-control" id="floatingCompany"
+                  placeholder="Cég neve">
+                <label for="floatingCompany">Cég neve</label>
+              </div>
+            </div>
+          </div>
 
-          <div class="form-floating mb-3">
-            <input name="name" class="form-control" id="floatingInput"
-              placeholder="{{ __('menu.name') }}" required>
-            <label for="floatingInput">{{ __('menu.name') }}</label>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input name="phone" type="tel" class="form-control" id="floatingPhone"
+                  placeholder="Telefonszám">
+                <label for="floatingPhone">Telefonszám</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input name="email" class="form-control" id="floatingEmail"
+                  placeholder="name@example.com" required>
+                <label for="floatingEmail">{{ __('menu.mail') }}</label>
+              </div>
+            </div>
           </div>
-          <div class="form-floating mb-3">
-            <input name="email" class="form-control" id="floatingEmail" placeholder="name@example.com"
-              required>
-            <label for="floatingEmail">{{ __('menu.mail') }}</label>
-          </div>
+
           <div class="form-group">
             <label for="message"
               class="form-label ms-2">{{ __('menu.short_decription_message') }}</label>
-            <textarea name="message" id="inputMessage" id="message" class="form-control" rows="2" required></textarea>
+            <textarea name="message" id="inputMessage" class="form-control" rows="2" required></textarea>
+
+            <input type="hidden" name="service" id="selectedService">
           </div>
+
+
           <div class="checkbox mb-3 mt-2 ms-2">
             <label>
               <input type="checkbox" value="remember-me" required>
@@ -1297,7 +1323,6 @@
               <a href="{{ route('gdpr') }}" target="blank">
                 {{ __('menu.data_management_conditions') }}
               </a>
-
             </label>
           </div>
 
@@ -1306,12 +1331,8 @@
             {!! htmlFormSnippet() !!}
           </div>
 
-
-
           <button class="w-100 btn btn-lg btn-primary"
             type="submit">Lépjen velünk kapcsolatba!</button>
-          <!-- <hr class="my-4">
-              <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small> -->
         </form>
       </div>
 
@@ -1352,14 +1373,18 @@
             <div class="contact-icon">📞</div>
             <div>
               <div class="contact-label">Telefon</div>
-              <div class="contact-val">+36 70 702 1252</div>
+              <div class="contact-val">
+                <a href="tel:+36707021252">+36 70 702 1252</a>
+              </div>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon">✉️</div>
             <div>
               <div class="contact-label">E-mail</div>
-              <div class="contact-val">info@pikft.hu</div>
+              <div class="contact-val">
+                <a href="mailto:info@pikft.hu">info@pikft.hu</a>
+              </div>
             </div>
           </div>
 
@@ -1372,50 +1397,25 @@
 
   <!-- END CONTACT FORM -->
 
-
-  <!-- <div class="conteiner my-5">
-      <div class="mb-5 mt-1 text-center">
-        <h6 class="display-6 text-body-emphasis lh-2 mb-3 mt-5" data-aos="fade-up">
-          {{ __('contacts.map')}}          
-        </h6>
-      </div>
-    
-    <div class="container my-5 pt-1" data-aos="fade-up">
-      <div class="text-center bg-body-tertiary rounded-3">
-
-        <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19151.850923572147!2d18.82580443619575!3d46.61593960707588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47425c4ebf44334b%3A0xc0ca0760f0d4fcc8!2zUGFrcywgVsOhY2lrYSBrw7Z6IDEsIDcwMzAgTWFneWFyb3JzesOhZw!5e0!3m2!1shu!2sua!4v1727186630055!5m2!1shu!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  
-      </div>
-    </div> -->
-
   <!-- FOOTER -->
 
   <!-- @include('layouts.footer') -->
 
-
-    <section class="py-8 py-md-11 mb-5 mt-3">
+  <section class="py-8 py-md-11 mb-5 mt-3">
     <div class="container">
-
-        <div class="row justify-content-center align-items-center text-center g-4">
-
-            <div class="col-12 col-lg-6" data-aos="fade-up">
-                <img src="http://pibt.test/dell.jpg" class="img-fluid" style="max-height:70px" alt="Dell authorized partners">
-            </div>
-
-            <div class="col-12 col-lg-6" data-aos="fade-up">
-                <img src="http://pibt.test/microsoft.png" class="img-fluid" style="max-height:70px" alt="Microsoft partner">
-            </div>
-
+      <div class="row justify-content-center align-items-center text-center g-4">
+        <div class="col-12 col-lg-6" data-aos="fade-up">
+          <img src="{{ asset('/dell.jpg') }}" class="img-fluid" style="max-height:70px" alt="Dell authorized partners">
         </div>
-
+        <div class="col-12 col-lg-6" data-aos="fade-up">
+          <img src="{{ asset('/microsoft.png') }}" class="img-fluid" style="max-height:70px" alt="Microsoft partner">
+        </div>
+      </div>
     </div>
   </section>
 
-
   <div class="container" data-aos="">
     <footer class="pt-5">
-
-
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
         <p>
           <img class="mb-1" src="favicon.ico" height="22" alt="">
@@ -1423,19 +1423,34 @@
         </p>
         <ul class="list-unstyled d-flex">
 
-          <li class="ms-3 me-3">                  <a href="{{ route('gdpr') }}" target="blank">
-                    Adatkezelési feltételeket
-                  </a></li>
+          <li class="ms-3 me-3">
+            <a href="{{ route('gdpr') }}" target="blank">
+              Adatkezelési feltételek
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
   </div>
-
   <!-- TOP BUTTON  -->
-
   <button type="button" class="btn btn-outline-primary btn-lg" id="btn-back-to-top">
     <i class="fas fa-arrow-up"></i>
   </button>
+
+
+  <script>
+    document.querySelectorAll('.btn-pkg').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const service = this.dataset.service;
+
+        // Скрытый инпут
+        document.getElementById('selectedService').value = service;
+
+        // Текст в textarea
+        document.getElementById('inputMessage').value = 'Érdeklődöm a következő csomag iránt: ' + service;
+      });
+    });
+  </script>
 
 </body>
 
