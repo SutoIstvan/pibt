@@ -39,7 +39,8 @@ class ContactController extends Controller
             $message->from($validated['email'], $validated['name']);
         });
 
-        return redirect()->back()->with('success', 'Köszönjük! Üzenetét sikeresen elküldtük! Kérése feldolgozása után munkatársunk felveszi Önnel a kapcsolatot.!');
+        return redirect(url()->previous() . '#kapcsolat')
+            ->with('success', 'Köszönjük! Üzenetét sikeresen elküldtük! Kérése feldolgozása után munkatársunk felveszi Önnel a kapcsolatot.!');    
     }
 
     public function phonesubmit(Request $request)
