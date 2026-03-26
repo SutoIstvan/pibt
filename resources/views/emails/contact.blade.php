@@ -8,7 +8,10 @@
 <body>
     <h1>Új üzenet az ajánlatkérés űrlapról</h1>
     <p><strong>Név:</strong> {{ $data['name'] }}</p>
+    <p><strong>CégNév:</strong> {{ $data['company'] }}</p>
     <p><strong>Email:</strong> {{ $data['email'] }}</p>
+    <p><strong>Telefon:</strong> {{ $data['phone'] }}</p>
+    <p><strong>Szolgáltatás:</strong> {{ $data['service'] }}</p>
     <p><strong>Rövid leírása, üzenet:</strong> {{ $data['message'] }}</p>
 </body>
 </html>
