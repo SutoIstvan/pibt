@@ -37,6 +37,10 @@ Route::get('/dimop-plusz-1-2-6-b-palyazati-lehetosegek-vallalkozasoknak', functi
     return view('dimopplusz');
 })->name('dimopplusz');
 
+Route::get('/mali', function () {
+    return view('dimopplusz2');
+})->name('dimopplusz2');
+
 Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
