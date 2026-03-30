@@ -908,6 +908,160 @@
     .pkg-acc-toggle:focus {
       background: #f0f7ff;
     }
+
+    .status-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(13, 27, 42, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 9999;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .25s ease, visibility .25s ease;
+    }
+
+    .status-modal-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .status-modal-box {
+      width: 100%;
+      max-width: 520px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 24px 80px rgba(13, 71, 161, 0.20);
+      overflow: hidden;
+      transform: translateY(20px) scale(.98);
+      transition: transform .25s ease;
+    }
+
+    .status-modal-overlay.show .status-modal-box {
+      transform: translateY(0) scale(1);
+    }
+
+    .status-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 24px 24px 8px;
+    }
+
+    .status-modal-title {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .status-modal-close {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: #f5f8fc;
+      border-radius: 10px;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      color: var(--text-mid);
+      transition: background .2s ease, color .2s ease;
+    }
+
+    .status-modal-close:hover {
+      background: #eaf2fb;
+      color: var(--accent);
+    }
+
+    .status-modal-body {
+      padding: 8px 24px 20px;
+    }
+
+    .status-modal-footer {
+      padding: 0 24px 24px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .status-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 800;
+    }
+
+    .success-icon {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    .error-icon {
+      background: #ffebee;
+      color: #c62828;
+    }
+
+    .status-alert {
+      border-radius: 14px;
+      padding: 16px 18px;
+      font-size: 14px;
+      line-height: 1.65;
+      border: 1px solid var(--border);
+    }
+
+    .status-alert-success {
+      background: #edf9f3;
+      border-color: #b7e4c7;
+      color: #1b5e20;
+    }
+
+    .status-alert-error {
+      background: #fff5f5;
+      border-color: #fecaca;
+      color: #991b1b;
+    }
+
+    .status-alert ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    .status-alert li {
+      margin-bottom: 6px;
+    }
+
+    .status-alert li:last-child {
+      margin-bottom: 0;
+    }
+
+    .status-modal-btn {
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 22px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s ease, transform .15s ease;
+    }
+
+    .status-modal-btn:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    body.modal-open-custom {
+      overflow: hidden;
+    }
   </style>
 
 </head>
@@ -1616,22 +1770,22 @@
 
         <div class="col-lg-6 text-center text-lg-start">
 
-          @if (session('success'))
-            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
-              {{ session('success') }}
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
+          {{-- @if (session('success'))
+          <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
           @endif
 
           @if ($errors->any())
-            <div class="alert alert-danger">
-              <ul>
-                @foreach ($errors->all() as $error)
-                  <li>{{ $error }}</li>
-                @endforeach
-              </ul>
-            </div>
-          @endif
+          <div class="alert alert-danger">
+            <ul>
+              @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+              @endforeach
+            </ul>
+          </div>
+          @endif --}}
 
 
 
@@ -1742,7 +1896,124 @@
           });
         });
       });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.btn-pkg').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            const service = this.dataset.service;
+
+            const selectedService = document.getElementById('selectedService');
+            const inputMessage = document.getElementById('inputMessage');
+
+            if (selectedService) {
+              selectedService.value = service;
+            }
+
+            if (inputMessage) {
+              inputMessage.value = 'Érdeklődöm a következő csomag iránt: ' + service;
+            }
+          });
+        });
+
+        document.querySelectorAll('.pkg-acc-toggle').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            btn.classList.toggle('active');
+            const content = btn.parentElement.querySelector('.pkg-acc-content');
+
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + 'px';
+            }
+          });
+        });
+
+        const modal = document.getElementById('formStatusModal');
+        const closeBtn = document.getElementById('closeStatusModal');
+        const okBtn = document.getElementById('okStatusModal');
+
+        function closeModal() {
+          if (!modal) return;
+          modal.classList.remove('show');
+          document.body.classList.remove('modal-open-custom');
+        }
+
+        if (modal) {
+          setTimeout(function () {
+            modal.classList.add('show');
+            document.body.classList.add('modal-open-custom');
+          }, 50);
+
+          if (closeBtn) {
+            closeBtn.addEventListener('click', closeModal);
+          }
+
+          if (okBtn) {
+            okBtn.addEventListener('click', closeModal);
+          }
+
+          modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+              closeModal();
+            }
+          });
+
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+              closeModal();
+            }
+          });
+        }
+      });
     </script>
+
+    
+    @if (session('success') || $errors->any())
+      <div class="status-modal-overlay" id="formStatusModal">
+        <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
+          <div class="status-modal-header">
+            <h2 class="status-modal-title" id="formStatusModalTitle">
+              @if (session('success'))
+                Sikeres üzenetküldés, hamarosan felvesszük Önnel a kapcsolatot!
+              @else
+                Kérjük, ellenőrizd az adatokat
+              @endif
+            </h2>
+
+            <button type="button" class="status-modal-close" id="closeStatusModal" aria-label="Bezárás">
+              ×
+            </button>
+          </div>
+
+          <div class="status-modal-body">
+            @if (session('success'))
+              <div class="status-icon success-icon">✓</div>
+              <div class="status-alert status-alert-success">
+                {{ session('success') }}
+              </div>
+            @endif
+
+            @if ($errors->any())
+              <div class="status-icon error-icon">!</div>
+              <div class="status-alert status-alert-error">
+                <strong>A beküldés nem sikerült:</strong>
+                <ul>
+                  @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                  @endforeach
+                </ul>
+              </div>
+            @endif
+          </div>
+
+          <div class="status-modal-footer">
+            <button type="button" class="status-modal-btn" id="okStatusModal">
+              Rendben
+            </button>
+          </div>
+        </div>
+      </div>
+    @endif
   </body>
 
 </html>
