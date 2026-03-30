@@ -1967,14 +1967,14 @@
       });
     </script>
 
-    
+
     @if (session('success') || $errors->any())
       <div class="status-modal-overlay" id="formStatusModal">
         <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
           <div class="status-modal-header">
             <h2 class="status-modal-title" id="formStatusModalTitle">
               @if (session('success'))
-                Sikeres üzenetküldés, hamarosan felvesszük Önnel a kapcsolatot!
+                Sikeres üzenetküldés!
               @else
                 Kérjük, ellenőrizd az adatokat
               @endif
