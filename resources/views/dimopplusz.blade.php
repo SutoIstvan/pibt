@@ -918,15 +918,16 @@
       justify-content: center;
       padding: 20px;
       z-index: 9999;
-
       opacity: 0;
       visibility: hidden;
+      pointer-events: none;
       transition: opacity .25s ease, visibility .25s ease;
     }
 
     .status-modal-overlay.show {
       opacity: 1;
       visibility: visible;
+      pointer-events: auto;
     }
 
     .status-modal-box {
@@ -1240,7 +1241,7 @@
               <div class="pkg-body"></div>
               <div class="pkg-accordion">
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">HARDVER</span>
                     <span class="pkg-acc-desc">(ügyfél által választott)</span>
@@ -1254,7 +1255,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Szoftver</span>
                     <span class="pkg-acc-desc">(Microsoft 365 + Copilot AI)</span>
@@ -1269,7 +1270,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Szolgáltatás</span>
                     <span class="pkg-acc-desc">(Kialakítás, Bevezetés, Üzemeltetés)</span>
@@ -1284,7 +1285,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Képzés</span>
                     <span class="pkg-acc-desc">(Használat, Kezelés, IKT oktatás)</span>
@@ -1349,7 +1350,7 @@
               <div class="pkg-body"></div>
               <div class="pkg-accordion">
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">HARDVER</span>
                     <span class="pkg-acc-desc">(ügyfél által választott)</span>
@@ -1363,7 +1364,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Szoftver</span>
                     <span class="pkg-acc-desc">(UNAS + ERP + alap AI)</span>
@@ -1379,7 +1380,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Szolgáltatás</span>
                     <span class="pkg-acc-desc">(Kialakítás, Bevezetés, Üzemeltetés)</span>
@@ -1394,7 +1395,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Képzés</span>
                     <span class="pkg-acc-desc">(Használat, Kezelés, IKT oktatás)</span>
@@ -1453,7 +1454,7 @@
               <div class="pkg-body"></div>
               <div class="pkg-accordion">
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">HARDVER</span>
                     <span class="pkg-acc-desc">(ügyfél által választott)</span>
@@ -1467,7 +1468,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Szoftver</span>
                     <span class="pkg-acc-desc">(Moduláris ERP rendszer)</span>
@@ -1482,7 +1483,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Szolgáltatás</span>
                     <span class="pkg-acc-desc">(Kialakítás, Bevezetés, Üzemeltetés)</span>
@@ -1497,7 +1498,7 @@
                   </div>
                 </div>
                 <div class="pkg-acc-item">
-                  <button class="pkg-acc-toggle">
+                  <button type="button" class="pkg-acc-toggle">
                     <span class="pkg-check">✓</span>
                     <span class="pkg-acc-title">Képzés</span>
                     <span class="pkg-acc-desc">(Használat, Kezelés, IKT oktatás)</span>
@@ -1884,24 +1885,9 @@
       });
 
       document.addEventListener('DOMContentLoaded', function () {
-        document.querySelectorAll('.pkg-acc-toggle').forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            btn.classList.toggle('active');
-            const content = btn.parentElement.querySelector('.pkg-acc-content');
-            if (content.style.maxHeight) {
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + 'px';
-            }
-          });
-        });
-      });
-
-      document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.btn-pkg').forEach(function (btn) {
           btn.addEventListener('click', function () {
             const service = this.dataset.service;
-
             const selectedService = document.getElementById('selectedService');
             const inputMessage = document.getElementById('inputMessage');
 
@@ -1967,14 +1953,14 @@
       });
     </script>
 
-    
+
     @if (session('success') || $errors->any())
       <div class="status-modal-overlay" id="formStatusModal">
         <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
           <div class="status-modal-header">
             <h2 class="status-modal-title" id="formStatusModalTitle">
               @if (session('success'))
-                Sikeres üzenetküldés, hamarosan felvesszük Önnel a kapcsolatot!
+                Sikeres üzenetküldés!
               @else
                 Kérjük, ellenőrizd az adatokat
               @endif
