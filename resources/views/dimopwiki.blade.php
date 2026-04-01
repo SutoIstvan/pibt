@@ -10,6 +10,8 @@
     <title>DIMOP Plusz Pályázati Kisokos – PIKFT.HU</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    @include('layouts.gtag')
 
 </head>
 

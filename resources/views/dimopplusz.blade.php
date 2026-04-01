@@ -10,6 +10,8 @@
   <title>@yield('title', __('menu.title_contact'))</title>
   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
+  @include('layouts.gtag')
+  
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
     rel="stylesheet">
 

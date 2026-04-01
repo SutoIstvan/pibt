@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', __('menu.title_contact'))</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
+    
+    @include('layouts.gtag')
 </head>
 
 <body>
