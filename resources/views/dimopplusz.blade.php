@@ -4,14 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Paksi Informatika – weboldal, webfejlesztés, webáruház, rendszerüzemeltetés, távmunka, felhős megoldások, pályázati és DIMOP támogatás cégeknek">
+  <meta name="description" content="DIMOP Plusz 1.2.6/B akár 12M Ft, 90% támogatás. Weboldal, webshop UNAS, ERP, CRM, AI, felhő, telefon, tablet egy csomagban.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>@yield('title', __('menu.title_contact'))</title>
   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
   @include('layouts.gtag')
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
     rel="stylesheet">
 
