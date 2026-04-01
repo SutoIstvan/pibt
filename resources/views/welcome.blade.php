@@ -11,6 +11,9 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     {!! htmlScriptTagJsApi() !!}
 
+
+    @include('layouts.gtag')
+
     <style>
         @media only screen and (max-width: 500px) {
             .g-recaptcha {
