@@ -2363,6 +2363,9 @@
               {!! htmlScriptTagJsApi() !!}
               {!! htmlFormSnippet() !!}
             </div>
+            
+            <input type="hidden" name="service" id="selectedService">
+
             <button type="submit" id="submitBtn" class="cf-submit">Ingyenes konzultációt kérek →</button>
             <div class="recaptcha-notice">Ez az oldal a Google reCAPTCHA-t használja a spam-védelem érdekében. <a href="https://policies.google.com/privacy" target="_blank">Adatvédelem</a> · <a href="https://policies.google.com/terms" target="_blank">Feltételek</a></div>
             <div class="cf-note">Az üzenet elküldésével nem vállalsz kötelezettséget.</div>
