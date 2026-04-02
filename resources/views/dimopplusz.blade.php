@@ -2618,40 +2618,10 @@
         secObserver.observe(s);
       });
     }
-
-    // ── Form success/error modal ──
-    @if(session('success') || $errors->any())
-      const formStatusModal = document.getElementById('formStatusModal');
-      const closeStatusModal = document.getElementById('closeStatusModal');
-      const okStatusModal = document.getElementById('okStatusModal');
-
-      function closeStatusModalFn() {
-        if (!formStatusModal) return;
-        formStatusModal.classList.remove('show');
-        document.body.classList.remove('modal-open-custom');
-      }
-
-      if (formStatusModal) {
-        setTimeout(() => {
-          formStatusModal.classList.add('show');
-          document.body.classList.add('modal-open-custom');
-        }, 60);
-
-        if (closeStatusModal) closeStatusModal.addEventListener('click', closeStatusModalFn);
-        if (okStatusModal) okStatusModal.addEventListener('click', closeStatusModalFn);
-
-        formStatusModal.addEventListener('click', function(e) {
-          if (e.target === formStatusModal) closeStatusModalFn();
-        });
-
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape') closeStatusModalFn();
-        });
-      }
-    @endif
+  </script>
   </script>
 
-  @if (session('success') || $errors->any())
+@if (session('success') || $errors->any())
     <div class="status-modal-overlay" id="formStatusModal">
       <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
         <div class="status-modal-header">
@@ -2690,7 +2660,42 @@
         </div>
       </div>
     </div>
-  @endif
+@endif
+
+  <script>
+    // ── Form success/error modal (в конце, после HTML) ──
+    document.addEventListener('DOMContentLoaded', function() {
+      @if(session('success') || $errors->any())
+        const formStatusModal = document.getElementById('formStatusModal');
+        const closeStatusModal = document.getElementById('closeStatusModal');
+        const okStatusModal = document.getElementById('okStatusModal');
+
+        function closeStatusModalFn() {
+          if (!formStatusModal) return;
+          formStatusModal.classList.remove('show');
+          document.body.classList.remove('modal-open-custom');
+        }
+
+        if (formStatusModal) {
+          setTimeout(() => {
+            formStatusModal.classList.add('show');
+            document.body.classList.add('modal-open-custom');
+          }, 100);
+
+          if (closeStatusModal) closeStatusModal.addEventListener('click', closeStatusModalFn);
+          if (okStatusModal) okStatusModal.addEventListener('click', closeStatusModalFn);
+
+          formStatusModal.addEventListener('click', function(e) {
+            if (e.target === formStatusModal) closeStatusModalFn();
+          });
+
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeStatusModalFn();
+          });
+        }
+      @endif
+    });
+  </script>
 </body>
 
 </html>
