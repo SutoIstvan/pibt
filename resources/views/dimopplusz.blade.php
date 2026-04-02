@@ -1545,6 +1545,149 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* MODAL */
+    .status-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(13, 27, 42, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .25s ease, visibility .25s ease;
+    }
+
+    .status-modal-overlay.show {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .status-modal-box {
+      width: 100%;
+      max-width: 520px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      transform: translateY(20px) scale(.98);
+      transition: transform .25s ease;
+    }
+
+    .status-modal-overlay.show .status-modal-box {
+      transform: translateY(0) scale(1);
+    }
+
+    .status-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 24px 24px 8px;
+    }
+
+    .status-modal-title {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text, #1a1a2e);
+    }
+
+    .status-modal-close {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: #f5f8fc;
+      border-radius: 10px;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      color: var(--text-mid, #6b7280);
+      transition: background .2s ease, color .2s ease;
+    }
+
+    .status-modal-close:hover {
+      background: #eaf2fb;
+      color: var(--accent, #f59e0b);
+    }
+
+    .status-modal-body {
+      padding: 8px 24px 20px;
+    }
+
+    .status-modal-footer {
+      padding: 0 24px 24px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .status-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 800;
+    }
+
+    .success-icon {
+      background: #e6ffed;
+      color: #059669;
+    }
+
+    .error-icon {
+      background: #ffeeee;
+      color: #dc2626;
+    }
+
+    .status-alert {
+      border-radius: 14px;
+      padding: 16px 18px;
+      font-size: 14px;
+      line-height: 1.65;
+      border: 1px solid var(--border, #e5e7eb);
+    }
+
+    .status-alert-success {
+      background: #edf9f3;
+      border-color: #b7e4c7;
+      color: #1b5e20;
+    }
+
+    .status-alert-error {
+      background: #fff5f5;
+      border-color: #fecaca;
+      color: #991b1b;
+    }
+
+    .status-modal-btn {
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 22px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s ease, transform .15s ease;
+    }
+
+    .status-modal-btn:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    body.modal-open-custom {
+      overflow: hidden;
+    }
   </style>
 
 </head>
@@ -2475,7 +2618,79 @@
         secObserver.observe(s);
       });
     }
+
+    // ── Form success/error modal ──
+    @if(session('success') || $errors->any())
+      const formStatusModal = document.getElementById('formStatusModal');
+      const closeStatusModal = document.getElementById('closeStatusModal');
+      const okStatusModal = document.getElementById('okStatusModal');
+
+      function closeStatusModalFn() {
+        if (!formStatusModal) return;
+        formStatusModal.classList.remove('show');
+        document.body.classList.remove('modal-open-custom');
+      }
+
+      if (formStatusModal) {
+        setTimeout(() => {
+          formStatusModal.classList.add('show');
+          document.body.classList.add('modal-open-custom');
+        }, 60);
+
+        if (closeStatusModal) closeStatusModal.addEventListener('click', closeStatusModalFn);
+        if (okStatusModal) okStatusModal.addEventListener('click', closeStatusModalFn);
+
+        formStatusModal.addEventListener('click', function(e) {
+          if (e.target === formStatusModal) closeStatusModalFn();
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeStatusModalFn();
+        });
+      }
+    @endif
   </script>
+
+  @if (session('success') || $errors->any())
+    <div class="status-modal-overlay" id="formStatusModal">
+      <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
+        <div class="status-modal-header">
+          <h2 class="status-modal-title" id="formStatusModalTitle">
+            @if (session('success'))
+              Sikeres üzenetküldés!
+            @else
+              Kérjük, ellenőrizd az adatokat
+            @endif
+          </h2>
+
+          <button type="button" class="status-modal-close" id="closeStatusModal" aria-label="Bezárás">×</button>
+        </div>
+
+        <div class="status-modal-body">
+          @if (session('success'))
+            <div class="status-icon success-icon">✓</div>
+            <div class="status-alert status-alert-success">{{ session('success') }}</div>
+          @endif
+
+          @if ($errors->any())
+            <div class="status-icon error-icon">!</div>
+            <div class="status-alert status-alert-error">
+              <strong>A beküldés nem sikerült:</strong>
+              <ul>
+                @foreach ($errors->all() as $error)
+                  <li>{{ $error }}</li>
+                @endforeach
+              </ul>
+            </div>
+          @endif
+        </div>
+
+        <div class="status-modal-footer">
+          <button type="button" class="status-modal-btn" id="okStatusModal">Rendben</button>
+        </div>
+      </div>
+    </div>
+  @endif
 </body>
 
 </html>
