@@ -2475,7 +2475,9 @@
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                   <polyline points="22,6 12,13 2,6" />
                 </svg></div>
-              <div class="ci-text">E-mail: <a href="/cdn-cgi/l/email-protection#731a1d151c33031a1815075d1b06"><span class="__cf_email__" data-cfemail="e68f888089a6968f8d8092c88e93">[email&#160;protected]</span></a></div>
+              <div class="ci-text">
+                E-mail: <a href="mailto:info@pikft.hu">info@pikft.hu</a>
+              </div>
             </div>
             <div class="ci-item">
               <div class="ci-icon"><svg viewBox="0 0 24 24">
@@ -2510,7 +2512,7 @@
             <input type="hidden" name="service" id="selectedService">
 
             <button type="submit" id="submitBtn" class="cf-submit">Ingyenes konzultációt kérek →</button>
-            <div class="recaptcha-notice">Ez az oldal a Google reCAPTCHA-t használja a spam-védelem érdekében. <a href="https://policies.google.com/privacy" target="_blank">Adatvédelem</a> · <a href="https://policies.google.com/terms" target="_blank">Feltételek</a></div>
+            <div class="recaptcha-notice">Ez az oldal a Google reCAPTCHA-t használja a spam-védelem érdekében. <a href="{{ route('gdpr') }}" target="_blank">Adatkezelési feltételeket</a> </div>
             <div class="cf-note">Az üzenet elküldésével nem vállalsz kötelezettséget.</div>
           </form>
         </div>
