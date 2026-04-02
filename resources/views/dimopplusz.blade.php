@@ -2358,12 +2358,12 @@
             <div class="cf-row"><label>E-mail cím</label><input type="email" name="email" placeholder="pelda@ceg.hu" required></div>
             <div class="cf-row"><label>Mire van szükséged? (röviden)</label><textarea name="message" placeholder="Pl.: Webshopot szeretnék indítani, ERP rendszert bevezetnénk, vagy csak nem tudom pontosan – segítséget kérek…"></textarea></div>
             <div class="cf-check"><input type="checkbox" id="gdpr" name="gdpr" required><label for="gdpr">Elfogadom az <a href="{{ route('gdpr') }}" target="_blank">adatkezelési feltételeket</a> és hozzájárulok, hogy felvegyék velem a kapcsolatot.</label></div>
-            <!-- <input type="hidden" name="recaptcha_token" id="recaptchaToken"> -->
+            <input type="hidden" name="recaptcha_token" id="recaptchaToken">
             <div class="mb-3">
               {!! htmlScriptTagJsApi() !!}
               {!! htmlFormSnippet() !!}
             </div>
-            <button type="submit" class="cf-submit">Ingyenes konzultációt kérek →</button>
+            <button type="submit" id="submitBtn" class="cf-submit">Ingyenes konzultációt kérek →</button>
             <div class="recaptcha-notice">Ez az oldal a Google reCAPTCHA-t használja a spam-védelem érdekében. <a href="https://policies.google.com/privacy" target="_blank">Adatvédelem</a> · <a href="https://policies.google.com/terms" target="_blank">Feltételek</a></div>
             <div class="cf-note">Az üzenet elküldésével nem vállalsz kötelezettséget.</div>
           </form>
@@ -2393,38 +2393,8 @@
     }
 
     // ── reCAPTCHA v3 + FORM SUBMIT ──
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const btn = document.getElementById('submitBtn');
-      btn.textContent = 'Küldés...';
-      btn.disabled = true;
-
-      grecaptcha.ready(function() {
-        grecaptcha.execute('RECAPTCHA_SITE_KEY', {
-          action: 'contact_form'
-        }).then(function(token) {
-          document.getElementById('recaptchaToken').value = token;
-
-          // GA4: form_submit konverzió
-          if (typeof gtag !== 'undefined') {
-            gtag('event', 'form_submit', {
-              'event_category': 'kapcsolat',
-              'event_label': 'DIMOP konzultacio'
-            });
-            // Google Ads: konverzió tüzelése
-            gtag('event', 'conversion', {
-              'send_to': 'GOOGLE_ADS_ID/GOOGLE_ADS_CONV_LABEL'
-            });
-          }
-
-          // Backend POST - fejlesztő köti be
-          // fetch('/api/contact', { method: 'POST', body: new FormData(document.getElementById('contactForm')) });
-
-          btn.textContent = 'Elküldve! Hamarosan felvesszük veled a kapcsolatot.';
-          btn.style.background = '#059669';
-        });
-      });
-    });
+    // Этот код отключен: обычная Laravel POST-форма отправляется без JS-перехватчика.
+    // Если хотите, можно добавить обработку событий и визуальный статус через JS.
 
     // ── GA4: telefon kattintás ──
     document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
