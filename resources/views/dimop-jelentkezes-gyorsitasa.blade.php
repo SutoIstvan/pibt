@@ -105,7 +105,7 @@
       </div>
 
       <p class="text-muted">
-        Küldd el a felmérés eredményét az alábbi e-mail címre:
+        Cégszerűen aláírva Küldd el a felmérés eredményét az alábbi e-mail címre:
       </p>
 
       <a href="mailto:dimop@pikft.hu" class="fw-bold">
