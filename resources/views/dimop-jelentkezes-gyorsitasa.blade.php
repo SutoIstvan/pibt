@@ -463,6 +463,77 @@
     {id:'e8',s:'8.',nev:'Multifunkciós nyomtató',spec:'Lézernyomtató, szkenner, kétoldalas, színes, 1200×1200 DPI, USB, Wi-Fi/LAN',n:152300,b:193421},
   ];
 
+const info = {
+  i1a: `E-mail fiókhoz való hozzáférést lehetővé tevő üzleti megoldások (saját domaines e-mail, naptár). 
+Dokumentummegosztást vagy kollaborációs munkát támogató üzleti felhő megoldások (közös szerkesztés). 
+VPN távoli hozzáférés az üzleti munkakörnyezethez, adatokhoz, dokumentumokhoz (pl. tárhely)  
+Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkciókhoz távolról való hozzáférést támogatja.`,
+
+  i1b: `Regisztráció/ fenntartás, DNS-kezelés.`,
+
+  i1c: `A SaaS irodai csomaggal kapcsolatos távoli segítségnyújtás, frissítés, alapbiztonsági felügyelet, melynek keretében megvalósítható pl. Tenant létrehozás, DNS/MX beállítás, 5 postafiók, az esetlegesen szükséges felhasználói migráció (Régi levelek/fájlok áthozása).`,
+
+  i2a: `Saját domaines integráció, képernyőmegosztás, felvétel, min. 100 résztvevő.`,
+
+  i2b: `A videókonferencia platform hosszú távú működését támogató szolgáltatás, amely magában foglalja a felhasználói fiókok létrehozását és törlését, jogosultságkezelést, rendszerfrissítéseket, hibajavításokat és alapvető helpdesk támogatást.`,
+
+  i3a: `Legalább 5 napos képzés az alapkészségekre: e-mail, felhőhasználat, adatvédelem, alap IT-biztonság.`,
+
+  i3b: `Legalább 2 napos képzés a haladó készségfejlesztésre: felhőeszközök (MS 365, Google Workspace), online együttműködés, adatmegosztás.`,
+
+  i4a: `Helyszíni hibaelhárítás, konfiguráció, konzultáció, informatikai és hálózati hibák elemzése, javítása.`,
+
+  i5a: `Legalább 3 napos IKT-biztonsági képzés: Kiberbiztonsági tudatosság, jelszókezelés, adathalászat felismerése, GDPR alapok.`,
+
+  i6a: `Vírus- és kártevővédelem, valós idejű frissítés, tűzfal-integráció központi menedzsment.`,
+
+  i6b: `Fájlrendszer/posta mentés, napi inkrementális mentés, felhő vagy helyi cél.`,
+
+  i7a: `Helyzetfelmérést, szabályzat kidolgozását (mely egyebek mellett tartalmazza a jogosultságkezelési és mentési rend és a biztonsági előírásokat) és a vezetői jóváhagyását szükséges tartalmaznia.`,
+
+  i7b: `A felmérést, a dokumentációk (adatáramlási térkép, incidenskezelési folyamat) elkészítését és az adatkezelési nyilvántartás összeállítását szükséges tartalmaznia.`,
+
+  i7c: `Incidenskezelési menedzsment képzés: jelszókezelés, adathalászat és annak felismerése, biztonságos eszközhasználat, adatvédelem, GDPR`,
+
+  i7d: `Minősített tanúsítványon alapuló elektronikus aláírás, időbélyeggel. Az IKT-biztonsági szabályzatok, adatkezelési és működési dokumentumok hitelesítésére, valamint elektronikus szerződéskötésre alkalmas megoldás.`,
+
+  i8a: `3–5 aloldal, reszponzív sablon, kapcsolatfelvételi űrlap, GDPR-cookie banner`,
+
+  i8b: `CMS-frissítések, biztonsági mentések, hibajavítás a weboldalhoz kapcsolódóan`,
+
+  i8c: `tárhely (weboldal tárhelye)`,
+
+  i8d: `DV vagy OV tanúsítvány (Let’s Encrypt: 0 Ft)`,
+
+  i9a: `Tartalomkészítés és publikálás egy közösségi média platformon, beleértve a grafikai elemek elkészítését, a bejegyzések ütemezését, a fiók beállítását és optimalizálását, valamint a tevékenységről készített havi riportot.`,
+
+  i10a: `Közösségimédia-felületek (pl. Facebook, Instagram) rendszeres frissítése és tartalomgyártása; alapvető célcsoport-meghatározás, posztok és vizuális anyagok elkészítése, ütemezése, valamint hirdetések létrehozása és kezelése.`,
+
+  i10b: `Online marketing alapfogalmak megismerése, így hatékony profil kialakítása, közösségi média kommunikáció alapjai, tartalomkészítés és kampánytervezés bevezető szinten.`,
+
+  i11a: `1 OCPU, 20-24 GB RAM, 200 GB SSD tárhely, 99,9% rendelkezésre állás, fix IP.`,
+
+  i11b: `1 TB redundáns tárhely, automatikus mentés, verziókövetés.`,
+
+  i11c: `Üzleti igények felmérése, rendszerbeállítás, jogosultság konfigurálás.`,
+
+  i11d: `Üzenetküldés és feltöltés, képalkotás, mélyreható kutatás és ügynök mód.`,
+
+  i12a: `5–10 felhasználós rendszer, modulok pl.: pénzügy, értékesítés, raktár, alap CRM. Elvárás legalább két új modul bevezetése és használata.`,
+
+  i12b: `Igényfelmérés, paraméterezés, adatimport, tesztelés, oktatás (max. 20 fő).`,
+
+  i13a: `3–10 felhasználós rendszer, ügyféladatbázis, értékesítési csővezeték (pipeline), e-mail integráció, riportok.`,
+
+  i13b: `Igényfelmérés, adatmigráció, jogosultságok beállítása, testreszabott mezők létrehozása.`,
+
+  i14a: `Korlátlan számlakiállítás, NAV API kapcsolat, e-számla funkció.`,
+
+  i15a: `Termékkatalógus, kosár, rendeléskövetés, alap integrációk. Bankkártyás fizetés beállítása, tesztelés.`,
+
+  i15b: `Webshophoz rendelt .hu domain, SSL, 10–20 GB tárhely`
+};
+
   /* Immateriális sorok.
     A col8 (mennyiség) és col9 (felhasználó szám) MINDEN sornál szerkeszthető.
     Az összeg = egységár × col8 × col9
@@ -470,67 +541,67 @@
     initQty / initFhz: az Excel által előre töltött érték (üres soroknál 0-ról indul). */
   const immGroups = [
     {lbl:'1. Távoli hozzáférés (e-mail, dokumentumok, üzleti alkalmazás) <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i1a',s:'1.',cel:'Távoli hozzáférés',nev:'<span title="E-mail fiókhoz való hozzáférést lehetővé tevő üzleti megoldások (saját domaines e-mail, naptár). Dokumentummegosztást vagy kollaborációs munkát támogató üzleti felhő megoldások (közös szerkesztés). VPN távoli hozzáférés az üzleti munkakörnyezethez, adatokhoz, dokumentumokhoz (pl. tárhely) Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkciókhoz távolról való hozzáférést támogatja. " style="cursor:help;border-bottom:1px dotted currentColor">SaaS irodai csomag</span>',               elv:'<span class="bdg bdg-req">Kötelező</span>',me:'felhasználó/hó',n:5900,  b:7493,  initQ:0,initF:0},
-      {id:'i1b',s:'',  cel:'',               nev:'Domain regisztráció',               elv:'Kötelező',me:'hó',            n:200,   b:254,   initQ:0,initF:1},
-      {id:'i1c',s:'',  cel:'',               nev:'Havidíjas IT-üzemeltetés (alapszint)',elv:'Kötelező',me:'hó',           n:127300,b:161671,initQ:0,initF:1},
+      {id:'i1a',s:'1.',cel:'Távoli hozzáférés', nev:`SaaS irodai csomag <span title="${info.i1a}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'felhasználó/hó',n:5900,  b:7493,  initQ:0,initF:0},
+      {id:'i1b',s:'',  cel:'',                  nev:`Domain regisztráció <span title="${info.i1b}" style="cursor:help;">ℹ️</span>`,               elv:'Kötelező',me:'hó',            n:200,   b:254,   initQ:0,initF:1},
+      {id:'i1c',s:'',  cel:'',                  nev:`Havidíjas IT-üzemeltetés (alapszint) <span title="${info.i1c}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',           n:127300,b:161671,initQ:0,initF:1},
     ]},
     {lbl:'2. Online (távoli) megbeszélések tartása <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i2a',s:'2.',cel:'Online megbeszélések',nev:'Videókonferencia platform',          elv:'Kötelező',me:'felhasználó/hó',n:5300, b:6731, initQ:0,initF:0},
-      {id:'i2b',s:'',  cel:'',               nev:'Bevezetési, üzemeltetési szolgáltatás',elv:'Kötelező',me:'hó',          n:53000,b:67310,initQ:0,initF:1},
+      {id:'i2a',s:'2.',cel:'Online megbeszélések',nev:`Videókonferencia platform   <span title="${info.i2a}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',me:'felhasználó/hó',n:5300, b:6731, initQ:0,initF:0},
+      {id:'i2b',s:'',  cel:'',                  nev:`Bevezetési, üzemeltetési szolgáltatás <span title="${info.i2b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',          n:53000,b:67310,initQ:0,initF:1},
     ]},
     {lbl:'3. IKT-képzés az alkalmazottaknak (max. 20%) <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i3a',s:'3.',cel:'IKT-képzés',     nev:'IKT-alapképzés',                    elv:'Kötelező',me:'fő',n:67310, b:96901, initQ:0,initF:1,kepzes:true},
-      {id:'i3b',s:'',  cel:'',               nev:'Haladó digitális készségfejlesztés', elv:'Kötelező',me:'fő',n:191100,b:242697,initQ:0,initF:1,kepzes:true},
+      {id:'i3a',s:'3.',cel:'IKT-képzés',     nev:`IKT-alapképzés <span title="${info.i3a}" style="cursor:help;">ℹ️</span>`,                    elv:'Kötelező',me:'fő',n:67310, b:96901, initQ:0,initF:1,kepzes:true},
+      {id:'i3b',s:'',  cel:'',               nev:`Haladó digitális készségfejlesztés <span title="${info.i3b}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'fő',n:191100,b:242697,initQ:0,initF:1,kepzes:true},
     ]},
     {lbl:'4. IKT-szakember igénybevétele <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i4a',s:'4.',cel:'IKT-szakember',  nev:'IKT-szakember igénybevétele',       elv:'Kötelező',me:'óra',n:9200,b:11684,initQ:0,initF:1},
+      {id:'i4a',s:'4.',cel:'IKT-szakember',  nev:`IKT-szakember igénybevétele <span title="${info.i4a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'óra',n:9200,b:11684,initQ:0,initF:1},
     ]},
     {lbl:'5. Alkalmazottak tájékoztatása IKT-biztonsági kötelezettségeikről (max. 10%) <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i5a',s:'5.',cel:'IKT-biztonsági képzés',nev:'IKT-biztonsági képzés',       elv:'Kötelező',me:'fő',n:207100,b:263017,initQ:0,initF:1,biz:true},
+      {id:'i5a',s:'5.',cel:'IKT-biztonsági képzés',nev:`IKT-biztonsági képzés <span title="${info.i5a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'fő',n:207100,b:263017,initQ:0,initF:1,biz:true},
     ]},
     {lbl:'6. Legalább 3 IKT-biztonsági intézkedés alkalmazása <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i6a',s:'6.',cel:'IKT-biztonsági intézkedések',nev:'Végpontvédelmi licenc', elv:'Kötelező',me:'db/hó',n:1400,b:1778,initQ:0,initF:1},
-      {id:'i6b',s:'',  cel:'',               nev:'Biztonsági mentés',                 elv:'Kötelező',me:'db/hó',n:3000,b:3810,initQ:0,initF:1},
+      {id:'i6a',s:'6.',cel:'IKT-biztonsági intézkedések',nev:`  Végpontvédelmi licenc <span title="${info.i6a}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'db/hó',n:1400,b:1778,initQ:0,initF:1},
+      {id:'i6b',s:'',  cel:'',               nev:`Biztonsági mentés <span title="${info.i6b}" style="cursor:help;">ℹ️</span>`,                 elv:'Kötelező',me:'db/hó',n:3000,b:3810,initQ:0,initF:1},
     ]},
     {lbl:'7. IKT-biztonsági dokumentumok megléte <span class="bdg bdg-help">Ha választod, az IBSZ <span class="bdg bdg-req">kötelező</span>, a többi szabadon <span class="bdg bdg-opt">választható</span></span>',items:[
-      {id:'i7a',s:'7.',cel:'Biztonsági dokumentumok',nev:'IBSZ kidolgozása',           elv:'Kötelező',  me:'egyszeri költség',n:524300,b:665861, initQ:1,initF:1},
-      {id:'i7b',s:'',  cel:'',               nev:'GDPR alapfelmérés és adatkezelési nyilvántartás',elv:'Választható',me:'egyszeri költség',n:257900,b:327533,initQ:1,initF:1,opt:true},
-      {id:'i7c',s:'',  cel:'',               nev:'Incidenskezelési terv és oktatás',  elv:'Választható',me:'fő',n:294300,b:373761,initQ:0,initF:1,opt:true},
-      {id:'i7d',s:'',  cel:'',               nev:'Digitális aláírás szolgáltatás',    elv:'Választható',me:'felhasználó/hó',n:5200,b:6604,initQ:0,initF:0,opt:true},
+      {id:'i7a',s:'7.',cel:'Biztonsági dokumentumok',nev:`IBSZ kidolgozása <span title="${info.i7a}" style="cursor:help;">ℹ️</span>`,           elv:'Kötelező',  me:'egyszeri költség',n:524300,b:665861, initQ:1,initF:1},
+      {id:'i7b',s:'',  cel:'',               nev:`GDPR alapfelmérés és adatkezelési nyilvántartás <span title="${info.i7b}" style="cursor:help;">ℹ️</span>`,elv:'Választható',me:'egyszeri költség',n:257900,b:327533,initQ:1,initF:1,opt:true},
+      {id:'i7c',s:'',  cel:'',               nev:`  Incidenskezelési terv és oktatás <span title="${info.i7c}" style="cursor:help;">ℹ️</span>`,  elv:'Választható',me:'fő',n:294300,b:373761,initQ:0,initF:1,opt:true},
+      {id:'i7d',s:'',  cel:'',               nev:`Digitális aláírás szolgáltatás <span title="${info.i7d}" style="cursor:help;">ℹ️</span>`,    elv:'Választható',me:'felhasználó/hó',n:5200,b:6604,initQ:0,initF:0,opt:true},
     ]},
     {lbl:'8. Saját weboldallal/honlappal való rendelkezés <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i8a',s:'8.',cel:'Weboldal',       nev:'Saját weboldal kialakítása',        elv:'Kötelező',me:'egyszeri költség',n:345100,b:438277,initQ:1,initF:1},
-      {id:'i8b',s:'',  cel:'',               nev:'Karbantartás/frissítés',            elv:'Kötelező',me:'hó',n:10100,b:12827,initQ:0,initF:1},
-      {id:'i8c',s:'',  cel:'',               nev:'Webtárhely',                        elv:'Kötelező',me:'hó',n:1900, b:2413, initQ:0,initF:1},
-      {id:'i8d',s:'',  cel:'',               nev:'SSL tanúsítvány',                   elv:'Kötelező',me:'hó',n:600,  b:762,  initQ:0,initF:1},
+      {id:'i8a',s:'8.',cel:'Weboldal',       nev:`Saját weboldal kialakítása <span title="${info.i8a}" style="cursor:help;">ℹ️</span>`,        elv:'Kötelező',me:'egyszeri költség',n:345100,b:438277,initQ:1,initF:1},
+      {id:'i8b',s:'',  cel:'',               nev:`Karbantartás/frissítés <span title="${info.i8b}" style="cursor:help;">ℹ️</span>`,            elv:'Kötelező',me:'hó',n:10100,b:12827,initQ:0,initF:1},
+      {id:'i8c',s:'',  cel:'',               nev: `Webtárhely <span title="${info.i8c}" style="cursor:help;">ℹ️</span>`,                        elv:'Kötelező',me:'hó',n:1900, b:2413, initQ:0,initF:1},
+      {id:'i8d',s:'',  cel:'',               nev:`SSL tanúsítvány <span title="${info.i8d}" style="cursor:help;">ℹ️</span>`,                   elv:'Kötelező',me:'hó',n:600,  b:762,  initQ:0,initF:1},
     ]},
     {lbl:'9. Bármilyen közösségi média használata <span class="bdg bdg-most">(nem választható együtt a 12. ponttal)</span> <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i9a',s:'9.',cel:'Közösségi média (1 típus)',nev:'Tartalomgyártás',          elv:'Kötelező',me:'hó',n:74900,b:95123,initQ:0,initF:1},
+      {id:'i9a',s:'9.',cel:'Közösségi média (1 típus)',nev:`Tartalomgyártás <span title="${info.i9a}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',me:'hó',n:74900,b:95123,initQ:0,initF:1},
     ]},
     {lbl:'10. Kettő vagy több típusú közösségi média <span class="bdg bdg-most">(nem választható együtt a 11. ponttal)</span> <span class="bdg bdg-help">Ha választod, az online jelenlét és hirdetések <span class="bdg bdg-req">kötelező</span> a Képzés <span class="bdg bdg-opt">Választható</span> </span>',items:[
-      {id:'i10a',s:'10.',cel:'Közösségi média (2+ típus)',nev:'Online jelenlét és hirdetések',elv:'Kötelező',  me:'hó',n:96300,b:122301,initQ:0,initF:1},
-      {id:'i10b',s:'',   cel:'',             nev:'Képzés (maximum 1 fő)',             elv:'Választható',me:'fő',n:374500,b:475615,initQ:0,initF:1,opt:true},
+      {id:'i10a',s:'10.',cel:'Közösségi média (2+ típus)',nev:`Online jelenlét és hirdetések <span title="${info.i10a}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',  me:'hó',n:96300,b:122301,initQ:0,initF:1} ,
+      {id:'i10b',s:'',   cel:'',             nev:`Képzés (maximum 1 fő) <span title="${info.i10b}" style="cursor:help;">ℹ️</span>`,             elv:'Választható',me:'fő',n:374500,b:475615,initQ:0,initF:1,opt:true},
     ]},
     {lbl:'11. Bármilyen fizetős felhőszolgáltatás használata <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span> a MI szolgáltatás szabadon <span class="bdg bdg-opt">Választható</span></span>',items:[
-      {id:'i11a',s:'11.',cel:'Felhőszolgáltatás',nev:'Virtuális szerver (IaaS)',       elv:'Kötelező',  me:'hó',n:21800,  b:27686,  initQ:0,initF:1},
-      {id:'i11b',s:'',   cel:'',             nev:'Adattárolás és mentés (felhő storage)',elv:'Kötelező',me:'hó',n:109100, b:138557, initQ:0,initF:1},
-      {id:'i11c',s:'',   cel:'',             nev:'Bevezetés, testre szabás',          elv:'Kötelező',  me:'egyszeri költség',n:1379800,b:1752346,initQ:1,initF:1},
-      {id:'i11d',s:'',   cel:'',             nev:'MI szolgáltatás',                   elv:'Választható',me:'felhasználó/hó',n:14400,b:18288,initQ:0,initF:0,opt:true},
+      {id:'i11a',s:'11.',cel:'Felhőszolgáltatás',nev:`Virtuális szerver (IaaS) <span title="${info.i11a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',  me:'hó',n:21800,  b:27686,  initQ:0,initF:1},
+      {id:'i11b',s:'',   cel:'',             nev:`Adattárolás és mentés (felhő storage) <span title="${info.i11b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',n:109100, b:138557, initQ:0,initF:1},
+      {id:'i11c',s:'',   cel:'',             nev:`Bevezetés, testre szabás <span title="${info.i11c}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',  me:'egyszeri költség',n:1379800,b:1752346,initQ:1,initF:1},
+      {id:'i11d',s:'',   cel:'',             nev:`MI szolgáltatás <span title="${info.i11d}" style="cursor:help;">ℹ️</span>`,                   elv:'Választható',me:'felhasználó/hó',n:14400,b:18288,initQ:0,initF:0,opt:true},
     ]},
     {lbl:'12. Vállalati erőforrás-tervezési (ERP) megoldás használata <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i12a',s:'12.',cel:'ERP megoldás', nev:'ERP szoftverlicenc / előfizetés (SaaS, min. 2 új modul)',elv:'Kötelező',me:'felhasználó/hó',n:24800,b:31496,initQ:0,initF:0},
-      {id:'i12b',s:'',   cel:'',             nev:'Bevezetés, testre szabás, felhasználói oktatás',elv:'Kötelező',me:'egyszeri költség',n:1994300,b:2532761,initQ:1,initF:1},
+      {id:'i12a',s:'12.',cel:'ERP megoldás', nev:`ERP szoftverlicenc / előfizetés (SaaS, min. 2 új modul) <span title="${info.i12a}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'felhasználó/hó',n:24800,b:31496,initQ:0,initF:0},
+      {id:'i12b',s:'',   cel:'',             nev:`Bevezetés, testre szabás, felhasználói oktatás <span title="${info.i12b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'egyszeri költség',n:1994300,b:2532761,initQ:1,initF:1},
     ]},
     {lbl:'13. Ügyfélkapcsolat-kezelési (CRM) megoldás használata <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i13a',s:'13.',cel:'CRM megoldás', nev:'CRM szoftverlicenc / előfizetés',   elv:'Kötelező',me:'felhasználó/hó',n:20700,b:26289,initQ:0,initF:0},
-      {id:'i13b',s:'',   cel:'',             nev:'Bevezetés és testre szabás',        elv:'Kötelező',me:'egyszeri költség',n:1329500,b:1688465,initQ:1,initF:1},
+      {id:'i13a',s:'13.',cel:'CRM megoldás', nev:`CRM szoftverlicenc / előfizetés <span title="${info.i13a}" style="cursor:help;">ℹ️</span>`,   elv:'Kötelező',me:'felhasználó/hó',n:20700,b:26289,initQ:0,initF:0},
+      {id:'i13b',s:'',   cel:'',             nev:`Bevezetés és testre szabás <span title="${info.i13b}" style="cursor:help;">ℹ️</span>`,        elv:'Kötelező',me:'egyszeri költség',n:1329500,b:1688465,initQ:1,initF:1},
     ]},
     {lbl:'14. Automatizált feldolgozásra alkalmas e-számlák küldése <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i14a',s:'14.',cel:'E-számla',     nev:'Online számlázó szoftver előfizetés',elv:'Kötelező',me:'hó',n:3200,b:4064,initQ:0,initF:1},
+      {id:'i14a',s:'14.',cel:'E-számla',     nev:`Online számlázó szoftver előfizetés <span title="${info.i14a}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',n:3200,b:4064,initQ:0,initF:1},
     ]},
     {lbl:'15. Webes értékesítés <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i15a',s:'15.',cel:'Webshop',      nev:'Bérelhető webshop rendszer',        elv:'Kötelező',me:'hó',n:19200,b:24384,initQ:0,initF:1},
-      {id:'i15b',s:'',   cel:'',             nev:'Domain és tárhely',                 elv:'Kötelező',me:'hó',n:3000, b:3810, initQ:0,initF:1},
+      {id:'i15a',s:'15.',cel:'Webshop',      nev:`Bérelhető webshop rendszer <span title="${info.i15a}" style="cursor:help;">ℹ️</span>`,        elv:'Kötelező',me:'hó',n:19200,b:24384,initQ:0,initF:1},
+      {id:'i15b',s:'',   cel:'',             nev:`Domain és tárhely <span title="${info.i15b}" style="cursor:help;">ℹ️</span>`,                 elv:'Kötelező',me:'hó',n:3000, b:3810, initQ:0,initF:1},
     ]},
   ];
 
