@@ -1703,8 +1703,8 @@
     <h1>Mondd el, mire van szükséged.<br><em>Mi megvalósítjuk.</em></h1>
     <p class="hero-lead">Akár <strong>12 millió forint vissza nem térítendő támogatás</strong> a vállalkozásod digitális fejlesztéséhez. Ha az igényed kilóg a sablonból – nálunk akkor is van megoldás.</p>
     <div class="hero-btns">
-      <a href="#kapcsolat" class="btn-primary">Kérek ingyenes konzultációt</a>
-      <a href="#csomagok" class="btn-outline">Megnézem a csomagokat</a>
+      <a href="#kapcsolat" class="btn-primary">Jelentkezés a pályázatra</a>
+      <!-- <a href="#csomagok" class="btn-outline">Megnézem a csomagokat</a> -->
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
@@ -2583,7 +2583,7 @@
 
             <input type="hidden" name="service" id="selectedService">
 
-            <button type="submit" id="submitBtn" class="cf-submit">Ingyenes konzultációt kérek →</button>
+            <button type="submit" id="submitBtn" class="cf-submit">Jelentkezés a pályázatra →</button>
             <div class="recaptcha-notice">Ez az oldal a Google reCAPTCHA-t használja a spam-védelem érdekében. <a href="{{ route('gdpr') }}" target="_blank">Adatkezelési feltételeket</a> </div>
             <div class="cf-note">Az üzenet elküldésével nem vállalsz kötelezettséget.</div>
           </form>

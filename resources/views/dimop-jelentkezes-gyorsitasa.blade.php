@@ -210,6 +210,10 @@
       <a href="https://kkvdigital.dkf.hu" target="_blank" class="btn btn-primary">
         Megnyitom a portált →
       </a>
+
+      <a href="{{ route('dimoppluszgyik') }}" target="_blank" class="btn btn-primary ms-3">
+        Gyakran ismételt kérdések →
+      </a>
     </div>
   </div>
 
@@ -446,6 +450,46 @@
 </div>
 
 
+  @if (session('success') || $errors->any())
+  <div class="status-modal-overlay" id="formStatusModal">
+    <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
+      <div class="status-modal-header">
+        <h2 class="status-modal-title" id="formStatusModalTitle">
+          @if (session('success'))
+          Sikeres üzenetküldés!
+          @else
+          Kérjük, ellenőrizd az adatokat
+          @endif
+        </h2>
+
+        <button type="button" class="status-modal-close" id="closeStatusModal" aria-label="Bezárás">×</button>
+      </div>
+
+      <div class="status-modal-body">
+        @if (session('success'))
+        <div class="status-icon success-icon">✓</div>
+        <div class="status-alert status-alert-success">{{ session('success') }}</div>
+        @endif
+
+        @if ($errors->any())
+        <div class="status-icon error-icon">!</div>
+        <div class="status-alert status-alert-error">
+          <strong>A beküldés nem sikerült:</strong>
+          <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+          </ul>
+        </div>
+        @endif
+      </div>
+
+      <div class="status-modal-footer">
+        <button type="button" class="status-modal-btn" id="okStatusModal">Rendben</button>
+      </div>
+    </div>
+  </div>
+  @endif
 
 <script>
   /* ══════════════════════════════════════════
