@@ -88,22 +88,51 @@ class ContactController extends Controller
     public function kalkulacioSubmit(Request $request)
     {
         $validated = $request->validate([
-            'company' => 'required|max:255',
+            'company' => 'nullable|max:255',
             'name' => 'nullable|max:255',
+            'phone' => 'nullable|max:255',
+            'email' => 'nullable|email',
+            '3522631_select_Rendelkezel1lezartuzletievvel' => 'nullable|string|max:255',
+            '3522631_select_Cegszekhelye' => 'nullable|string|max:255',
+            '3522631_select_Rendelkezelmarwebaruhazzal' => 'nullable|string|max:255',
             'mode' => 'required|in:netto,brutto',
             'eszkozok_json' => 'nullable|string',
             'immaterialis_json' => 'nullable|string',
             'sum_eszkoz' => 'nullable|numeric',
             'sum_immaterialis' => 'nullable|numeric',
             'sum_total' => 'nullable|numeric',
+            'documents' => 'nullable|array|max:20',
+            'documents.*' => 'file|max:10240',
         ]);
 
         $eszkozok = json_decode($validated['eszkozok_json'] ?? '[]', true) ?: [];
         $immaterialis = json_decode($validated['immaterialis_json'] ?? '[]', true) ?: [];
 
+        $urls = [];
+        if ($request->hasFile('documents')) {
+            if (!file_exists(public_path('uploads/documents'))) {
+                mkdir(public_path('uploads/documents'), 0755, true);
+            }
+            foreach ($request->file('documents') as $file) {
+                $originalName = $file->getClientOriginalName();
+                $filename = time() . '_' . uniqid() . '.' . $file->getClientOriginalExtension();
+                $file->move(public_path('uploads/documents'), $filename);
+                $urls[] = [
+                    'name' => $originalName,
+                    'url' => asset("uploads/documents/" . $filename)
+                ];
+            }
+        }
+
         $data = [
+            'documents' => $urls,
             'company' => $validated['company'] ?? '',
             'name' => $validated['name'] ?? '',
+            'phone' => $validated['phone'] ?? '',
+            'email' => $validated['email'] ?? '',
+            'businessYear' => $validated['3522631_select_Rendelkezel1lezartuzletievvel'] ?? '',
+            'companyLocation' => $validated['3522631_select_Cegszekhelye'] ?? '',
+            'webshopStatus' => $validated['3522631_select_Rendelkezelmarwebaruhazzal'] ?? '',
             'mode' => $validated['mode'],
             'eszkozok' => $eszkozok,
             'immaterialis' => $immaterialis,

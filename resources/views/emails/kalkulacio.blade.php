@@ -37,18 +37,52 @@
         </div>
 
         <div class="body">
-            @if($data['name'] || $data['company'])
+            @if(!empty($data['name']))
             <div class="info-row">
-                @if($data['name'])
                 <div class="label">Név</div>
                 <div class="value">{{ $data['name'] }}</div>
-                @endif
             </div>
+            @endif
+
+            @if(!empty($data['company']))
             <div class="info-row">
-                @if($data['company'])
                 <div class="label">Adószám</div>
                 <div class="value">{{ $data['company'] }}</div>
-                @endif
+            </div>
+            @endif
+
+            @if(!empty($data['phone']))
+            <div class="info-row">
+                <div class="label">Telefon</div>
+                <div class="value">{{ $data['phone'] }}</div>
+            </div>
+            @endif
+
+            @if(!empty($data['email']))
+            <div class="info-row">
+                <div class="label">E-mail</div>
+                <div class="value">{{ $data['email'] }}</div>
+            </div>
+            @endif
+
+            @if(!empty($data['businessYear']))
+            <div class="info-row">
+                <div class="label">Rendelkezik 1 lezárt üzleti évvel?</div>
+                <div class="value">{{ $data['businessYear'] }}</div>
+            </div>
+            @endif
+
+            @if(!empty($data['companyLocation']))
+            <div class="info-row">
+                <div class="label">Cég székhelye</div>
+                <div class="value">{{ $data['companyLocation'] }}</div>
+            </div>
+            @endif
+
+            @if(!empty($data['webshopStatus']))
+            <div class="info-row">
+                <div class="label">Webáruház státusz</div>
+                <div class="value">{{ $data['webshopStatus'] }}</div>
             </div>
             @endif
 
@@ -56,6 +90,19 @@
                 <div class="label">Elszámolás módja</div>
                 <div class="value">{{ $data['mode'] === 'netto' ? 'Nettó' : 'Bruttó' }}</div>
             </div>
+
+            @if(!empty($data['documents']) && count($data['documents']) > 0)
+            <div class="section-title" style="margin-top: 30px;">📎 Csatolt dokumentumok</div>
+            <div class="totals" style="padding: 12px 20px; text-align: left; margin-top: 10px;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    @foreach($data['documents'] as $doc)
+                    <li style="margin-bottom: 5px;">
+                        <a href="{{ $doc['url'] }}" style="color: #2563eb; text-decoration: none; font-weight: 500;" target="_blank">{{ $doc['name'] }}</a>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
 
             {{-- ESZKÖZÖK --}}
             @if(count($data['eszkozok']) > 0)

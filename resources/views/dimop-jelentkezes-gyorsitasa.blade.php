@@ -46,12 +46,164 @@
   .nav-links a:hover,.nav-links a.on{color:#fff;background:rgba(255,255,255,.1)}
 
   /* HERO */
-  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 55%,#1d4ed8 100%);padding:3rem 2rem 2.75rem;text-align:center;position:relative;overflow:hidden}
-  .hero::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
-  .hero-chip{position:relative;display:inline-flex;align-items:center;background:rgba(6,182,212,.14);border:1px solid rgba(6,182,212,.32);color:#67e8f9;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .85rem;border-radius:20px;margin-bottom:1.1rem}
-  .hero h1{position:relative;font-size:clamp(1.5rem,3.8vw,2.3rem);font-weight:800;color:#fff;letter-spacing:-.02em;line-height:1.2;margin-bottom:.65rem}
-  .hero h1 em{font-style:normal;color:#93c5fd}
-  .hero p{position:relative;color:rgba(255,255,255,.72);font-size:.9rem;max-width:520px;margin:0 auto}
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -.5px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, #fbbf24, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-lead {
+      font-size: 18px;
+      color: rgba(255, 255, 255, .7);
+      max-width: 600px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .hero-lead strong {
+      color: rgba(255, 255, 255, .95);
+      font-weight: 600;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 13px 28px;
+      border-radius: 10px;
+      border: none;
+      display: inline-block;
+      cursor: pointer;
+      transition: background .15s, transform .15s;
+      box-shadow: 0 4px 14px rgba(26, 86, 219, .4);
+    }
+
+    .btn-primary:hover {
+      background: var(--blue-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, .08);
+      color: #fff;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 13px 28px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, .2);
+      display: inline-block;
+      transition: background .15s;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, .15);
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: var(--r-lg);
+      max-width: 700px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .hero-stat {
+      flex: 1;
+      min-width: 140px;
+      padding: 20px 16px;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .hero-stat:last-child {
+      border-right: none;
+    }
+
+    .hero-stat-val {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .hero-stat-val.gold {
+      color: #fbbf24;
+    }
+
+    .hero-stat-label {
+      font-size: 12px;
+      color: rgba(255, 255, 255, .5);
+    }
+
+
+
+        /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #1a3a5c 100%);
+      padding: 72px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245, 158, 11, .15);
+      border: 1px solid rgba(245, 158, 11, .4);
+      color: #fbbf24;
+      padding: 5px 14px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fbbf24;
+      animation: pulse 2s infinite;
+    }
 
   /* WRAPPER */
   .wrap{max-width:1200px;margin:0 auto;padding:2.25rem 1.25rem 5rem}
@@ -170,18 +322,44 @@
 
   @include('layouts.nav')
 
-
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge"><span class="hero-badge-dot"></span>DIMOP Plusz 1.2.6/B · Beadás: 2026. márciustól</div>
+    <h1>Mondd el, mire van szükséged.<br><em>Mi megvalósítjuk.</em></h1>
+    <p class="hero-lead">Akár <strong>12 millió forint vissza nem térítendő támogatás</strong> a vállalkozásod digitális fejlesztéséhez. Ha az igényed kilóg a sablonból – nálunk akkor is van megoldás.</p>
+    <div class="hero-btns">
+      <!-- <a href="#kapcsolat" class="btn-primary">Jelentkezés a pályázatra</a> -->
+      <!-- <a href="#csomagok" class="btn-outline">Megnézem a csomagokat</a> -->
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-val gold">3–12 M Ft</div>
+        <div class="hero-stat-label">Vissza nem térítendő</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val gold">90%</div>
+        <div class="hero-stat-label">Támogatási intenzitás</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">10%</div>
+        <div class="hero-stat-label">Csak ennyi az önerő</div>
+      </div>
+    </div>
+  </section>
+  
 <div class="container py-5">
 
+
+
   <!-- HEADER -->
-  <div class="text-center mb-5">
+  <!-- <div class="text-center mb-5">
     <div class="mb-3 fs-1 text-success">✓</div>
     <h1 class="fw-bold">Köszönjük {{ session('name') ?: '' }} a jelentkezésed!</h1>
     <p class="text-muted">
       Hamarosan felvesszük veled a kapcsolatot.<br>
       Addig is van még egy fontos teendőd – olvasd el figyelmesen!
     </p>
-  </div>
+  </div> -->
 
   <!-- IMPORTANT -->
   <div class="alert alert-warning d-flex gap-3 align-items-start mb-4">
@@ -277,13 +455,96 @@
         <h5 class="mb-0 fw-bold">Küldd el nekünk az eredményt</h5>
       </div>
 
-      <p class="text-muted">
-        Cégszerűen aláírva Küldd el a felmérés eredményét az alábbi e-mail címre:
-      </p>
+        <div class="contact-form">
+          <form action="{{ route('contact.submit') }}" method="POST" id="contactForm" novalidate>
+            @csrf
+            <div class="row">
+              
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Neved</label>
+                <input type="text" class="form-control" name="name" placeholder="Kovács János" required>
+              </div>
 
-      <a href="mailto:dimop@pikft.hu" class="fw-bold">
-        dimop@pikft.hu
-      </a>
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Cég Adószám</label>
+                <input type="text" class="form-control" name="company" placeholder="12345678-1-12">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Telefonszám</label>
+                <input type="tel" class="form-control" name="phone" placeholder="+36 30 000 0000">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">E-mail cím</label>
+                <input type="email" class="form-control" name="email" placeholder="pelda@ceg.hu" required>
+              </div>
+
+            </div>
+
+
+            <div class="mb-3">
+              <label for="businessYear" class="form-label">
+                Rendelkezel 1 lezárt üzleti évvel
+              </label>
+              <select class="form-select" name="3522631_select_Rendelkezel1lezartuzletievvel" id="businessYear" required>
+                <option value="" selected disabled>Kérem válasszon!</option>
+                <option value="igen">igen</option>
+                <option value="nem">nem</option>
+              </select>
+              <div class="invalid-feedback">
+                Kérlek válassz egy opciót
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="companyLocation" class="form-label">
+                Cég székhelye
+              </label>
+              <select class="form-select" name="3522631_select_Cegszekhelye" id="companyLocation" required>
+                <option value="" selected disabled>Kérem válasszon!</option>
+                <option value="Magyarország, kivéve Budapest">
+                  Magyarország, kivéve Budapest
+                </option>
+                <option value="Budapest">Budapest</option>
+              </select>
+              <div class="invalid-feedback">
+                Kérlek válassz egy opciót
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="webshopStatus" class="form-label">
+                Rendelkezel már webáruházzal
+              </label>
+              <select class="form-select" name="3522631_select_Rendelkezelmarwebaruhazzal" id="webshopStatus" required>
+                <option value="" selected disabled>Kérem válasszon!</option>
+                <option value="Igen, UNAS áruházam van">
+                  Igen, UNAS áruházam van
+                </option>
+                <option value="Igen, de nem UNAS áruházam van">
+                  Igen, de nem UNAS áruházam van
+                </option>
+                <option value="Nincs webáruházam">
+                  Nincs webáruházam
+                </option>
+              </select>
+              <div class="invalid-feedback">
+                Kérlek válassz egy opciót
+              </div>
+            </div>
+
+            <div class="mb-3 mt-4" id="documentsContainer">
+              <label for="documents" class="form-label fw-bold">Cégszerűen aláírva Küldd el a felmérés eredményét az alábbi űrlap segítségével.</label>
+              <input type="file" class="form-control" id="documents" name="documents[]" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip">
+              <div class="form-text">Több fájlt is kijelölhet (max. 10 MB / fájl). Tartsa lenyomva a Ctrl/Cmd gombot több fájl kiválasztásához.</div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
     </div>
   </div>
 
@@ -293,6 +554,10 @@
     <a href="mailto:dimop@pikft.hu" class="fw-bold fs-5">
       dimop@pikft.hu
     </a>
+
+    <a href="tel:+36707021252" class="fw-bold fs-5 ms-5">
+      +36 70 702 1252
+    </a>
   </div>
 
 
@@ -300,7 +565,7 @@
 
 
   <!-- STEP 4 -->
-  <div class=" mb-3 ">
+  <div class="container mb-3 ">
     <div class="">
       <div class="d-flex align-items-center mb-3">
         <span class="badge bg-primary rounded-circle me-3">4</span>
@@ -425,21 +690,34 @@
     <div class="alert" id="al"></div>
   </div>
 
-  <div class="actions">
-    <button type="button" class="btn btn-ghost" onclick="resetAll()">Visszaállítás</button>
-    <form action="{{ route('kalkulacio.submit') }}" method="POST" id="kalkulacioForm" onsubmit="return prepareKalkulacio()">
+  <div class="">
+    <!-- <button type="button" class="btn btn-ghost" onclick="resetAll()">Visszaállítás</button> -->
+    <form action="{{ route('kalkulacio.submit') }}" method="POST" enctype="multipart/form-data" id="kalkulacioForm" onsubmit="return prepareKalkulacio()">
       @csrf
-      <input type="hidden" name="company" value="{{ old('company', session('company')) }}">
-      <input type="hidden" name="name" value="{{ old('name', session('name')) }}">
+      <input type="hidden" name="company" id="kf_company" value="{{ old('company', session('company')) }}">
+      <input type="hidden" name="name" id="kf_name" value="{{ old('name', session('name')) }}">
+      <input type="hidden" name="phone" id="kf_phone" value="{{ old('phone') }}">
+      <input type="hidden" name="email" id="kf_email" value="{{ old('email') }}">
+      <input type="hidden" name="3522631_select_Rendelkezel1lezartuzletievvel" id="kf_businessYear">
+      <input type="hidden" name="3522631_select_Cegszekhelye" id="kf_companyLocation">
+      <input type="hidden" name="3522631_select_Rendelkezelmarwebaruhazzal" id="kf_webshopStatus">
       <input type="hidden" name="mode" id="kf_mode">
       <input type="hidden" name="eszkozok_json" id="kf_eszkozok">
       <input type="hidden" name="immaterialis_json" id="kf_immaterialis">
       <input type="hidden" name="sum_eszkoz" id="kf_sum_eszkoz">
       <input type="hidden" name="sum_immaterialis" id="kf_sum_immaterialis">
       <input type="hidden" name="sum_total" id="kf_sum_total">
-      <input type="hidden" name="name" class="form-control" value="{{ old('name', session('name')) }}">
 
-      <input type="text" name="company" class="form-control" value="{{ old('company', session('company')) }}" required placeholder="Adószám">
+      <div class="recaptcha-notice mt-3">Ez az oldal a Google reCAPTCHA-t használja a spam-védelem érdekében. <a href="{{ route('gdpr') }}" target="_blank">Adatkezelési feltételeket</a> </div>
+
+      <div class="cf-check mt-3"><input type="checkbox" id="gdpr" name="gdpr" required><label for="gdpr">Elfogadom az <a href="{{ route('gdpr') }}" target="_blank">adatkezelési feltételeket</a> és hozzájárulok, hogy felvegyék velem a kapcsolatot.</label></div>
+      
+      <input type="hidden" name="recaptcha_token" id="recaptchaToken">
+      <div class="mb-3">
+        {!! htmlScriptTagJsApi() !!}
+        {!! htmlFormSnippet() !!}
+      </div>
+
       <button type="submit" class="btn btn-primary">Kalkuláció küldése →</button>
     </form>
   </div>
@@ -449,6 +727,26 @@
 
 </div>
 
+
+  <div id="notEligibleModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9999; justify-content: center; align-items: center; flex-direction: column;">
+    <div class="modal-dialog" style="margin: auto; width: 100%; max-width: 500px; padding: 20px;">
+      <div class="modal-content text-center shadow-lg border-0" style="background: #fff; border-radius: 12px; position: relative; overflow: hidden;">
+        <div class="modal-header border-0 pb-0" style="padding: 1.5rem 1rem 0;">
+          <button type="button" class="btn-close" aria-label="Bezárás" onclick="document.getElementById('notEligibleModal').style.display='none'" style="position: absolute; right: 20px; top: 20px; border: none; background: transparent; font-size: 2rem; cursor: pointer; color: #000; opacity: 0.5;">&times;</button>
+        </div>
+        <div class="modal-body pb-4" style="padding: 1rem 2rem;">
+          <div class="mb-3">
+             <span style="font-size: 3.5rem; color: #dc3545;">⚠️</span>
+          </div>
+          <!-- <strong class="fs-4 text-dark d-block" style="font-size: 1.5rem; color: #212529; font-weight: bold; margin-bottom: 10px; display: block;">Вам не подходит этот проект!</strong> -->
+          <p class="text-muted fw-normal fs-6" style="color: #6c757d; margin-bottom: 20px; line-height: 1.5;">Sajnos 1 lezárt üzleti év hiányában nem indulhat ezen a pályázaton.</p>
+        </div>
+        <div class="modal-footer justify-content-center border-0 pt-0 pb-4" style="padding: 0 2rem 2rem; display: flex; justify-content: center;">
+          <button type="button" onclick="document.getElementById('notEligibleModal').style.display='none'" style="background-color: #0f2447; color: white; border: none; padding: 10px 30px; border-radius: 6px; cursor: pointer; font-family: Inter, sans-serif; font-weight: 600; font-size: 1rem; transition: background 0.15s;">Értem</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   @if (session('success') || $errors->any())
   <div class="status-modal-overlay" id="formStatusModal">
@@ -833,6 +1131,23 @@ Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkci
 
   /* ── PREPARE FORM DATA ── */
   function prepareKalkulacio() {
+    // contact form data
+    document.getElementById('kf_name').value = document.querySelector('#contactForm input[name="name"]')?.value || '';
+    document.getElementById('kf_company').value = document.querySelector('#contactForm input[name="company"]')?.value || '';
+    document.getElementById('kf_phone').value = document.querySelector('#contactForm input[name="phone"]')?.value || '';
+    document.getElementById('kf_email').value = document.querySelector('#contactForm input[name="email"]')?.value || '';
+    document.getElementById('kf_businessYear').value = document.getElementById('businessYear')?.value || '';
+    document.getElementById('kf_companyLocation').value = document.getElementById('companyLocation')?.value || '';
+    document.getElementById('kf_webshopStatus').value = document.getElementById('webshopStatus')?.value || '';
+
+    // move uploaded files to the kalkulacioForm before submit
+    const fileInput = document.getElementById('documents');
+    const kalkulacioForm = document.getElementById('kalkulacioForm');
+    if (fileInput && fileInput.files.length > 0) {
+      fileInput.style.display = 'none';
+      kalkulacioForm.appendChild(fileInput);
+    }
+
     // mode
     document.getElementById('kf_mode').value = mode;
 
@@ -888,6 +1203,14 @@ Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkci
   }
 
   buildE(); buildI(); recalc();
+
+  document.getElementById('businessYear')?.addEventListener('change', function() {
+    if (this.value === 'nem') {
+      document.getElementById('notEligibleModal').style.display = 'flex';
+      this.value = ''; // Reset selection
+    }
+  });
+
 </script>
 
 </body>
