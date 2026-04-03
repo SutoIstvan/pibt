@@ -45,7 +45,12 @@ class ContactController extends Controller
             $message->from($validated['email'], $validated['name']);
         });
 
-        return redirect()->route('dimop-jelentkezes-gyorsitasa');
+        return redirect()
+            ->route('dimop-jelentkezes-gyorsitasa')
+            ->with('name', $validated['name'])
+            ->with('company', $validated['company']);
+    
+        // return redirect()->route('dimop-jelentkezes-gyorsitasa');
         
         // return redirect()->back()->with('success', 'Köszönjük! Üzenetét sikeresen elküldtük! Kérése feldolgozása után munkatársunk felveszi Önnel a kapcsolatot.!');
         

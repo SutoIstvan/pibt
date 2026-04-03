@@ -29,7 +29,7 @@
   <!-- HEADER -->
   <div class="text-center mb-5">
     <div class="mb-3 fs-1 text-success">✓</div>
-    <h1 class="fw-bold">Köszönjük a jelentkezésed!</h1>
+    <h1 class="fw-bold">Köszönjük {{ session('name') ?: '' }} a jelentkezésed!</h1>
     <p class="text-muted">
       Hamarosan felvesszük veled a kapcsolatot.<br>
       Addig is van még egy fontos teendőd – olvasd el figyelmesen!
@@ -121,6 +121,14 @@
       dimop@pikft.hu
     </a>
   </div>
+
+
+  <input 
+  type="text" 
+  name="company" 
+  class="form-control"
+  value="{{ old('company', session('company')) }}"
+>
 
 </div>
 
