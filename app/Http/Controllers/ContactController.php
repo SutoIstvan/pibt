@@ -84,4 +84,39 @@ class ContactController extends Controller
 
         return redirect()->back();
     }
+
+    public function kalkulacioSubmit(Request $request)
+    {
+        $validated = $request->validate([
+            'company' => 'required|max:255',
+            'name' => 'nullable|max:255',
+            'mode' => 'required|in:netto,brutto',
+            'eszkozok_json' => 'nullable|string',
+            'immaterialis_json' => 'nullable|string',
+            'sum_eszkoz' => 'nullable|numeric',
+            'sum_immaterialis' => 'nullable|numeric',
+            'sum_total' => 'nullable|numeric',
+        ]);
+
+        $eszkozok = json_decode($validated['eszkozok_json'] ?? '[]', true) ?: [];
+        $immaterialis = json_decode($validated['immaterialis_json'] ?? '[]', true) ?: [];
+
+        $data = [
+            'company' => $validated['company'] ?? '',
+            'name' => $validated['name'] ?? '',
+            'mode' => $validated['mode'],
+            'eszkozok' => $eszkozok,
+            'immaterialis' => $immaterialis,
+            'sum_eszkoz' => (int)($validated['sum_eszkoz'] ?? 0),
+            'sum_immaterialis' => (int)($validated['sum_immaterialis'] ?? 0),
+            'sum_total' => (int)($validated['sum_total'] ?? 0),
+        ];
+
+        Mail::send('emails.kalkulacio', ['data' => $data], function ($message) use ($data) {
+            $message->to('info@pikft.hu')
+                    ->subject('DIMOP Plusz kalkuláció – ' . ($data['company'] ?: $data['name'] ?: 'Ismeretlen'));
+        });
+
+        return redirect()->back()->with('success', 'A kalkuláció sikeresen elküldve!');
+    }
 }

@@ -65,6 +65,8 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 
 Route::post('/phone', [ContactController::class, 'phonesubmit'])->name('contact.phonesubmit');
 
+Route::post('/kalkulacio', [ContactController::class, 'kalkulacioSubmit'])->name('kalkulacio.submit');
+
 Route::prefix('services')->group(function () {
     Route::get('/access-control-systems', function () {
         return view('services.access_control_systems');
