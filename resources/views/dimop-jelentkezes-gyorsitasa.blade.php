@@ -365,7 +365,7 @@
   <div class="alert alert-warning d-flex gap-3 align-items-start mb-4">
     <div class="fs-4">👉</div>
     <div>
-      <strong>Van még egy fontos teendőd!</strong>
+      <strong>Kérjük kövesd az alábbi lépéseket!</strong>
       <div>
         A pályázati folyamat elindításához regisztrálnod kell a hivatalos portálra,
         és ki kell töltened a digitális érettségi felmérőt.
@@ -452,7 +452,7 @@
     <div class="card-body">
       <div class="d-flex align-items-center mb-3">
         <span class="badge bg-primary rounded-circle me-3">3</span>
-        <h5 class="mb-0 fw-bold">Küldd el nekünk az eredményt</h5>
+        <h5 class="mb-0 fw-bold">Add meg a pályázó adatait!</h5>
       </div>
 
         <div class="contact-form">
@@ -748,46 +748,85 @@
     </div>
   </div>
 
-  @if (session('success') || $errors->any())
-  <div class="status-modal-overlay" id="formStatusModal">
-    <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
-      <div class="status-modal-header">
-        <h2 class="status-modal-title" id="formStatusModalTitle">
-          @if (session('success'))
-          Sikeres üzenetküldés!
-          @else
-          Kérjük, ellenőrizd az adatokat
-          @endif
-        </h2>
+@if (session('success') || $errors->any())
+<div id="formStatusModal" style="
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+">
 
-        <button type="button" class="status-modal-close" id="closeStatusModal" aria-label="Bezárás">×</button>
-      </div>
+  <div style="
+    background: #fff;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  ">
 
-      <div class="status-modal-body">
-        @if (session('success'))
-        <div class="status-icon success-icon">✓</div>
-        <div class="status-alert status-alert-success">{{ session('success') }}</div>
-        @endif
+    <!-- КНОПКА ЗАКРЫТИЯ -->
+    <button onclick="closeModal()" style="
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 24px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      opacity: 0.5;
+    ">×</button>
 
-        @if ($errors->any())
-        <div class="status-icon error-icon">!</div>
-        <div class="status-alert status-alert-error">
-          <strong>A beküldés nem sikerült:</strong>
-          <ul>
-            @foreach ($errors->all() as $error)
+    <!-- HEADER -->
+    <h2 style="margin-bottom: 15px;">
+      @if (session('success'))
+        Sikeres üzenetküldés!
+      @else
+        Kérjük, ellenőrizd az adatokat
+      @endif
+    </h2>
+
+    <!-- BODY -->
+    @if (session('success'))
+      <div style="font-size:40px; color:green;">✓</div>
+      <p>{{ session('success') }}</p>
+    @endif
+
+    @if ($errors->any())
+      <div style="font-size:40px; color:red;">⚠️</div>
+      <div>
+        <strong>A beküldés nem sikerült:</strong>
+        <ul style="text-align:left;">
+          @foreach ($errors->all() as $error)
             <li>{{ $error }}</li>
-            @endforeach
-          </ul>
-        </div>
-        @endif
+          @endforeach
+        </ul>
       </div>
+    @endif
 
-      <div class="status-modal-footer">
-        <button type="button" class="status-modal-btn" id="okStatusModal">Rendben</button>
-      </div>
-    </div>
+    <!-- FOOTER -->
+    <button onclick="closeModal()" style="
+      margin-top:15px;
+      background:#0f2447;
+      color:#fff;
+      border:none;
+      padding:10px 25px;
+      border-radius:6px;
+      cursor:pointer;
+    ">
+      Rendben
+    </button>
+
   </div>
-  @endif
+</div>
+@endif
 
 <script>
   /* ══════════════════════════════════════════
