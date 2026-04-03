@@ -2497,10 +2497,82 @@
           <div class="cf-title">Kérj visszahívást vagy konzultációt</div>
           <form action="{{ route('contact.submit') }}" method="POST" id="contactForm" novalidate>
             @csrf
-            <div class="cf-row"><label>Neved</label><input type="text" name="name" placeholder="Kovács János" required></div>
-            <div class="cf-row"><label>Cég neve</label><input type="text" name="company" placeholder="Példa Kft."></div>
-            <div class="cf-row"><label>Telefonszám</label><input type="tel" name="phone" placeholder="+36 30 000 0000"></div>
-            <div class="cf-row"><label>E-mail cím</label><input type="email" name="email" placeholder="pelda@ceg.hu" required></div>
+            <div class="row">
+              
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Neved</label>
+                <input type="text" class="form-control" name="name" placeholder="Kovács János" required>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Adószám</label>
+                <input type="text" class="form-control" name="company" placeholder="12345678-1-12">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Telefonszám</label>
+                <input type="tel" class="form-control" name="phone" placeholder="+36 30 000 0000">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">E-mail cím</label>
+                <input type="email" class="form-control" name="email" placeholder="pelda@ceg.hu" required>
+              </div>
+
+            </div>
+
+
+            <div class="mb-3">
+              <label for="businessYear" class="form-label">
+                Rendelkezel 1 lezárt üzleti évvel
+              </label>
+              <select class="form-select" name="3522631_select_Rendelkezel1lezartuzletievvel" id="businessYear" required>
+                <option value="" selected disabled>Kérem válasszon!</option>
+                <option value="igen">igen</option>
+                <option value="nem">nem</option>
+              </select>
+              <div class="invalid-feedback">
+                Kérlek válassz egy opciót
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="companyLocation" class="form-label">
+                Cég székhelye
+              </label>
+              <select class="form-select" name="3522631_select_Cegszekhelye" id="companyLocation" required>
+                <option value="" selected disabled>Kérem válasszon!</option>
+                <option value="Magyarország, kivéve Budapest">
+                  Magyarország, kivéve Budapest
+                </option>
+                <option value="Budapest">Budapest</option>
+              </select>
+              <div class="invalid-feedback">
+                Kérlek válassz egy opciót
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="webshopStatus" class="form-label">
+                Rendelkezel már webáruházzal
+              </label>
+              <select class="form-select" name="3522631_select_Rendelkezelmarwebaruhazzal" id="webshopStatus" required>
+                <option value="" selected disabled>Kérem válasszon!</option>
+                <option value="Igen, UNAS áruházam van">
+                  Igen, UNAS áruházam van
+                </option>
+                <option value="Igen, de nem UNAS áruházam van">
+                  Igen, de nem UNAS áruházam van
+                </option>
+                <option value="Nincs webáruházam">
+                  Nincs webáruházam
+                </option>
+              </select>
+              <div class="invalid-feedback">
+                Kérlek válassz egy opciót
+              </div>
+            </div>
+
             <div class="cf-row"><label>Mire van szükséged? (röviden)</label><textarea name="message" placeholder="Pl.: Webshopot szeretnék indítani, ERP rendszert bevezetnénk, vagy csak nem tudom pontosan – segítséget kérek…"></textarea></div>
             <div class="cf-check"><input type="checkbox" id="gdpr" name="gdpr" required><label for="gdpr">Elfogadom az <a href="{{ route('gdpr') }}" target="_blank">adatkezelési feltételeket</a> és hozzájárulok, hogy felvegyék velem a kapcsolatot.</label></div>
             <input type="hidden" name="recaptcha_token" id="recaptchaToken">
@@ -2508,7 +2580,7 @@
               {!! htmlScriptTagJsApi() !!}
               {!! htmlFormSnippet() !!}
             </div>
-            
+
             <input type="hidden" name="service" id="selectedService">
 
             <button type="submit" id="submitBtn" class="cf-submit">Ingyenes konzultációt kérek →</button>
@@ -2623,78 +2695,78 @@
   </script>
   </script>
 
-@if (session('success') || $errors->any())
-    <div class="status-modal-overlay" id="formStatusModal">
-      <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
-        <div class="status-modal-header">
-          <h2 class="status-modal-title" id="formStatusModalTitle">
-            @if (session('success'))
-              Sikeres üzenetküldés!
-            @else
-              Kérjük, ellenőrizd az adatokat
-            @endif
-          </h2>
-
-          <button type="button" class="status-modal-close" id="closeStatusModal" aria-label="Bezárás">×</button>
-        </div>
-
-        <div class="status-modal-body">
+  @if (session('success') || $errors->any())
+  <div class="status-modal-overlay" id="formStatusModal">
+    <div class="status-modal-box" role="dialog" aria-modal="true" aria-labelledby="formStatusModalTitle">
+      <div class="status-modal-header">
+        <h2 class="status-modal-title" id="formStatusModalTitle">
           @if (session('success'))
-            <div class="status-icon success-icon">✓</div>
-            <div class="status-alert status-alert-success">{{ session('success') }}</div>
+          Sikeres üzenetküldés!
+          @else
+          Kérjük, ellenőrizd az adatokat
           @endif
+        </h2>
 
-          @if ($errors->any())
-            <div class="status-icon error-icon">!</div>
-            <div class="status-alert status-alert-error">
-              <strong>A beküldés nem sikerült:</strong>
-              <ul>
-                @foreach ($errors->all() as $error)
-                  <li>{{ $error }}</li>
-                @endforeach
-              </ul>
-            </div>
-          @endif
-        </div>
+        <button type="button" class="status-modal-close" id="closeStatusModal" aria-label="Bezárás">×</button>
+      </div>
 
-        <div class="status-modal-footer">
-          <button type="button" class="status-modal-btn" id="okStatusModal">Rendben</button>
+      <div class="status-modal-body">
+        @if (session('success'))
+        <div class="status-icon success-icon">✓</div>
+        <div class="status-alert status-alert-success">{{ session('success') }}</div>
+        @endif
+
+        @if ($errors->any())
+        <div class="status-icon error-icon">!</div>
+        <div class="status-alert status-alert-error">
+          <strong>A beküldés nem sikerült:</strong>
+          <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+          </ul>
         </div>
+        @endif
+      </div>
+
+      <div class="status-modal-footer">
+        <button type="button" class="status-modal-btn" id="okStatusModal">Rendben</button>
       </div>
     </div>
-@endif
+  </div>
+  @endif
 
   <script>
     // ── Form success/error modal (в конце, после HTML) ──
     document.addEventListener('DOMContentLoaded', function() {
       @if(session('success') || $errors->any())
-        const formStatusModal = document.getElementById('formStatusModal');
-        const closeStatusModal = document.getElementById('closeStatusModal');
-        const okStatusModal = document.getElementById('okStatusModal');
+      const formStatusModal = document.getElementById('formStatusModal');
+      const closeStatusModal = document.getElementById('closeStatusModal');
+      const okStatusModal = document.getElementById('okStatusModal');
 
-        function closeStatusModalFn() {
-          if (!formStatusModal) return;
-          formStatusModal.classList.remove('show');
-          document.body.classList.remove('modal-open-custom');
-        }
+      function closeStatusModalFn() {
+        if (!formStatusModal) return;
+        formStatusModal.classList.remove('show');
+        document.body.classList.remove('modal-open-custom');
+      }
 
-        if (formStatusModal) {
-          setTimeout(() => {
-            formStatusModal.classList.add('show');
-            document.body.classList.add('modal-open-custom');
-          }, 100);
+      if (formStatusModal) {
+        setTimeout(() => {
+          formStatusModal.classList.add('show');
+          document.body.classList.add('modal-open-custom');
+        }, 100);
 
-          if (closeStatusModal) closeStatusModal.addEventListener('click', closeStatusModalFn);
-          if (okStatusModal) okStatusModal.addEventListener('click', closeStatusModalFn);
+        if (closeStatusModal) closeStatusModal.addEventListener('click', closeStatusModalFn);
+        if (okStatusModal) okStatusModal.addEventListener('click', closeStatusModalFn);
 
-          formStatusModal.addEventListener('click', function(e) {
-            if (e.target === formStatusModal) closeStatusModalFn();
-          });
+        formStatusModal.addEventListener('click', function(e) {
+          if (e.target === formStatusModal) closeStatusModalFn();
+        });
 
-          document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') closeStatusModalFn();
-          });
-        }
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') closeStatusModalFn();
+        });
+      }
       @endif
     });
   </script>

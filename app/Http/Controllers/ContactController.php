@@ -19,6 +19,9 @@ class ContactController extends Controller
             'company' => 'nullable|max:255',
             'phone' => 'nullable|max:50',
             'service' => 'nullable|string|max:255',
+            '3522631_select_Rendelkezel1lezartuzletievvel' => 'nullable|string|max:255',
+            '3522631_select_Cegszekhelye' => 'nullable|string|max:255',
+            '3522631_select_Rendelkezelmarwebaruhazzal' => 'nullable|string|max:255',
             'g-recaptcha-response' => 'recaptcha',
         ]);
 
@@ -29,6 +32,9 @@ class ContactController extends Controller
         $message .= "Cég: {$validated['company']}\n";
         $message .= "Telefon: {$validated['phone']}\n";
         $message .= "Szolgáltatás: {$validated['service']}\n";
+        $message .= "1 lezárt üzleti év: " . ($validated['3522631_select_Rendelkezel1lezartuzletievvel'] ?? '') . "\n";
+        $message .= "Cég székhelye: " . ($validated['3522631_select_Cegszekhelye'] ?? '') . "\n";
+        $message .= "Webáruház: " . ($validated['3522631_select_Rendelkezelmarwebaruhazzal'] ?? '') . "\n";
         $message .= "Üzenet:\n{$validated['message']}";
 
         // Логика для отправки письма или сохранения данных
@@ -39,7 +45,9 @@ class ContactController extends Controller
             $message->from($validated['email'], $validated['name']);
         });
 
-        return redirect()->back()->with('success', 'Köszönjük! Üzenetét sikeresen elküldtük! Kérése feldolgozása után munkatársunk felveszi Önnel a kapcsolatot.!');
+        return redirect()->route('dimop-jelentkezes-gyorsitasa');
+        
+        // return redirect()->back()->with('success', 'Köszönjük! Üzenetét sikeresen elküldtük! Kérése feldolgozása után munkatársunk felveszi Önnel a kapcsolatot.!');
         
         // return redirect(url()->previous() . '#kapcsolat')
         //     ->with('success', 'Köszönjük! Üzenetét sikeresen elküldtük! Kérése feldolgozása után munkatársunk felveszi Önnel a kapcsolatot.!');    
