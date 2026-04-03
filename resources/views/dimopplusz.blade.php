@@ -2087,7 +2087,7 @@
             <div class="pkg-palya-note"><svg viewBox="0 0 24 24">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>Komplett csomag – a pályázatírás díját mi álljuk</div>
-            <a href="#kapcsolat" class="pkg-cta">Jekenkezés a pályázatra</a>
+            <a href="#kapcsolat" class="pkg-cta">Jelentkezés a pályázatra</a>
           </div>
         </div>
 
@@ -2215,7 +2215,7 @@
             <div class="pkg-palya-note"><svg viewBox="0 0 24 24">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>Komplett csomag – a pályázatírás díját mi álljuk</div>
-            <a href="#kapcsolat" class="pkg-cta">Jekenkezés a pályázatra</a>
+            <a href="#kapcsolat" class="pkg-cta">Jelentkezés a pályázatra</a>
           </div>
         </div>
 
@@ -2340,7 +2340,7 @@
             <div class="pkg-palya-note"><svg viewBox="0 0 24 24">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>Komplett csomag – a pályázatírás díját mi álljuk</div>
-            <a href="#kapcsolat" class="pkg-cta">Jekenkezés a pályázatra</a>
+            <a href="#kapcsolat" class="pkg-cta">Jelentkezés a pályázatra</a>
           </div>
         </div>
       </div>
