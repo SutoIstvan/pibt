@@ -1250,6 +1250,10 @@ Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkci
     }
   });
 
+  function closeModal() {
+    document.getElementById('formStatusModal').style.display = 'none';
+  }
+
 </script>
 
 </body>
