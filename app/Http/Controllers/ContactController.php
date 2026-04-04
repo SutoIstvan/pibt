@@ -103,6 +103,7 @@ class ContactController extends Controller
             'sum_total' => 'nullable|numeric',
             'documents' => 'nullable|array|max:20',
             'documents.*' => 'file|max:10240',
+            'g-recaptcha-response' => 'recaptcha',
         ]);
 
         $eszkozok = json_decode($validated['eszkozok_json'] ?? '[]', true) ?: [];
