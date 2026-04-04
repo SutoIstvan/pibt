@@ -938,7 +938,7 @@ Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkci
       {id:'i4a',s:'4.',cel:'IKT-szakember',  nev:`IKT-szakember igénybevétele <span title="${info.i4a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'óra',n:9200,b:11684,initQ:0,initF:1},
     ]},
     {lbl:'5. Alkalmazottak tájékoztatása IKT-biztonsági kötelezettségeikről (max. 10%) <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i5a',s:'5.',cel:'IKT-biztonsági képzés',nev:`IKT-biztonsági képzés <span title="${info.i5a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'fő',n:207100,b:263017,initQ:0,initF:1,biz:true},
+      {id:'i5a',s:'5.',cel:'IKT-biztonsági képzés',nev:`IKT-biztonsági képzés <span title="${info.i5a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'fő',n:207100,b:263017,initQ:0,initF:1,biz:true,noF:true},
     ]},
     {lbl:'6. Legalább 3 IKT-biztonsági intézkedés alkalmazása <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
       {id:'i6a',s:'6.',cel:'IKT-biztonsági intézkedések',nev:`  Végpontvédelmi licenc <span title="${info.i6a}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'db/hó',n:1400,b:1778,initQ:0,initF:1},
