@@ -456,28 +456,28 @@
       </div>
 
         <div class="contact-form">
-          <form action="{{ route('contact.submit') }}" method="POST" id="contactForm" novalidate>
+          <form action="{{ route('contact.submit') }}" method="POST" id="contactForm">
             @csrf
             <div class="row">
               
               <div class="col-md-6 mb-3">
                 <label class="form-label">Neved</label>
-                <input type="text" class="form-control" name="name" placeholder="Kovács János" required>
+                <input type="text" class="form-control" name="name" placeholder="Kovács János" value="{{ old('name') }}" required>
               </div>
 
               <div class="col-md-6 mb-3">
                 <label class="form-label">Cég Adószám</label>
-                <input type="text" class="form-control" name="company" placeholder="12345678-1-12">
+                <input type="text" class="form-control" name="company" placeholder="12345678-1-12" value="{{ old('company') }}" required>
               </div>
 
               <div class="col-md-6 mb-3">
                 <label class="form-label">Telefonszám</label>
-                <input type="tel" class="form-control" name="phone" placeholder="+36 30 000 0000">
+                <input type="tel" class="form-control" name="phone" placeholder="+36 30 000 0000" value="{{ old('phone') }}" required>
               </div>
 
               <div class="col-md-6 mb-3">
                 <label class="form-label">E-mail cím</label>
-                <input type="email" class="form-control" name="email" placeholder="pelda@ceg.hu" required>
+                <input type="email" class="form-control" name="email" placeholder="pelda@ceg.hu" value="{{ old('email') }}" required>
               </div>
 
             </div>
@@ -488,9 +488,9 @@
                 Rendelkezel 1 lezárt üzleti évvel
               </label>
               <select class="form-select" name="3522631_select_Rendelkezel1lezartuzletievvel" id="businessYear" required>
-                <option value="" selected disabled>Kérem válasszon!</option>
-                <option value="igen">igen</option>
-                <option value="nem">nem</option>
+                <option value="" {{ old('3522631_select_Rendelkezel1lezartuzletievvel') == '' ? 'selected' : '' }} disabled>Kérem válasszon!</option>
+                <option value="igen" {{ old('3522631_select_Rendelkezel1lezartuzletievvel') == 'igen' ? 'selected' : '' }}>igen</option>
+                <option value="nem" {{ old('3522631_select_Rendelkezel1lezartuzletievvel') == 'nem' ? 'selected' : '' }}>nem</option>
               </select>
               <div class="invalid-feedback">
                 Kérlek válassz egy opciót
@@ -502,11 +502,11 @@
                 Cég székhelye
               </label>
               <select class="form-select" name="3522631_select_Cegszekhelye" id="companyLocation" required>
-                <option value="" selected disabled>Kérem válasszon!</option>
-                <option value="Magyarország, kivéve Budapest">
+                <option value="" {{ old('3522631_select_Cegszekhelye') == '' ? 'selected' : '' }} disabled>Kérem válasszon!</option>
+                <option value="Magyarország, kivéve Budapest" {{ old('3522631_select_Cegszekhelye') == 'Magyarország, kivéve Budapest' ? 'selected' : '' }}>
                   Magyarország, kivéve Budapest
                 </option>
-                <option value="Budapest">Budapest</option>
+                <option value="Budapest" {{ old('3522631_select_Cegszekhelye') == 'Budapest' ? 'selected' : '' }}>Budapest</option>
               </select>
               <div class="invalid-feedback">
                 Kérlek válassz egy opciót
@@ -518,14 +518,14 @@
                 Rendelkezel már webáruházzal
               </label>
               <select class="form-select" name="3522631_select_Rendelkezelmarwebaruhazzal" id="webshopStatus" required>
-                <option value="" selected disabled>Kérem válasszon!</option>
-                <option value="Igen, UNAS áruházam van">
+                <option value="" {{ old('3522631_select_Rendelkezelmarwebaruhazzal') == '' ? 'selected' : '' }} disabled>Kérem válasszon!</option>
+                <option value="Igen, UNAS áruházam van" {{ old('3522631_select_Rendelkezelmarwebaruhazzal') == 'Igen, UNAS áruházam van' ? 'selected' : '' }}>
                   Igen, UNAS áruházam van
                 </option>
-                <option value="Igen, de nem UNAS áruházam van">
+                <option value="Igen, de nem UNAS áruházam van" {{ old('3522631_select_Rendelkezelmarwebaruhazzal') == 'Igen, de nem UNAS áruházam van' ? 'selected' : '' }}>
                   Igen, de nem UNAS áruházam van
                 </option>
-                <option value="Nincs webáruházam">
+                <option value="Nincs webáruházam" {{ old('3522631_select_Rendelkezelmarwebaruhazzal') == 'Nincs webáruházam' ? 'selected' : '' }}>
                   Nincs webáruházam
                 </option>
               </select>
@@ -694,10 +694,10 @@
     <!-- <button type="button" class="btn btn-ghost" onclick="resetAll()">Visszaállítás</button> -->
     <form action="{{ route('kalkulacio.submit') }}" method="POST" enctype="multipart/form-data" id="kalkulacioForm" onsubmit="return prepareKalkulacio()">
       @csrf
-      <input type="hidden" name="company" id="kf_company" value="{{ old('company', session('company')) }}">
-      <input type="hidden" name="name" id="kf_name" value="{{ old('name', session('name')) }}">
-      <input type="hidden" name="phone" id="kf_phone" value="{{ old('phone') }}">
-      <input type="hidden" name="email" id="kf_email" value="{{ old('email') }}">
+      <input type="hidden" name="company" id="kf_company" value="{{ old('company', session('company')) }}" required>
+      <input type="hidden" name="name" id="kf_name" value="{{ old('name', session('name')) }}" required>
+      <input type="hidden" name="phone" id="kf_phone" value="{{ old('phone') }}" required>
+      <input type="hidden" name="email" id="kf_email" value="{{ old('email') }}" required>
       <input type="hidden" name="3522631_select_Rendelkezel1lezartuzletievvel" id="kf_businessYear">
       <input type="hidden" name="3522631_select_Cegszekhelye" id="kf_companyLocation">
       <input type="hidden" name="3522631_select_Rendelkezelmarwebaruhazzal" id="kf_webshopStatus">
@@ -707,10 +707,12 @@
       <input type="hidden" name="sum_eszkoz" id="kf_sum_eszkoz">
       <input type="hidden" name="sum_immaterialis" id="kf_sum_immaterialis">
       <input type="hidden" name="sum_total" id="kf_sum_total">
+      <input type="hidden" name="qv_json" id="kf_qv" value="{{ old('qv_json', '{}') }}">
+      <input type="hidden" name="fv_json" id="kf_fv" value="{{ old('fv_json', '{}') }}">
 
       <div class="recaptcha-notice mt-3">Ez az oldal a Google reCAPTCHA-t használja a spam-védelem érdekében. <a href="{{ route('gdpr') }}" target="_blank">Adatkezelési feltételeket</a> </div>
 
-      <div class="cf-check mt-3"><input type="checkbox" id="gdpr" name="gdpr" required><label for="gdpr">Elfogadom az <a href="{{ route('gdpr') }}" target="_blank">adatkezelési feltételeket</a> és hozzájárulok, hogy felvegyék velem a kapcsolatot.</label></div>
+      <div class="cf-check mt-3"><input type="checkbox" id="gdpr" name="gdpr" {{ old('gdpr') ? 'checked' : '' }} required><label for="gdpr">Elfogadom az <a href="{{ route('gdpr') }}" target="_blank">adatkezelési feltételeket</a> és hozzájárulok, hogy felvegyék velem a kapcsolatot.</label></div>
       
       <input type="hidden" name="recaptcha_token" id="recaptchaToken">
       <div class="mb-3">
@@ -923,62 +925,62 @@ Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkci
   const immGroups = [
     {lbl:'1. Távoli hozzáférés (e-mail, dokumentumok, üzleti alkalmazás) <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
       {id:'i1a',s:'1.',cel:'Távoli hozzáférés', nev:`SaaS irodai csomag <span title="${info.i1a}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'felhasználó/hó',n:5900,  b:7493,  initQ:0,initF:0},
-      {id:'i1b',s:'',  cel:'',                  nev:`Domain regisztráció <span title="${info.i1b}" style="cursor:help;">ℹ️</span>`,               elv:'Kötelező',me:'hó',            n:200,   b:254,   initQ:0,initF:1},
-      {id:'i1c',s:'',  cel:'',                  nev:`Havidíjas IT-üzemeltetés (alapszint) <span title="${info.i1c}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',           n:127300,b:161671,initQ:0,initF:1},
+      {id:'i1b',s:'',  cel:'',                  nev:`Domain regisztráció <span title="${info.i1b}" style="cursor:help;">ℹ️</span>`,               elv:'Kötelező',me:'hó',            n:200,   b:254,   initQ:0,initF:0},
+      {id:'i1c',s:'',  cel:'',                  nev:`Havidíjas IT-üzemeltetés (alapszint) <span title="${info.i1c}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',           n:127300,b:161671,initQ:0,initF:0},
     ]},
     {lbl:'2. Online (távoli) megbeszélések tartása <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i2a',s:'2.',cel:'Online megbeszélések',nev:`Videókonferencia platform   <span title="${info.i2a}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',me:'felhasználó/hó',n:5300, b:6731, initQ:0,initF:1,noF:true},
-      {id:'i2b',s:'',  cel:'',                  nev:`Bevezetési, üzemeltetési szolgáltatás <span title="${info.i2b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',          n:53000,b:67310,initQ:0,initF:1,noF:true},
+      {id:'i2a',s:'2.',cel:'Online megbeszélések',nev:`Videókonferencia platform   <span title="${info.i2a}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',me:'felhasználó/hó',n:5300, b:6731, initQ:0,initF:0,noF:true},
+      {id:'i2b',s:'',  cel:'',                  nev:`Bevezetési, üzemeltetési szolgáltatás <span title="${info.i2b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',          n:53000,b:67310,initQ:0,initF:0,noF:true},
     ]},
     {lbl:'3. IKT-képzés az alkalmazottaknak (max. 20%) <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i3a',s:'3.',cel:'IKT-képzés',     nev:`IKT-alapképzés <span title="${info.i3a}" style="cursor:help;">ℹ️</span>`,                    elv:'Kötelező',me:'fő',n:67310, b:96901, initQ:0,initF:1,kepzes:true},
-      {id:'i3b',s:'',  cel:'',               nev:`Haladó digitális készségfejlesztés <span title="${info.i3b}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'fő',n:191100,b:242697,initQ:0,initF:1,kepzes:true},
+      {id:'i3a',s:'3.',cel:'IKT-képzés',     nev:`IKT-alapképzés <span title="${info.i3a}" style="cursor:help;">ℹ️</span>`,                    elv:'Kötelező',me:'fő',n:67310, b:96901, initQ:0,initF:0,kepzes:true},
+      {id:'i3b',s:'',  cel:'',               nev:`Haladó digitális készségfejlesztés <span title="${info.i3b}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'fő',n:191100,b:242697,initQ:0,initF:0,kepzes:true},
     ]},
     {lbl:'4. IKT-szakember igénybevétele <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i4a',s:'4.',cel:'IKT-szakember',  nev:`IKT-szakember igénybevétele <span title="${info.i4a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'óra',n:9200,b:11684,initQ:0,initF:1,noF:true},
+      {id:'i4a',s:'4.',cel:'IKT-szakember',  nev:`IKT-szakember igénybevétele <span title="${info.i4a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'óra',n:9200,b:11684,initQ:0,initF:0,noF:true},
     ]},
     {lbl:'5. Alkalmazottak tájékoztatása IKT-biztonsági kötelezettségeikről (max. 10%) <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i5a',s:'5.',cel:'IKT-biztonsági képzés',nev:`IKT-biztonsági képzés <span title="${info.i5a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'fő',n:207100,b:263017,initQ:0,initF:1,biz:true,noF:true},
+      {id:'i5a',s:'5.',cel:'IKT-biztonsági képzés',nev:`IKT-biztonsági képzés <span title="${info.i5a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',me:'fő',n:207100,b:263017,initQ:0,initF:0,biz:true,noF:true},
     ]},
     {lbl:'6. Legalább 3 IKT-biztonsági intézkedés alkalmazása <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i6a',s:'6.',cel:'IKT-biztonsági intézkedések',nev:`  Végpontvédelmi licenc <span title="${info.i6a}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'db/hó',n:1400,b:1778,initQ:0,initF:1},
-      {id:'i6b',s:'',  cel:'',               nev:`Biztonsági mentés <span title="${info.i6b}" style="cursor:help;">ℹ️</span>`,                 elv:'Kötelező',me:'db/hó',n:3000,b:3810,initQ:0,initF:1},
+      {id:'i6a',s:'6.',cel:'IKT-biztonsági intézkedések',nev:`  Végpontvédelmi licenc <span title="${info.i6a}" style="cursor:help;">ℹ️</span>`, elv:'Kötelező',me:'db/hó',n:1400,b:1778,initQ:0,initF:0},
+      {id:'i6b',s:'',  cel:'',               nev:`Biztonsági mentés <span title="${info.i6b}" style="cursor:help;">ℹ️</span>`,                 elv:'Kötelező',me:'db/hó',n:3000,b:3810,initQ:0,initF:0},
     ]},
     {lbl:'7. IKT-biztonsági dokumentumok megléte <span class="bdg bdg-help">Ha választod, az IBSZ <span class="bdg bdg-req">kötelező</span>, a többi szabadon <span class="bdg bdg-opt">választható</span></span>',items:[
-      {id:'i7a',s:'7.',cel:'Biztonsági dokumentumok',nev:`IBSZ kidolgozása <span title="${info.i7a}" style="cursor:help;">ℹ️</span>`,           elv:'Kötelező',  me:'egyszeri költség',n:524300,b:665861, initQ:1,initF:1,noF:true},
-      {id:'i7b',s:'',  cel:'',               nev:`GDPR alapfelmérés és adatkezelési nyilvántartás <span title="${info.i7b}" style="cursor:help;">ℹ️</span>`,elv:'Választható',me:'egyszeri költség',n:257900,b:327533,initQ:1,initF:1,opt:true,noF:true},
-      {id:'i7c',s:'',  cel:'',               nev:`  Incidenskezelési terv és oktatás <span title="${info.i7c}" style="cursor:help;">ℹ️</span>`,  elv:'Választható',me:'fő',n:294300,b:373761,initQ:0,initF:1,opt:true},
+      {id:'i7a',s:'7.',cel:'Biztonsági dokumentumok',nev:`IBSZ kidolgozása <span title="${info.i7a}" style="cursor:help;">ℹ️</span>`,           elv:'Kötelező',  me:'egyszeri költség',n:524300,b:665861, initQ:0,initF:0,noF:true},
+      {id:'i7b',s:'',  cel:'',               nev:`GDPR alapfelmérés és adatkezelési nyilvántartás <span title="${info.i7b}" style="cursor:help;">ℹ️</span>`,elv:'Választható',me:'egyszeri költség',n:257900,b:327533,initQ:0,initF:0,opt:true,noF:true},
+      {id:'i7c',s:'',  cel:'',               nev:`  Incidenskezelési terv és oktatás <span title="${info.i7c}" style="cursor:help;">ℹ️</span>`,  elv:'Választható',me:'fő',n:294300,b:373761,initQ:0,initF:0,opt:true},
       {id:'i7d',s:'',  cel:'',               nev:`Digitális aláírás szolgáltatás <span title="${info.i7d}" style="cursor:help;">ℹ️</span>`,    elv:'Választható',me:'felhasználó/hó',n:5200,b:6604,initQ:0,initF:0,opt:true,noF:true},
     ]},
     {lbl:'8. Saját weboldallal/honlappal való rendelkezés <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i8a',s:'8.',cel:'Weboldal',       nev:`Saját weboldal kialakítása <span title="${info.i8a}" style="cursor:help;">ℹ️</span>`,        elv:'Kötelező',me:'egyszeri költség',n:345100,b:438277,initQ:1,initF:1},
-      {id:'i8b',s:'',  cel:'',               nev:`Karbantartás/frissítés <span title="${info.i8b}" style="cursor:help;">ℹ️</span>`,            elv:'Kötelező',me:'hó',n:10100,b:12827,initQ:0,initF:1},
-      {id:'i8c',s:'',  cel:'',               nev: `Webtárhely <span title="${info.i8c}" style="cursor:help;">ℹ️</span>`,                        elv:'Kötelező',me:'hó',n:1900, b:2413, initQ:0,initF:1},
-      {id:'i8d',s:'',  cel:'',               nev:`SSL tanúsítvány <span title="${info.i8d}" style="cursor:help;">ℹ️</span>`,                   elv:'Kötelező',me:'hó',n:600,  b:762,  initQ:0,initF:1},
+      {id:'i8a',s:'8.',cel:'Weboldal',       nev:`Saját weboldal kialakítása <span title="${info.i8a}" style="cursor:help;">ℹ️</span>`,        elv:'Kötelező',me:'egyszeri költség',n:345100,b:438277,initQ:0,initF:0},
+      {id:'i8b',s:'',  cel:'',               nev:`Karbantartás/frissítés <span title="${info.i8b}" style="cursor:help;">ℹ️</span>`,            elv:'Kötelező',me:'hó',n:10100,b:12827,initQ:0,initF:0},
+      {id:'i8c',s:'',  cel:'',               nev: `Webtárhely <span title="${info.i8c}" style="cursor:help;">ℹ️</span>`,                        elv:'Kötelező',me:'hó',n:1900, b:2413, initQ:0,initF:0},
+      {id:'i8d',s:'',  cel:'',               nev:`SSL tanúsítvány <span title="${info.i8d}" style="cursor:help;">ℹ️</span>`,                   elv:'Kötelező',me:'hó',n:600,  b:762,  initQ:0,initF:0},
     ]},
     {lbl:'9. Bármilyen közösségi média használata <span class="bdg bdg-most">(nem választható együtt a 12. ponttal)</span> <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i9a',s:'9.',cel:'Közösségi média (1 típus)',nev:`Tartalomgyártás <span title="${info.i9a}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',me:'hó',n:74900,b:95123,initQ:0,initF:1},
+      {id:'i9a',s:'9.',cel:'Közösségi média (1 típus)',nev:`Tartalomgyártás <span title="${info.i9a}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',me:'hó',n:74900,b:95123,initQ:0,initF:0},
     ]},
     {lbl:'10. Kettő vagy több típusú közösségi média <span class="bdg bdg-most">(nem választható együtt a 11. ponttal)</span> <span class="bdg bdg-help">Ha választod, az online jelenlét és hirdetések <span class="bdg bdg-req">kötelező</span> a Képzés <span class="bdg bdg-opt">Választható</span> </span>',items:[
-      {id:'i10a',s:'10.',cel:'Közösségi média (2+ típus)',nev:`Online jelenlét és hirdetések <span title="${info.i10a}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',  me:'hó',n:96300,b:122301,initQ:0,initF:1,noF:true} ,
-      {id:'i10b',s:'',   cel:'',             nev:`Képzés (maximum 1 fő) <span title="${info.i10b}" style="cursor:help;">ℹ️</span>`,             elv:'Választható',me:'fő',n:374500,b:475615,initQ:0,initF:1,opt:true},
+      {id:'i10a',s:'10.',cel:'Közösségi média (2+ típus)',nev:`Online jelenlét és hirdetések <span title="${info.i10a}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',  me:'hó',n:96300,b:122301,initQ:0,initF:0,noF:true} ,
+      {id:'i10b',s:'',   cel:'',             nev:`Képzés (maximum 1 fő) <span title="${info.i10b}" style="cursor:help;">ℹ️</span>`,             elv:'Választható',me:'fő',n:374500,b:475615,initQ:0,initF:0,opt:true},
     ]},
     {lbl:'11. Bármilyen fizetős felhőszolgáltatás használata <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span> a MI szolgáltatás szabadon <span class="bdg bdg-opt">Választható</span></span>',items:[
-      {id:'i11a',s:'11.',cel:'Felhőszolgáltatás',nev:`Virtuális szerver (IaaS) <span title="${info.i11a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',  me:'hó',n:21800,  b:27686,  initQ:0,initF:1},
-      {id:'i11b',s:'',   cel:'',             nev:`Adattárolás és mentés (felhő storage) <span title="${info.i11b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',n:109100, b:138557, initQ:0,initF:1},
-      {id:'i11c',s:'',   cel:'',             nev:`Bevezetés, testre szabás <span title="${info.i11c}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',  me:'egyszeri költség',n:1379800,b:1752346,initQ:1,initF:1},
+      {id:'i11a',s:'11.',cel:'Felhőszolgáltatás',nev:`Virtuális szerver (IaaS) <span title="${info.i11a}" style="cursor:help;">ℹ️</span>`,       elv:'Kötelező',  me:'hó',n:21800,  b:27686,  initQ:0,initF:0},
+      {id:'i11b',s:'',   cel:'',             nev:`Adattárolás és mentés (felhő storage) <span title="${info.i11b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',n:109100, b:138557, initQ:0,initF:0},
+      {id:'i11c',s:'',   cel:'',             nev:`Bevezetés, testre szabás <span title="${info.i11c}" style="cursor:help;">ℹ️</span>`,          elv:'Kötelező',  me:'egyszeri költség',n:1379800,b:1752346,initQ:0,initF:0},
       {id:'i11d',s:'',   cel:'',             nev:`MI szolgáltatás <span title="${info.i11d}" style="cursor:help;">ℹ️</span>`,                   elv:'Választható',me:'felhasználó/hó',n:14400,b:18288,initQ:0,initF:0,opt:true},
     ]},
     {lbl:'12. Vállalati erőforrás-tervezési (ERP) megoldás használata <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
       {id:'i12a',s:'12.',cel:'ERP megoldás', nev:`ERP szoftverlicenc / előfizetés (SaaS, min. 2 új modul) <span title="${info.i12a}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'felhasználó/hó',n:24800,b:31496,initQ:0,initF:0,noF:true},
-      {id:'i12b',s:'',   cel:'',             nev:`Bevezetés, testre szabás, felhasználói oktatás <span title="${info.i12b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'egyszeri költség',n:1994300,b:2532761,initQ:1,initF:0,noF:true},
+      {id:'i12b',s:'',   cel:'',             nev:`Bevezetés, testre szabás, felhasználói oktatás <span title="${info.i12b}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'egyszeri költség',n:1994300,b:2532761,initQ:0,initF:0,noF:true},
     ]},
     {lbl:'13. Ügyfélkapcsolat-kezelési (CRM) megoldás használata <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
       {id:'i13a',s:'13.',cel:'CRM megoldás', nev:`CRM szoftverlicenc / előfizetés <span title="${info.i13a}" style="cursor:help;">ℹ️</span>`,   elv:'Kötelező',me:'felhasználó/hó',n:20700,b:26289,initQ:0,initF:0,noF:true},
-      {id:'i13b',s:'',   cel:'',             nev:`Bevezetés és testre szabás <span title="${info.i13b}" style="cursor:help;">ℹ️</span>`,        elv:'Kötelező',me:'egyszeri költség',n:1329500,b:1688465,initQ:1,initF:0,noF:true},
+      {id:'i13b',s:'',   cel:'',             nev:`Bevezetés és testre szabás <span title="${info.i13b}" style="cursor:help;">ℹ️</span>`,        elv:'Kötelező',me:'egyszeri költség',n:1329500,b:1688465,initQ:0,initF:0,noF:true},
     ]},
     {lbl:'14. Automatizált feldolgozásra alkalmas e-számlák küldése <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
-      {id:'i14a',s:'14.',cel:'E-számla',     nev:`Online számlázó szoftver előfizetés <span title="${info.i14a}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',n:3200,b:4064,initQ:0,initF:1},
+      {id:'i14a',s:'14.',cel:'E-számla',     nev:`Online számlázó szoftver előfizetés <span title="${info.i14a}" style="cursor:help;">ℹ️</span>`,elv:'Kötelező',me:'hó',n:3200,b:4064,initQ:0,initF:0},
     ]},
     {lbl:'15. Webes értékesítés <span class="bdg bdg-help">Ha választod, az összes összetevő <span class="bdg bdg-req">kötelező</span></span>',items:[
       {id:'i15a',s:'15.',cel:'Webshop',      nev:`Bérelhető webshop rendszer <span title="${info.i15a}" style="cursor:help;">ℹ️</span>`,        elv:'Kötelező',me:'hó',n:19200,b:24384,initQ:0,initF:0,noF:true},
@@ -987,9 +989,11 @@ Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkci
   ];
 
   /* ── STATE ── */
-  let mode = 'netto';
+  let mode = '{{ old("mode", "netto") }}';
   const qv = {}; // col8: mennyiség
   const fv = {}; // col9: felhasználó szám
+  try { Object.assign(qv, JSON.parse(document.getElementById('kf_qv').value)); } catch(e){}
+  try { Object.assign(fv, JSON.parse(document.getElementById('kf_fv').value)); } catch(e){}
 
   /* ── HELPERS ── */
   const pr   = it => mode === 'netto' ? it.n : it.b;
@@ -1241,11 +1245,13 @@ Vagy bármely igazolható olyan üzleti megoldás megléte, amely a fenti funkci
     document.getElementById('kf_sum_eszkoz').value = sumE;
     document.getElementById('kf_sum_immaterialis').value = sumI;
     document.getElementById('kf_sum_total').value = sumE + sumI;
+    document.getElementById('kf_qv').value = JSON.stringify(qv);
+    document.getElementById('kf_fv').value = JSON.stringify(fv);
 
     return true;
   }
 
-  buildE(); buildI(); recalc();
+  buildE(); buildI(); setMode(mode);
 
   document.getElementById('businessYear')?.addEventListener('change', function() {
     if (this.value === 'nem') {

@@ -23,6 +23,14 @@ class ContactController extends Controller
             '3522631_select_Cegszekhelye' => 'nullable|string|max:255',
             '3522631_select_Rendelkezelmarwebaruhazzal' => 'nullable|string|max:255',
             'g-recaptcha-response' => 'recaptcha',
+        ], [], [
+            'name' => 'Név',
+            'email' => 'E-mail cím',
+            'message' => 'Üzenet',
+            'company' => 'Cég',
+            'phone' => 'Telefonszám',
+            'service' => 'Szolgáltatás',
+            'g-recaptcha-response' => 'reCAPTCHA',
         ]);
 
         // dd($request);
@@ -66,6 +74,10 @@ class ContactController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required|min:10',
+        ], [], [
+            'name' => 'Név',
+            'email' => 'E-mail cím',
+            'message' => 'Üzenet',
         ]);
 
         // dd($request);
@@ -88,10 +100,10 @@ class ContactController extends Controller
     public function kalkulacioSubmit(Request $request)
     {
         $validated = $request->validate([
-            'company' => 'nullable|max:255',
-            'name' => 'nullable|max:255',
-            'phone' => 'nullable|max:255',
-            'email' => 'nullable|email',
+            'company' => 'required|max:255',
+            'name' => 'required|max:255',
+            'phone' => 'required|max:255',
+            'email' => 'required|email',
             '3522631_select_Rendelkezel1lezartuzletievvel' => 'nullable|string|max:255',
             '3522631_select_Cegszekhelye' => 'nullable|string|max:255',
             '3522631_select_Rendelkezelmarwebaruhazzal' => 'nullable|string|max:255',
@@ -104,6 +116,13 @@ class ContactController extends Controller
             'documents' => 'nullable|array|max:20',
             'documents.*' => 'file|max:10240',
             'g-recaptcha-response' => 'recaptcha',
+        ], [], [
+            'company' => 'Adószám',
+            'name' => 'Név',
+            'phone' => 'Telefonszám',
+            'email' => 'E-mail cím',
+            'documents' => 'Dokumentumok',
+            'g-recaptcha-response' => 'reCAPTCHA',
         ]);
 
         $eszkozok = json_decode($validated['eszkozok_json'] ?? '[]', true) ?: [];
