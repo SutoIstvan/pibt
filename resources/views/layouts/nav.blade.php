@@ -33,7 +33,7 @@
 
             <li class="nav-item me-4">
               <a class="nav-link {{ Route::is('dimop-jelentkezes-gyorsitasa') ? 'active' : '' }}" aria-current="page" href="{{route('dimop-jelentkezes-gyorsitasa')}}" style="color: #ff6e31; font-weight: 500;">
-                DIMOP Plusz 1.2.6/B
+                DIMOP Plusz 1.2.6/C
               </a>
             </li>
 

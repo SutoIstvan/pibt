@@ -324,7 +324,7 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-badge"><span class="hero-badge-dot"></span>DIMOP Plusz 1.2.6/B · Beadás: 2026. márciustól</div>
+    <div class="hero-badge"><span class="hero-badge-dot"></span>DIMOP Plusz 1.2.6/C · Beadás: 2026. május 5-től</div>
     <h1>Mondd el, mire van szükséged.<br><em>Mi megvalósítjuk.</em></h1>
     <p class="hero-lead">Akár <strong>12 millió forint vissza nem térítendő támogatás</strong> a vállalkozásod digitális fejlesztéséhez. Ha az igényed kilóg a sablonból – nálunk akkor is van megoldás.</p>
     <div class="hero-btns">
