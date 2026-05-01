@@ -39,7 +39,7 @@
 
             <li class="nav-item me-4">
               <a class="nav-link {{ Route::is('dimop') ? 'active' : '' }}" aria-current="page" href="{{route('dimop')}}">
-                DIMOP Plusz
+                OKM Business
               </a>
             </li>
             <li class="nav-item me-4 dropdown">

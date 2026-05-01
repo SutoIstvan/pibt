@@ -29,7 +29,7 @@ Route::get('/dimop-plusz-wiki', function () {
     return view('dimopwiki');
 })->name('dimopwiki');
 
-Route::get('/dimop-plusz-palyazati-lehetosegek-vallalkozasoknak', function () {
+Route::get('/okm-business', function () {
     return view('dimop');
 })->name('dimop');
 
