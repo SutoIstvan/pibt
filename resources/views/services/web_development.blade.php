@@ -33,7 +33,10 @@
     <div class="container my-3 mb-4">
       <div class="col-md-11 mt-1 text-center justify-content-center g-lg-5 py-1 mx-auto" data-aos="fade-up">
         <div class="d-flex flex-column align-items-center">
-          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center">
+          <button type="button" class="btn btn-outline-primary btn-lg mb-5" onclick="window.location.href='/services/weboldal_keszitesi_kerdoiv'">
+            Kérdőív kitöltése
+          </button>
+          <h1 class="display-6 text-body-emphasis lh-2 mb-3 text-center mt-4">
             {{ __('development.web_development') }}
           </h1>
         </div>        
@@ -41,6 +44,8 @@
           {{ __('development.services_intro') }}
         </p>
       </div>
+      
+
     </div>
 
     <div class="container" data-aos="fade-up">

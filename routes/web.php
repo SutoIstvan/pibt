@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\QuestionnaireController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -94,7 +95,14 @@ Route::prefix('services')->group(function () {
 
     Route::get('/web-development', function () {
         return view('services.web_development');
-    })->name('services.web_development');    
+    })->name('services.web_development'); 
+
+    Route::get('/weboldal_keszitesi_kerdoiv', function () {
+        return view('services.weboldal_keszitesi_kerdoiv');
+    })->name('services.weboldal_keszitesi_kerdoiv');   
+
+    Route::post('/kerdoiv/submit', [QuestionnaireController::class, 'submit'])->name('kerdoiv.submit');
+    Route::post('/kerdoiv/pdf', [QuestionnaireController::class, 'downloadPdf'])->name('kerdoiv.pdf');
 });
 
 Route::get('change-language/{locale}', function ($locale) {
