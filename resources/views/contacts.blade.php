@@ -47,8 +47,11 @@
           <div class=" p-5 text-center bg-body-tertiary rounded-3" data-aos="fade-up" data-aos-delay="100">
             <img src="../assets/img/mobile.png" height="50px" alt="">
             <h3 class="text-body-emphasis mt-2 mb-2">{{ __('contacts.phone')}}</h3>
-            <p class="col-lg-10 mx-auto text-muted"><br>
-              +36 70 702 1252 
+            <p class="col-lg-10 mx-auto text-muted">
+              Ügyvezető: +36 70 702 1252 
+            </p>
+            <p class="mb-0 text-muted">
+              Titkárság: +36 70 702 1252 
             </p>
           </div>
         </div>
@@ -58,7 +61,7 @@
             <img src="../assets/img/address.png" height="50px" alt="">
             <h3 class="text-body-emphasis mt-2 mb-2">{{ __('contacts.address')}}</h3>
             <p class="col-lg-10 mx-auto text-muted">
-              Paks, Vácika köz 1, 7030 Magyarország
+              Paks, Dózsa György utca 98. Magyarország
             </p>
           </div>
         </div>
